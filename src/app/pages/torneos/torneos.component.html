@@ -1,0 +1,47 @@
+<div class="imagen">
+        <div class="torneos-container">
+                <div class="top-container">
+                        <div class="torneo-activado" *ngIf="torneo; else esFalso">
+                                <div class="info-torneo-activado">
+                                        <div class="nombre-torneo-activado">
+                                                {{torneo.nombre}}
+                                        </div>
+                                        <div class="fecha-torneo-activado">
+                                               Empieza el {{torneo.fecha}}
+                                        </div>
+                                </div>
+                                <div class="botones-torneo-activado">
+                                        <a href="#" class="boton-torneo-activado-left">¡Apúntate!</a>
+                                        <a href="#" class="boton-torneo-activado-right">¡Más info!</a>
+                                </div>
+                        </div>
+                        
+                        <ng-template #esFalso>
+                                <div class="torneo-desactivado">
+                                        <div class="top-title">
+                                                        <h1>ELIGE UN TORNEO</h1>
+                                                </div>
+                                                <div class="slogan">
+                                                        <p>Compite con tu equipo</p>
+                                                        <p>Escala en el ranking</p>
+                                                        <p>Gana premios</p>
+                                        </div>
+                                </div>
+                        </ng-template>
+                </div>
+               
+                
+                <div class="bottom-container">
+                        <h3>Torneos</h3>
+                        <div class="carrousel-torneos">
+                                <div [ngClass]="torneo.patrocinado === true ? 'card-torneo-rojo': 'card-torneo-azul'" on-click="mostrarTorneo(i)" *ngFor="let torneo of torneos; let i = index">
+                                        <div class="card-title">{{torneo.nombre}}</div>
+                                        <div class="card-info">
+                                                <div class="card-tier">Tier {{torneo.tier}}</div>
+                                        <div class="card-fecha">{{torneo.fecha}}</div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>

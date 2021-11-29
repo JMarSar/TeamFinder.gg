@@ -1,0 +1,215 @@
+.torneos-container {
+        height: 100vh;
+        width: 100%;
+        background: -webkit-linear-gradient(0deg, rgba(29, 40, 49, 0.96) 41.88%, rgba(10, 14, 18, 0.65) 100.88%);
+        background-blend-mode: color-dodge;
+}
+.imagen {
+        background: url(../../../assets/img/Inline_LoL_1280x720.jpg);
+        background-size: 100%;
+}
+
+.top-container  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        height: 50%;
+}
+.torneo-desactivado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        height: 50%;
+}
+.torneo-activado{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: 0 0 0 6%;
+        padding-bottom: 50px;
+        background-color: saddlebrown;
+}
+.info-torneo-activado {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 57px;
+}
+.nombre-torneo-activado {
+        width: 60%;
+        font-family: var(--fontTitulos);
+        font-size: var(--sizeDisplay);
+        margin-bottom: -20px;
+        line-height: 80px;
+}
+.fecha-torneo-activado {
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeCommonSubtitle);
+        padding-top:10px;
+}
+.botones-torneo-activado{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 68px;
+}
+.boton-torneo-activado-left {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 107px;
+        height: 40px;
+        font-size: 16px;
+        padding: 10px 16px;
+        margin-left: 32px ;
+        margin-right: 12px ;
+        color: var(--colorRojoPrimario);
+        background-color: white;
+        border-radius: 2px;
+        text-decoration: none;
+        box-shadow: var(--sombraMedium);
+        font-family: var(--fontRevxRegular);
+}
+.boton-torneo-activado-right {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 107px;
+        height: 40px;
+        font-size: 16px;
+        padding: 10px 16px;
+        color: var(--colorRojoPrimario);
+        background-color: white;
+        border-radius: 2px;
+        text-decoration: none;
+        box-shadow: var(--sombraMedium);
+        font-family: var(--fontRevxRegular);
+}
+
+.top-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 23px;
+        border: 2px solid var(--colorRojoPrimario);
+}
+.top-title > h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px -20px 20px;
+        font-family: var(--fontTitulos);
+        font-size: 138px;
+        text-shadow: var(--sombraStrongPlus);
+}
+
+.slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.slogan > p {
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeCommonSubtitle);
+        line-height: 24px;
+        margin-bottom: 5px;
+        text-shadow: var(--sombraStrongPlus);
+}
+
+.bottom-container{
+        padding: 0 6%;
+        width: 100%;
+} 
+.bottom-container > h3 {
+        font-family: var(--fontRevxMedium);
+        font-size: var(--sizeDesktopHeading3);
+        text-shadow: var(--sombraStrongPlus)
+}
+
+.carrousel-torneos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 24px 24px;
+        margin-bottom: 8px;
+        overflow-x: scroll;
+}
+.carrousel-torneos::-webkit-scrollbar {
+        display: none;
+}
+
+.card-torneo-rojo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 14px 14px 0 16px;
+        min-width: 185px;
+        max-width: 190px;
+        height: 192px;
+        background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
+        margin: 0 13px;
+        border-radius: 4px;
+        box-shadow: var(--sombraStrongPlus);
+        transition: height .2s ease-in;
+}
+.card-torneo-azul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 14px 14px 0 16px;
+        min-width: 185px;
+        max-width: 190px;
+        height: 192px;
+        background: -webkit-linear-gradient(-90deg, #123D66 0%, #102A42 100%);
+        margin: 0 13px;
+        border-radius: 4px;
+        box-shadow: var(--sombraStrongPlus);
+        transition: height .2s ease-in-out;
+}
+.card-torneo-rojo:hover, .card-torneo-azul:hover {
+        height: 210px;
+        
+}
+.card-torneo-rojo:active, .card-torneo-azul:active {
+        border: 2px solid var(--colorBlancoPrimario);
+
+} 
+
+.card-title {
+        display: flex;
+        justify-content: center;
+        font-family: var(--fontTitulos);
+        font-size: var(--sizeTitulos);
+        text-align: center;
+}
+.card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-self: flex-end;
+}
+.card-tier {
+        font-family: var(--fontRevxBold);
+        font-size: var(--sizeDesktopHeading4);
+        text-shadow: var(--sombraMedium);
+        text-align: right;
+}
+.card-fecha {
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeCommonLabel);
+        text-shadow: var(--sombraMedium);
+        text-align: right;
+}
