@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+        font-family: Porton;
+        src: url(assets/porton/Porton\ -\ Bold.otf) format("opentype");
+}
+@font-face {
+        font-family: RevxBold;
+        src: url(assets/revx-neue-10008162/RevxNeue\ Bold.ttf) format("opentype");
+}
+@font-face {
+        font-family: RevxBlack;
+        src: url(assets/revx-neue-10008162/RevxNeue\ Black.ttf) format("opentype");
+}
+@font-face {
+        font-family: RevxRegular;
+        src: url(assets/revx-neue-10008162/RevxNeue\ Regular.ttf) format("opentype");
+}
+@font-face {
+        font-family: RevxMedium;
+        src: url(assets/revx-neue-10008162/RevxNeue\ Medium.ttf) format("opentype");
+}
+
 * {
         margin: 0;
         padding: 0;
@@ -44,4 +65,11 @@
         --sizeCommonBody2: 16px;
         --sizeCommonLabel: 16px;
         --sizeCommonCaptionDefault: 14px;
+
+        /* FUENTES */
+        --fontTitulos: Porton;
+        --fontRevxBold: RevxBold;
+        --fontRevxMedium: RevxMedium;
+        --fontRevxRegular: RevxRegular;
+        --fontRevxBlack: RevxBlack;
 }
