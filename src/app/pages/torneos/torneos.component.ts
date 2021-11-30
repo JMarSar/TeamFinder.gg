@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Torneo } from '../../models/torneo';
+import { Partida } from '../../models/partida';
 
 @Component({
   selector: 'app-torneos',
@@ -11,6 +12,7 @@ export class TorneosComponent implements OnInit {
   public torneos:Torneo[]
   public torneo:Torneo;
   public myIndex:number;
+  public partida:Partida;
 
   constructor() { 
     this.torneos = [
@@ -23,7 +25,7 @@ export class TorneosComponent implements OnInit {
       new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
       new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
       new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
+      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false)
     ]
   }
 
