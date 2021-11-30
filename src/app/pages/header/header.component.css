@@ -1,0 +1,179 @@
+
+.padre{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15.9%;
+    left: 0px;
+    top: 0px;
+    /*quitar color*/
+    background-color: transparent;
+}
+.logo{
+    height: 70%; 
+}
+.contenidoHeader{
+    position: fixed;
+    height: 11%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    /* text-decoration: underline; */
+}
+.letrasHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5%;
+    width: 60%;
+    list-style: none;
+    /* text-decoration: underline; */
+}
+a{
+    text-decoration: none;
+}
+li{
+    border-bottom: solid 4px rgb(255, 255, 255);
+    margin-bottom: 1em;
+    display: inline;
+    font-family: Porton;
+    font-weight: bold;
+    font-size: 52px;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    /* background: -webkit-linear-gradient(180deg, #FFFFFF 100%, #D6D6D6 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-decoration: none;  */     
+    /* z-index: 4;
+    text-decoration: underline; */
+    /* border-bottom: solid 1px white; */
+}
+.iconoPerfil{
+    height: 100%;
+}
+.colocarImagenPerfil
+{
+    
+
+    width: 7%;
+}
+.nombreIcono{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.lineaSeparadora{
+    margin-top: 8%;
+    width: 55%;
+    height: 1px;
+    margin-right: 1em;
+    background-color: #ffffff;
+}
+.boton{
+    background-color: transparent;
+    border-bottom: solid 4px rgb(255, 255, 255);
+    font-size: 52px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    font-family: Porton;
+    font-weight: bold;
+}
+.match{
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    /* background: -webkit-linear-gradient(180deg, #FFFFFF 100%, #D6D6D6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  */
+}
+/* .boton > p{
+    z-index: -100;
+    text-shadow: 0.1em 0.1em 0.2em black;
+} */
+.dropdown{
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #1D2831;
+    min-width: 160px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    font-family: Porton;
+    font-weight: bold;
+    font-size: 52px;
+    left: 60%;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    border: 3px solid #6D7781  ;
+    
+   
+    
+    
+}
+
+.dropdown-content a{
+    color:#FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Revx Neue;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 16px;
+   
+}
+.dropdown-content a:hover{
+    background-color: #061014;
+}
+.dropdown-content a :hover{background-color: #061014}
+
+.dropdown:hover .dropdown-content{display: block;}
+
+.dropdown:hover .dropbtn{background-color: yellow;}
+
+
+a:hover{
+    cursor: pointer;
+    z-index: 9;
+}
+a:link, a:visited, a:active {
+    color: white;
+    z-index: 9;
+}
+.arrow {
+    border: solid rgb(247, 245, 245);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    left: 179px;
+    top: 38px;
+    box-shadow: 0px 8px 11px 1px rgba(0, 0, 0, 0.4);
+    text-shadow: 0.1em 0.1em 0.2em black;
+  }
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.nombreUser{
+    position: relative;
+    font-family: Revx Neue;
+    color: #FFFFFF;
+    
+
+}
