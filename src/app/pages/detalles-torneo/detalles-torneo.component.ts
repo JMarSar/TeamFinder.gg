@@ -2,15 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Torneo } from '../../models/torneo';
 
 @Component({
-  selector: 'app-torneos',
-  templateUrl: './torneos.component.html',
-  styleUrls: ['./torneos.component.css']
+  selector: 'app-detalles-torneo',
+  templateUrl: './detalles-torneo.component.html',
+  styleUrls: ['./detalles-torneo.component.css']
 })
-export class TorneosComponent implements OnInit {
+export class DetallesTorneoComponent implements OnInit {
 
   public torneos:Torneo[]
   public torneo:Torneo;
-  public myIndex:number;
 
   constructor() { 
     this.torneos = [
@@ -25,11 +24,6 @@ export class TorneosComponent implements OnInit {
       new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
       new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
     ]
-  }
-
-  mostrarTorneo(i:number){
-    this.torneo = this.torneos[i]
-    this.myIndex = i
   }
 
   ngOnInit(): void {

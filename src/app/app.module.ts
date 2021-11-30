@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TorneosComponent } from './pages/torneos/torneos.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SeleccionPartidaComponent } from './pages/seleccion-partida/seleccion-partida.component';
+import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TorneosComponent,
     HomeComponent,
-    SeleccionPartidaComponent
+    SeleccionPartidaComponent,
+    DetallesTorneoComponent
   ],
   imports: [
     BrowserModule,

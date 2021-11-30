@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
       let barra = document.getElementById("barraColapsada")!
       let flecha = document.getElementById("flecha")!
       flecha.style.transform = "scaleX(-1)"
-      barra.style.marginLeft = "4.1%"}
+      barra.style.marginLeft = "3.29vw"}
     else{this.abierto= false
       let barra = document.getElementById("barraColapsada")!
       let flecha = document.getElementById("flecha")!

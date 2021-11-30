@@ -47,7 +47,7 @@
         height: 100%;
         padding: 0 0 0 6%;
         padding-bottom: 50px;
-        background-color: saddlebrown;
+        background-color: brown;
 }
 .info-torneo-activado {
         display: flex;
@@ -100,11 +100,12 @@
         height: 40px;
         font-size: 16px;
         padding: 10px 16px;
-        color: var(--colorRojoPrimario);
+        color: var(--colorBlancoPrimario);
         border-radius: 2px;
         text-decoration: none;
         box-shadow: var(--sombraMedium);
         font-family: var(--fontRevxRegular);
+        border: 2px solid var(--colorBlancoPrimario);
 }
 
 .top-title {
@@ -192,16 +193,17 @@
         margin: 0 13px;
         border-radius: 4px;
         box-shadow: var(--sombraStrongPlus);
-        transition: height .2s ease-in-out;
+        transition: height .2s ease-in;
 }
 .card-torneo-rojo:hover, .card-torneo-azul:hover {
-        height: 210px;
         cursor: pointer;
-        
+        height: 210px;
 }
-.card-torneo-rojo:active, .card-torneo-azul:active {
+.card-torneo-rojo:active, .card-torneo-azul:active , .blanco{
+        height: 210px;
         border: 2px solid var(--colorBlancoPrimario);
-} 
+        -width: 190px;
+}
 
 .card-title {
         display: flex;

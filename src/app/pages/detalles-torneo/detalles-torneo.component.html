@@ -1,0 +1,24 @@
+<div class="imagen-de-fondo">
+        <div class="detalles-torneo-container">
+                <div class="left-container">
+                        <div class="resultados-anteriores">
+                                <h3>Resultados anteriores</h3>
+                                <div class="carrousel-torneos">
+                                        <div [ngClass]="torneo.patrocinado === true ? 'card-torneo-rojo': 'card-torneo-azul'" *ngFor="let torneo of torneos; let i = index">
+                                                <div class="card-title">{{torneo.nombre}}</div>
+                                                <div class="card-info">
+                                                        <div class="card-tier">Tier {{torneo.tier}}</div>
+                                                <div class="card-fecha">{{torneo.fecha}}</div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="proximo-partido">
+
+                        </div>
+                </div>
+                <div class="right-container">
+
+                </div>
+        </div>
+</div>

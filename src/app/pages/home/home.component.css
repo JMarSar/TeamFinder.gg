@@ -3,6 +3,7 @@
         justify-content: center;
         height: 100vh;
         background-image: url("../../../assets/img/fondo_basico.jpg");
+        background-size: 100%;
         background-color: #142236;
 }
 .main{
