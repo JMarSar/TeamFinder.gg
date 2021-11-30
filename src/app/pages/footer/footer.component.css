@@ -1,0 +1,30 @@
+
+.PadreFoter{
+    position: fixed;
+    bottom: 0%;
+    height: 40px;
+    background-color:#1D2831;
+    width: 100%;
+    margin-top: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.ContenidoFoter{
+    display: flex;
+    justify-content: center;
+    margin-top:0.3%;
+    margin-right: 10%;
+    
+}
+.ContenidoFoter div{
+    padding: 9px;
+    font-family: Revx Neue;
+    color: #FFFFFF;
+    
+}
+.Marca{
+    font-family: Revx Neue;
+    color: #FFFFFF;
+    text-decoration-line: underline;
+}

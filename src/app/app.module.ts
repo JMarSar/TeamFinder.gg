@@ -7,6 +7,8 @@ import { TorneosComponent } from './pages/torneos/torneos.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SeleccionPartidaComponent } from './pages/seleccion-partida/seleccion-partida.component';
 import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo.component';
+import { HeaderComponent } from './pages/header/header.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo
     TorneosComponent,
     HomeComponent,
     SeleccionPartidaComponent,
-    DetallesTorneoComponent
+    DetallesTorneoComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
