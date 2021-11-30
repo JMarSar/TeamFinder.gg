@@ -19,7 +19,10 @@ export class TorneosComponent implements OnInit {
       new Torneo("PREDATORIANS FROM SPAIN", "4", "10/11/2121", true),
       new Torneo("TESTING OF THE TOMB", "1", "10/11/2121", false),
       new Torneo("TESTEO OF THE TOMB", "2", "10/11/2121", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false)
+      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
+      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
+      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
+      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
     ]
   }
 

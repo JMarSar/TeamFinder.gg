@@ -1,3 +1,14 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+}
+      
+      /* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+        -ms-overflow-style: none;
+        scrollbar-width: none; /* Firefox */
+}
+
 .torneos-container {
         height: 100vh;
         width: 100%;
@@ -25,6 +36,7 @@
         padding-top: 40px;
         padding-bottom: 10px;
         height: 50%;
+        min-width: 643px;
 }
 .torneo-activado{
         display: flex;
@@ -138,17 +150,34 @@
         text-shadow: var(--sombraStrongPlus)
 }
 
-.carrousel-torneos{
+.carrousel-torneos {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
+        max-height: 238px;
         padding: 24px 24px;
         margin-bottom: 8px;
         overflow-x: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
 }
-.carrousel-torneos::-webkit-scrollbar {
+/* .carrousel-torneos::-webkit-scrollbar {
         display: none;
+} */
+.carrousel-torneos::-webkit-scrollbar {
+        background-color: rgba(255, 255, 255, 0);
+        height: 6px;
+}
+/* background of the scrollbar except button or resizer */
+.carrousel-torneos::-webkit-scrollbar-track {
+        background-color: rgba(255, 255, 255, 0);
+}
+
+/* scrollbar itself */
+.carrousel-torneos::-webkit-scrollbar-thumb {
+        background-color: var(--colorBlancoPrimario);
+        border-radius: 16px;
 }
 
 .card-torneo-rojo {
@@ -181,6 +210,7 @@
 }
 .card-torneo-rojo:hover, .card-torneo-azul:hover {
         height: 210px;
+        cursor: pointer;
         
 }
 .card-torneo-rojo:active, .card-torneo-azul:active {
