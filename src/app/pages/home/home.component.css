@@ -1,0 +1,297 @@
+.padre{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("../../../assets/img/fondo_basico.jpg");
+        background-color: #142236;
+}
+.main{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        margin-top: 11%;
+        width: 79%;
+        height: 67%;
+        gap: 5%
+}
+.welcome{
+        width: fit-content;
+        font-family: var(--fontRevxMedium);
+        font-size: 40px;
+        color: white;
+        height: 85%;
+        border-bottom:  2px solid #CE0037;
+}
+.bottom{
+        margin-left: 6%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        height: 85%;
+}
+.stats{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+}
+.rank{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 100%;
+        gap:0.5rem;
+        color: white;
+}
+.wr{
+        display: flex;
+        flex-direction: row;
+        gap:0.5rem;
+        width: 30%;
+        height: 100%;
+        font-family: var(--fontRevxMedium);
+        color: white;
+}
+.tipo{
+        font-family: var(--fontRevxBold);
+}
+.datos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        background-color: #CE0037;
+        height: 100%;
+        width: 100%;
+        font-family: var(--fontRevxMedium);
+        gap: 4%;
+}
+.decorador{
+        background-color: white;
+        height: 100%;
+        width: 1rem;
+}
+.noticia{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 2.2%;
+        height: 85%;
+        width: 100%;
+        border-radius: 4px;
+        background: url(../../../assets/img/torneo.jpg);
+        background-size: 100%;
+        border: solid 1px #CE0037;
+        box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5)
+}
+.titular{
+        color: white;
+        width: 35%;
+}
+.nuevo{
+        font-family: var(--fontTitulos);
+        font-size: 4.55em;
+        line-height: 4rem;
+        margin-top: 20%;
+        /* text-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5); */
+}
+.fecha{
+        font-family: var(--fontRevxBold);
+        font-size: 1.6rem;
+        margin-top: 1%;
+}
+button{
+        border: transparent;
+        font-family: var(--fontRevxMedium);
+        background:white;
+        color: var(--colorRojoPrimario);
+        height: 12%;
+        width: 11%;
+        font-size: var(--sizeCommonBody2);
+        border-radius: 2px;
+        box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5)
+}
+.barra{
+
+        position: fixed;
+        height: 77.2%;
+        margin-top: 9%;
+
+}
+.barraNormal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        margin-left: -100%;
+        background: var(--colorAzulPrimarioGradient);
+        width: 4em;
+        height: 100%;
+        border-radius: 0px 40px 0px 0px ;
+        z-index: 1;
+}
+.barraNormalFuera{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        background: var(--colorAzulPrimarioGradient);
+        width: 4em;
+        height: 100%;
+        border-radius: 0px 40px 0px 0px ;
+        z-index: 1;
+}
+.juego{
+        height: 3rem;
+        width: 3.2rem;
+        border-radius: 50%;
+}
+.juego:hover{
+        cursor: pointer;
+}
+#lol{
+        background-image: url("../../../assets/img/iconos_esports_lol.svg");
+}
+#tft{
+        background-image: url("../../../assets/img/iconos_esports_tft.svg");
+}
+#val{
+        background-image: url("../../../assets/img/iconos_esports_val.svg");
+}
+
+hr{
+        width: 90%;
+        border-color: transparent;
+        border-bottom: solid 1px white;
+}
+#barraColapsada{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 2.5em;
+}
+#barraColapsada:hover{
+        cursor: pointer;
+}
+#pestana{
+        background: var(--colorAzulPrimarioGradient);
+        height: 20%;
+        width: 100%;
+        box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
+        border-radius: 0px 18px 18px 0px;
+        opacity: 0.5;
+}
+
+#flecha {
+        position: absolute;
+        width: 50%;
+        margin-bottom: 30%;
+        z-index: 1;
+}
+.switch {
+        position: absolute;
+        display: inline-block;
+        width: 3.8em;
+        height: 2.1em;
+}
+.img{
+        position: absolute;
+
+}
+.switch input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+}
+.lfm{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 10%;
+        border: solid 2px #CE0037;
+        margin-left: 85%;
+        margin-top: 9%;
+        padding-top: 2.5%;
+        padding-bottom: 3%;
+        height: 10%;
+        border-radius: 5px;
+}
+.tituloLFM{
+        width: 150%;
+        position: absolute;
+        color: white;
+        bottom: 120%;
+        font-size: var(--sizeCommonBody2);
+        font-family: var(--fontRevxMedium);
+}
+.etiquetaOff{
+        position: absolute;
+        color: white;
+        top: 30%;
+        right: 130%;
+        font-size: var(--sizeCommonBody2);
+        font-family: var(--fontRevxMedium);
+}
+.etiquetaOn{
+        position: absolute;
+        color: white;
+        top: 30%;
+        left: 120%;
+        font-size: var(--sizeCommonBody2);
+        font-family: var(--fontRevxMedium);
+}
+.slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(148, 148, 148);
+        -webkit-transition: .4s;
+        transition: .4s;
+}
+
+.slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+}
+
+input:checked + .slider {
+        background-color:#aaaaaa;
+}
+
+
+input:checked + .slider:before {
+        background-color: var(--colorRojoPrimario);
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+}
+
+.slider.round {
+        border-radius: 34px;
+}
+
+.slider.round:before {
+        border-radius: 50%;
+}
+
