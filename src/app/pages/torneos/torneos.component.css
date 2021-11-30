@@ -162,23 +162,10 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
 }
-/* .carrousel-torneos::-webkit-scrollbar {
-        display: none;
-} */
 .carrousel-torneos::-webkit-scrollbar {
-        background-color: rgba(255, 255, 255, 0);
-        height: 6px;
-}
-/* background of the scrollbar except button or resizer */
-.carrousel-torneos::-webkit-scrollbar-track {
-        background-color: rgba(255, 255, 255, 0);
+        display: none;
 }
 
-/* scrollbar itself */
-.carrousel-torneos::-webkit-scrollbar-thumb {
-        background-color: var(--colorBlancoPrimario);
-        border-radius: 16px;
-}
 
 .card-torneo-rojo {
         display: flex;
