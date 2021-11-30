@@ -101,7 +101,6 @@
         font-size: 16px;
         padding: 10px 16px;
         color: var(--colorRojoPrimario);
-        background-color: white;
         border-radius: 2px;
         text-decoration: none;
         box-shadow: var(--sombraMedium);
@@ -202,7 +201,6 @@
 }
 .card-torneo-rojo:active, .card-torneo-azul:active {
         border: 2px solid var(--colorBlancoPrimario);
-
 } 
 
 .card-title {
