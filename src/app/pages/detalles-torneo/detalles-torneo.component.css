@@ -1,0 +1,35 @@
+.detalles-torneo-container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100%;
+        background: -webkit-linear-gradient(0deg, rgba(29, 40, 49, 0.96) 41.88%, rgba(10, 14, 18, 0.65) 100.88%);
+        background-blend-mode: color-dodge;
+}
+.imagen-de-fondo {
+        background: url(../../../assets/img/Inline_LoL_1280x720.jpg);
+        background-size: 100%;
+}
+
+.left-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 2% 0 6%;
+}
+.resultados-anteriores {
+        height: 49%;
+        background-color: red;
+}
+.proximo-partido {
+        height: 49%;
+        background-color: teal;
+}
+
+.right-container {
+        width: 20%;
+        height: 100%;
+        background-color: red;
+}
