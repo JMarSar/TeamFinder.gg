@@ -8,8 +8,9 @@ import { Torneo } from '../../models/torneo';
 })
 export class DetallesTorneoComponent implements OnInit {
 
-  public torneos:Torneo[]
+  public torneos:Torneo[];
   public torneo:Torneo;
+  public proximoTorneo:Torneo;
 
   constructor() { 
     this.torneos = [
@@ -23,7 +24,8 @@ export class DetallesTorneoComponent implements OnInit {
       new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
       new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
       new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
-    ]
+    ],
+    this.proximoTorneo = new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2021", false)
   }
 
   ngOnInit(): void {
