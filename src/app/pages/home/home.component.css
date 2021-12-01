@@ -201,16 +201,17 @@ hr{
         margin-bottom: 30%;
         z-index: 1;
 }
+.img{
+        position: absolute;
+
+}
 .switch {
         position: absolute;
         display: inline-block;
         width: 3.8em;
         height: 2.1em;
 }
-.img{
-        position: absolute;
 
-}
 .switch input {
         position: absolute;
         opacity: 0;

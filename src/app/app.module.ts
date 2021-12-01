@@ -10,6 +10,9 @@ import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { LandingComponent } from './pages/footer/pages/landing/landing.component';
+import { PartidaComponent } from './pages/partida/partida.component';
+import { PartidaDetalleComponent } from './pages/partida-detalle/partida-detalle.component';
+import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { LandingComponent } from './pages/footer/pages/landing/landing.component
     HeaderComponent,
     FooterComponent,
     LandingComponent,
+    PartidaComponent,
+    PartidaDetalleComponent,
+    BuscarScrimComponent
   ],
   imports: [
     BrowserModule,
