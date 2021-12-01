@@ -1,0 +1,136 @@
+.padre{
+    background-image:url(../../../assets/img/fondo_reg.png);
+    height: 100vh;
+    background-size: 100%;
+    width: 100vw;
+}
+.logo{
+width: 72px;
+height: 76.11px;
+margin-left: 5%;
+margin-top: 2%;
+}
+.parteMadia{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.titulo{
+   margin-top: 4%;
+   margin-right: 20%;
+   justify-content: center;
+   text-align: center;
+    
+}
+.title{
+font-family: var(--fontRevxBold);
+font-size: var(--sizeDesktopHeading2);
+color: #FFFFFF;
+}
+.nombres{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.user{
+    margin-left: 20%;
+    font-family: var(--fontRevxRegular);
+    font-size: var(--sizeCommonBody1);
+}
+.circulo{
+    margin-top: 4px;
+        width: 12px;
+        height: 12px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #CE0037;
+        margin-left:1%;
+        
+}
+.email{
+    padding-left: 13.5%;
+    font-family: var(--fontRevxRegular);
+    font-size: var(--sizeCommonBody1);
+}
+.cajas1{
+    margin-left: 20%;
+    
+}
+.cajaUser{
+    font-family: var(--fontRevxRegular);
+    font-size: var(--sizeCommonBody1);
+    color: black;
+}
+.cajaEmail{
+    margin-left: 4.5%;
+    font-family: var(--fontRevxRegular);
+    font-size: var(--sizeCommonBody1);
+    color: black;
+    margin-top: 1%;
+}
+.pass{
+    margin-left: 20%;
+    font-family: var(--fontRevxRegular);
+    font-size: var(--sizeCommonBody1);
+}
+.cajaPass{
+    font-family: var(--fontRevxRegular);
+    font-size: var(--sizeCommonBody1);
+    color: black;
+    
+
+}
+.pass2{
+    margin-left: 9.3%;
+    font-family: var(--fontRevxRegular);
+    font-size: var(--sizeCommonBody1);
+}
+.cajaPass2{
+    font-family: var(--fontRevxRegular);
+    font-size: var(--sizeCommonBody1);
+    color: black;
+    margin-left: 4.5%;
+    margin-top: 1%;
+}
+.parteInferior{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+.letras{
+text-align: center;
+  font-family: var(--fontRevxRegular);
+  height: 50%;
+  width: 50%;
+  margin-top: 1%;
+  margin-right: 30%;
+}
+.boton{
+    margin-top: 1%;
+}
+.registro{
+    
+    width: 100px;
+    height: 48px;
+    background: #f50505;
+    font-family: var(--fontRevxMedium);
+    font-size: var(--sizeCommonBody2);
+    color: #FFFFFF;
+    border-radius: 4%;
+
+}
+.botonDesactivado{
+ 
+    width: 100px;
+    height: 48px;
+    background: #CAD2DA;
+    border-radius: 2px;
+    font-family: var(--fontRevxMedium);
+    font-size: var(--sizeCommonBody2);
+    color: #FFFFFF;
+    border-radius: 4%;
+    
+
+}

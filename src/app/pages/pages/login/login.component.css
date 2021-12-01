@@ -30,11 +30,8 @@
 }
 .inputs{
     margin-top: 5%;
-    font-family: Revx Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: var(--fontRevxMedium);
+    font-weight: var(--sizeCommonBody2);
 
 
 
@@ -116,14 +113,10 @@ padding-left: 15%;
     width: 100px;
     height: 48px;
     background: #f50505;
-    border-radius: 2px;
     font-family: var(--fontRevxMedium);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+    font-size: var(--sizeCommonBody2);
     color: #FFFFFF;
     border-radius: 4%;
-
 }
 .botonDesactivado{
  
@@ -132,9 +125,7 @@ padding-left: 15%;
     background: #CAD2DA;
     border-radius: 2px;
     font-family: var(--fontRevxMedium);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+    font-size:(var(--sizeCommonBody2));
     color: #FFFFFF;
     border-radius: 4%;
     
