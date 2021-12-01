@@ -33,6 +33,16 @@
         font-family: var(--fontRevxRegular);
         font-size: var(--sizeDesktopHeading3);
 }
+.top-heading-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeDesktopHeading3);
+        margin-bottom: 11px;
+}
+/*Soy pani te estoy tocando el codigo*/
 .fecha-top-heading {
         font-size: var(--sizeCommonSubtitle);
 }
@@ -42,11 +52,12 @@
         justify-content: space-between;
         align-items: flex-end;
         max-height: 238px;
-        padding: 24px 24px;
+        padding: 11px 0;
         margin-bottom: 8px;
         overflow-x: scroll;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+        box-shadow: inset -15px 0 black;
 }
 .card-partida-ganada {
         display: flex;
@@ -73,6 +84,7 @@
         background: -webkit-linear-gradient(-90deg, #1D2831 0%, #0A0E12 100%);
         border-radius: 4px;
         box-shadow: var(--sombraStrongPlus);
+        
 }
 .estado-partida {
         font-family: var(--fontRevxRegular);
@@ -82,26 +94,52 @@
         display: flex;
         flex-direction: column;
 }
-.resultado-partida-equipo {
+.resultado-partida-equipo-ganador {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+}
+.resultado-partida-equipo-perdedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        padding-right: 10%;
+} 
+.resultado-partida-equipos {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        width: 100%;
 }
-
-.resultado-partida-equipo > h3 {
+.equipo-ganador {
+        margin-left: 100%;
+        margin-top: 5px;
+}
+.equipo-ganador > img {
+        width: auto;
+        height: 15px;
+}
+.nombre-equipo {
         font-family: var(--fontRevxRegular);
         font-size: var(--sizeCommonBody2);
 }
-
+.puntos-equipo {
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeDesktopHeading4);
+}
 .proximo-partido {
         height: 50%;
-        padding: 0 5% 10% 5%;
+        padding: 0 0 0 0;
 }
 .proximo-partido-display {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 160px;
+        min-width: 695px; 
         border-radius: 4px;
         background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
         box-shadow: var(--sombraStrongPlus);
@@ -121,7 +159,7 @@
         align-items: center;
         top: 0;
         right: 0;
-        width: 25%;
+        width: 300px;
         height: 100%;
         margin-left: 6%;
         border-radius: 8px 0 0 0;
