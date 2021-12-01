@@ -2,23 +2,111 @@
         <div class="detalles-torneo-container">
                 <div class="left-container">
                         <div class="resultados-anteriores">
-                                <h3>Resultados anteriores</h3>
-                                <div class="carrousel-torneos">
-                                        <div [ngClass]="torneo.patrocinado === true ? 'card-torneo-rojo': 'card-torneo-azul'" *ngFor="let torneo of torneos; let i = index">
-                                                <div class="card-title"> Resultado {{torneo.partida.resultadoEquipo1}}</div>
-                                                <div class="card-info">
-                                                        <div class="card-tier">Resultado {{torneo.partida.resultadoEquipo2}}</div>
-                                                <div class="card-fecha">{{torneo.fecha}}</div>
+                                <div class="top-heading">
+                                        <h3>Resultados anteriores</h3>
+                                </div>
+                                <div class="carrousel-partidos">
+                                        <div *ngFor="let torneo of torneos">
+                                                <div *ngIf="torneo.partida.resultadoEquipo1 > torneo.partida.resultadoEquipo2"  class="card-partida-ganada">
+                                                        <div class="estado-partida">
+                                                                <h3>Victoria</h3>
+                                                        </div>
+                                                        <div class="resultado-partida">
+                                                                <div class="resultado-partida-equipo-ganador">
+                                                                        <div class="resultado-partida-equipos">
+                                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo1}}</h3>
+                                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo1}}</h3>
+                                                                        </div>
+                                                                        <div class="selector-ganador">
+                                                                                <div class="equipo-ganador">
+                                                                                        <img src="../../../assets/img/arrov_victoria.svg" alt="">
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="resultado-partida-equipo-perdedor">
+                                                                        <div class="resultado-partida-equipos">
+                                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo2}}</h3>
+                                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo2}}</h3>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                                
+                                                <div *ngIf="torneo.partida.resultadoEquipo2 > torneo.partida.resultadoEquipo1" class="card-partida-perdida">
+                                                        <div class="estado-partida">
+                                                                <h3>Derrota</h3>
+                                                        </div>
+                                                        <div class="resultado-partida">
+                                                                <div class="resultado-partida-equipo-perdedor">
+                                                                        <div class="resultado-partida-equipos">
+                                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo1}}</h3>
+                                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo1}}</h3>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="resultado-partida-equipo-ganador">
+                                                                        <div class="resultado-partida-equipos">
+                                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo2}}</h3>
+                                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo2}}</h3>
+                                                                        </div>
+                                                                        <div class="selector-ganador">
+                                                                                <div class="equipo-ganador">
+                                                                                        <img src="../../../assets/img/arrov_victoria.svg" alt="">
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <div class="proximo-partido">
-
+                                <div class="top-heading-2">
+                                        <h3>Proximo partido</h3>
+                                        <div class="fecha-top-heading">
+                                                <h3>{{proximoTorneo.fecha}}</h3>
+                                        </div>
+                                </div>
+                                <div class="proximo-partido-display">
+                                        <h1>{{proximoTorneo.partida.equipo1}} VS {{proximoTorneo.partida.equipo2}}</h1>
+                                </div>
                         </div>
                 </div>
                 <div class="right-container">
-
+                        <div class="top-heading-right">
+                                <h3>Estadísticas por jugador</h3>
+                        </div>
+                        <div class="bottom-container-right">
+                                <div class="usuario">
+                                        <div class="foto-perfil">
+                                                <img src="../../../assets/img/torneo.jpg" alt="">
+                                        </div>
+                                        <div class="nombre-usuario">
+                                                @Wasabi
+                                        </div>
+                                </div>
+                                <div class="datos">
+                                        <div class="top-datos">
+                                                <div class="datos-titulo">Total Kills</div>
+                                                <div class="datos-stats">194</div>
+                                        </div>
+                                        <div class="mid-datos">
+                                                <div class="datos-titulo">KDA</div>
+                                                <div class="datos-stats">15</div>
+                                        </div>
+                                        <div class="bottom-datos">
+                                                <div class="datos-titulo">Asistencias</div>
+                                                <div class="datos-stats">312</div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flechas">
+                                <div class="flecha-izq">
+                                        <img class="img" src="../../../assets/img/noun_Arrow_18954.svg" alt="flecha">
+                                </div>
+                                <div class="flecha-der">
+                                        <img class="img" src="../../../assets/img/noun_Arrow_18954.svg" alt="flecha">
+                                </div>
+                        </div>
                 </div>
         </div>
 </div>

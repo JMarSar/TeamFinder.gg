@@ -179,7 +179,7 @@
         margin: 0 13px;
         border-radius: 4px;
         box-shadow: var(--sombraStrongPlus);
-        transition: height .2s ease-in;
+        transition: height 0.15s ease-in;
 }
 .card-torneo-azul {
         display: flex;
@@ -193,7 +193,7 @@
         margin: 0 13px;
         border-radius: 4px;
         box-shadow: var(--sombraStrongPlus);
-        transition: height .2s ease-in;
+        transition: height 0.15s ease-in;
 }
 .card-torneo-rojo:hover, .card-torneo-azul:hover {
         cursor: pointer;
