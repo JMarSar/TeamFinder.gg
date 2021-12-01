@@ -9,6 +9,7 @@ import { SeleccionPartidaComponent } from './pages/seleccion-partida/seleccion-p
 import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { LandingComponent } from './pages/footer/pages/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './pages/footer/footer.component';
     DetallesTorneoComponent,
     HeaderComponent,
     FooterComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
