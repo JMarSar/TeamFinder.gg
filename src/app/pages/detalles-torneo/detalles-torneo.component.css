@@ -15,9 +15,9 @@
 .left-container {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 90%;
         width: 60%;
-        margin-top: 6%;
+        margin-top: 10%;
         margin-left: 6%;
 }
 .resultados-anteriores {
@@ -157,10 +157,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        top: 0;
+        bottom: 0;
         right: 0;
         width: 300px;
-        height: 100%;
+        height: 85%;
         margin-left: 6%;
         border-radius: 8px 0 0 0;
         background-color: var(--colorAzulSecundario);
