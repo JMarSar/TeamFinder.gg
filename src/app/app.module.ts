@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,8 @@ import { LandingComponent } from './pages/footer/pages/landing/landing.component
 import { PartidaComponent } from './pages/partida/partida.component';
 import { PartidaDetalleComponent } from './pages/partida-detalle/partida-detalle.component';
 import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
+import { LoginComponent } from './pages/pages/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -26,11 +29,13 @@ import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.componen
     LandingComponent,
     PartidaComponent,
     PartidaDetalleComponent,
-    BuscarScrimComponent
+    BuscarScrimComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
