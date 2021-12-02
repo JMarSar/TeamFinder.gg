@@ -32,6 +32,7 @@
         align-items: center;
         font-family: var(--fontRevxRegular);
         font-size: var(--sizeDesktopHeading3);
+        text-shadow: var(--sombraStrongPlus);
 }
 .top-heading-2 {
         display: flex;
@@ -40,6 +41,7 @@
         align-items: center;
         font-family: var(--fontRevxRegular);
         font-size: var(--sizeDesktopHeading3);
+        text-shadow: var(--sombraStrongPlus);
         margin-bottom: 11px;
 }
 /*Soy pani te estoy tocando el codigo*/
@@ -89,6 +91,7 @@
 .estado-partida {
         font-family: var(--fontRevxRegular);
         font-size: var(--sizeDesktopHeading4);
+        text-shadow: var(--sombraStrongPlus);
 }
 .resultado-partida {
         display: flex;
