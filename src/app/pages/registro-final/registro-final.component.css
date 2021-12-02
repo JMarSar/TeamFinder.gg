@@ -1,0 +1,47 @@
+.padre{
+    background-image: url(../../../assets/img/fondo_badass.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+}
+.logo{
+width: 72px;
+height: 76.11px;
+margin-top: 2%;
+margin-left: 9%;
+}
+.medio{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+.titulo{
+font-family: var(--fontRevxBold);
+font-size: var(--sizeGrande);
+}
+.confir{
+    font-family: var(--fontRevxMedium);
+    font-size: var(--sizeDesktopHeading4);
+    width: 654px;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.boton{
+width: 286px;
+height: 65px;
+background: linear-gradient(179.84deg, #FFFFFF 0.14%, #D6D6D6 84.23%);
+border-radius: 4px;
+margin-left: 37%;
+margin-top: 7%;
+box-shadow: var(--sombraStrongPlus);
+}
+
+.leta{
+
+font-family: var(--fontRevxBold);
+font-size: var(--sizeDesktopHeading2);
+margin-top: 10px;
+color:#102A42;
+}

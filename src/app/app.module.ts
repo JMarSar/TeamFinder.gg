@@ -16,6 +16,8 @@ import { PartidaDetalleComponent } from './pages/partida-detalle/partida-detalle
 import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
 import { LoginComponent } from './pages/pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { RegistroFinalComponent } from './pages/registro-final/registro-final.component';
+import { RegistroCompletaRegistroComponent } from './pages/registro-completa-registro/registro-completa-registro.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { RegistroComponent } from './pages/registro/registro.component';
     BuscarScrimComponent,
     LoginComponent,
     RegistroComponent,
+    RegistroFinalComponent,
+    RegistroCompletaRegistroComponent,
   ],
   imports: [
     BrowserModule,
