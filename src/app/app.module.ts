@@ -18,6 +18,7 @@ import { RankingComponent } from './pages/ranking/ranking.component';
 import { NOequipoComponent } from './pages/noequipo/noequipo.component';
 import { EquipoCreadoComponent } from './pages/equipo-creado/equipo-creado.component';
 import { AdminToolsComponent } from './pages/admin-tools/admin-tools.component';
+import { AdminCreateComponent } from './pages/admin-create/admin-create.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AdminToolsComponent } from './pages/admin-tools/admin-tools.component';
     RankingComponent,
     NOequipoComponent,
     EquipoCreadoComponent,
-    AdminToolsComponent
+    AdminToolsComponent,
+    AdminCreateComponent
   ],
   imports: [
     BrowserModule,

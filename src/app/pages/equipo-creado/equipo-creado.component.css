@@ -8,7 +8,6 @@ main{
 }
 header{
     height: 15%;
-    background-color: black;
 }
 #containerBig{
     height: 60vh;
@@ -22,18 +21,15 @@ h1{
     font-size: var(--sizeGrande);
     color: white;
     margin-bottom: 2%;
-    box-shadow:  0px 8px 11px 1px rgba(0, 0, 0, 0.4);
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
-.titulo{
-    color:aqua ;
-    text-shadow:  var(--sombraStrongPlus);
-}
+
 h2{
+    color: var(--colorAzulPrimario);
     margin-top: 1%; 
-    text-shadow:  20px 38px 11px 1px rgba(0, 0, 0, 0.8)
+    text-shadow: 0.1em 0.1em 0.2em var(--colorAzulPrimario);
 }
 #containerTeamName{
-    color: var(--colorAzulPrimario);
     background-color: white;
     width: 32%;
     text-align: center;
@@ -66,5 +62,6 @@ button{
     font-family: var(--fontRevxRegular);
     font-size: var(--sizeDesktopHeading4);
     margin-top: 1%;
+    box-shadow: 0.1em 0.1em 0.2em var(--colorRojoPrimario);
   
 }
