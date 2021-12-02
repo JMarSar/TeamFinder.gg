@@ -13,6 +13,11 @@ import { LandingComponent } from './pages/footer/pages/landing/landing.component
 import { PartidaComponent } from './pages/partida/partida.component';
 import { PartidaDetalleComponent } from './pages/partida-detalle/partida-detalle.component';
 import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
+import { LfmComponent } from './pages/lfm/lfm.component';
+import { VolverComponent } from './pages/volver/volver.component';
+import { SideBarComponent } from './pages/side-bar/side-bar.component';
+import { EquiposComponent } from './pages/equipos/equipos.component';
+import { RankingComponent } from './pages/ranking/ranking.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.componen
     LandingComponent,
     PartidaComponent,
     PartidaDetalleComponent,
-    BuscarScrimComponent
+    BuscarScrimComponent,
+    LfmComponent,
+    VolverComponent,
+    SideBarComponent,
+    EquiposComponent,
+    RankingComponent
   ],
   imports: [
     BrowserModule,

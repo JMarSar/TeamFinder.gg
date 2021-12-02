@@ -1,0 +1,34 @@
+<div class="padre">
+        <div class="contieneImagen">
+                <img class="imagen" src="../../../assets/img/garen.png" alt="Garen" >
+        </div>
+        <div class="contenedor">
+                <div class="titulo" >
+                        <p class="scrim">EQUIPOS</p>
+                </div>
+                <div class="descripcion">
+                        <div class="arriba">
+                                <input class="buscar" placeholder="Buscar por nombre">
+                                <div class="filtrar">
+                                        <p class="filtro">Filtrar</p>
+                                        <img class="img" src="../../../assets/img/filter_blanco.svg" alt="filter">
+                                </div>
+                        </div>
+                        <div class="equipos">
+                                <div class="lista">
+                                        <div class="etiquetaEquipo" *ngFor="let equipo of equipos">
+                                                <div class="rank">Rank</div>  
+                                                <div class="numeroRank">{{equipo.rank}}</div> 
+                                                <div class="numeroRank linea">|</div>   
+                                                <div class="nombre">{{equipo.nombre}}</div>  
+                                                <div class="botones">
+                                                        <button class="conectar">Conectar</button>
+                                                        <button class="unirse">Unirse</button>
+                                                </div>             
+                                        </div>
+                                </div>
+                                <div class="barrita"></div>
+                        </div>
+                </div>
+        </div>
+</div>

@@ -1,0 +1,28 @@
+.contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        margin-top:43vw;
+        height: 2vw;
+        width: 5vw;
+        color: rgb(255, 0, 0);
+        border: solid 2px rgb(255, 255, 255);
+        background-color:transparent;
+        border-radius: 4px;
+        gap: 0.3vw;
+        margin-left: 3vw;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        z-index: 1
+}
+button:hover{
+        cursor: pointer;
+}
+p{
+        font-family: var(--fontRevxMedium);
+}
+#flecha {
+        margin-top: 0.2vw;
+        width: 1vw;
+        transform : scaleX(-1)
+}

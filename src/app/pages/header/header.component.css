@@ -47,7 +47,7 @@ li{
     justify-content: center;
     color: #FFFFFF;
     background-color: transparent;
-    text-shadow: 0.1em 0.1em 0.2em black;
+    text-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.7);
     /* background: -webkit-linear-gradient(180deg, #FFFFFF 100%, #D6D6D6 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -57,12 +57,24 @@ li{
     /* border-bottom: solid 1px white; */
 }
 .iconoPerfil{
-    height: 100%;
+    height: 3vw;
+    width: 3vw;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("../../../assets/img/iconoPerfil.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    box-shadow:  0.1em 0.1em 0.5em rgba(0, 0, 0, 0.7);
 }
-.colocarImagenPerfil
-{
-    
-
+.colocarImagenPerfil{
+    margin-top: 1.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
     width: 7%;
 }
 .nombreIcono{
@@ -117,11 +129,7 @@ li{
     font-size: 52px;
     left: 60%;
     text-shadow: 0.1em 0.1em 0.2em black;
-    border: 3px solid #6D7781  ;
-    
-   
-    
-    
+    border: 3px solid #6D7781  ;  
 }
 
 .dropdown-content a{
@@ -174,6 +182,5 @@ a:link, a:visited, a:active {
     position: relative;
     font-family: Revx Neue;
     color: #FFFFFF;
-    
-
+    text-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.7);
 }
