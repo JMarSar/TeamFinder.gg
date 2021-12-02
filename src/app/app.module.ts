@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +25,10 @@ import { VolverComponent } from './pages/volver/volver.component';
 import { SideBarComponent } from './pages/side-bar/side-bar.component';
 import { EquiposComponent } from './pages/equipos/equipos.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
+import { EquipoPersonalComponent } from './pages/infoPersonal/equipo-personal/equipo-personal.component';
+import { UsuarioPersonalComponent } from './pages/infoPersonal/usuario-personal/usuario-personal.component';
+import { EquipoPublicoComponent } from './pages/infoPublica/equipo-publico/equipo-publico.component';
+import { UsuarioPublicoComponent } from './pages/infoPublica/usuario-publico/usuario-publico.component';
 
 @NgModule({
   declarations: [
@@ -46,12 +51,17 @@ import { RankingComponent } from './pages/ranking/ranking.component';
     VolverComponent,
     SideBarComponent,
     EquiposComponent,
-    RankingComponent
+    RankingComponent,
+    EquipoPersonalComponent,
+    UsuarioPersonalComponent,
+    EquipoPublicoComponent,
+    UsuarioPublicoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

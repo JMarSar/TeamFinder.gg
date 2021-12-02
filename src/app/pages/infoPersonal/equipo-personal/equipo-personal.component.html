@@ -1,0 +1,128 @@
+<div id="total">
+    <div class="header"></div>
+<div class="info1">
+    <div class="infoNombre">
+        <div class="texto">1upEs</div>
+        <div class="adorno"></div>
+    </div>
+    
+    <img class="imagenEquipo" src="./../../../../assets/img/iconooEquipo.png" alt="">
+    <div class="roaster">Roster</div>
+    <div class="jugadores">
+    <div class="ranked">
+        <div class="textoRanked">
+                JohnDoe
+        </div>
+        <div class="adorno1"></div>
+    </div>
+    <div class="ranked">
+        <div class="adorno1"></div>
+        <div class="textoRanked">
+                BreadWater
+        </div>
+    </div>
+    <div class="ranked">
+        <div class="textoRanked">
+                GeorG
+        </div>
+        <div class="adorno1"></div>
+    </div>
+    <div class="ranked">
+        <div class="adorno1"></div>
+        <div class="textoRanked">
+                Gui-Y
+        </div>
+    </div>
+    <div class="ranked">
+        <div class="textoRanked">
+                Ethan
+        </div>
+        <div class="adorno1"></div>
+    </div>
+</div>
+</div>
+<div class="info2">
+    <div class="titulo">
+        <div class="texto1">Estadisticas</div>
+        <div class="adorno"></div>
+    </div>
+    <div class="info2Primero">
+        <div class="estadisticaWL">{{estadistica.win}} W / {{estadistica.loses}} L</div>
+        <div>
+            <img class="imagenLugar" src="./../../../../assets/img/EEUU.png" alt="">
+            <div class="lugarText">{{estadistica.zona}}</div>
+        </div>
+    </div>
+    <div class="info2Segunda">
+        <div>
+            <p>K</p>
+            <p>D</p>
+            <p>A</p>
+        </div>
+        <div>
+            <p>{{estadistica.kills}}</p>/<p>{{estadistica.deaths}}</p>/<p>{{estadistica.asistencias}}</p>
+        </div>
+        <div>
+            2.20 : 1  (29%)
+        </div>
+    </div>
+    
+    <div class="graph" style="display: block">
+        <div class="porcenGanados">
+            {{porcenGanados}}%
+        </div>
+        <canvas mdbChart
+            [chartType]="chartType"
+            [datasets]="chartDatasets"
+            [labels]="chartLabels"
+            [colors]="chartColors"
+            [options]="chartOptions"
+            [legend]="false"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)">
+        </canvas>
+        
+    </div>
+</div>
+<div class="info3">
+    <div class="titulo">
+        <div class="botonCalen" [ngClass]="mostrarConexiones == false ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarConexiones = false">Calendario</div>
+        <div class="botonConex" [ngClass]="mostrarConexiones == true ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarConexiones = true">Conexiones</div>
+    </div>
+    <div class="conexiones" *ngIf="mostrarConexiones == true">
+        <div class="conexion" *ngFor="let conex of conexionesTotal">
+            <img src="{{conex.img}}" alt="">
+            <div class="nombreEquipo">{{conex.equipoNom}}</div>
+        </div>
+    </div>
+    <div class="calendario" *ngIf="mostrarConexiones == false">
+        <div class="semana">
+            <div class="dias" *ngFor="let dia of dias">
+                <div>{{dia.diaSemana}}</div>
+                <div class="diaNumero" [ngClass]="dia.date >= fechaHoy ? (dia.partido == true ? 'diasOcupados' : 'diasRestantes') : 'diaNumero'">{{dia.date.getDate()}}</div>
+            </div>
+        </div>
+        <div class="partidos">
+            <div>
+                Proximo Partido
+            </div>
+            <div class="partidoProx">
+                <div>
+                    <img class="imagenEquipoPart" src="./../../../../assets/img/iconooEquipo.png" alt="">
+                    <div>1upX</div>
+                </div>
+                <div class="vs">VS</div>
+                <div>
+                    <img class="imagenEquipoPart" src="./../../../../assets/img/logoEquipoEne.png" alt="">
+                    <div>1upX</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="abandonar" *ngIf="admin == false">Abandonar</button>
+<button class="eliminar" *ngIf="admin == true">Eliminar</button>
+<button class="back">< Volver</button>
+
+<footer></footer>
+</div>
