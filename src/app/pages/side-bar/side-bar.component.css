@@ -1,0 +1,86 @@
+.barra{
+        position: fixed;
+        height: 77.2%;
+        margin-top: 9%;
+        z-index: 5;
+}
+.barraNormal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        margin-left: -100%;
+        background: var(--colorAzulPrimarioGradient);
+        width: 4em;
+        height: 100%;
+        border-radius: 0px 40px 0px 0px ;
+        z-index: 1;
+        transition: margin 0.5s;
+}
+.barraNormalFuera{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        background: var(--colorAzulPrimarioGradient);
+        width: 4em;
+        height: 100%;
+        border-radius: 0px 40px 0px 0px ;
+        z-index: 1;
+        transition: margin 0.5s;
+}
+#barraColapsada{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 2.5em;
+        transition: margin 0.5s;
+}
+#barraColapsada:hover{
+        cursor: pointer;
+        margin-left: 0%;
+}
+#pestana{
+        background: var(--colorAzulPrimarioGradient);
+        height: 20%;
+        width: 100%;
+        box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
+        border-radius: 0px 18px 18px 0px;
+        opacity: 0.5;
+}
+
+#flecha {
+        position: absolute;
+        width: 50%;
+        margin-bottom: 30%;
+        z-index: 1;
+}
+.juego{
+        height: 3rem;
+        width: 3.2rem;
+        border-radius: 50%;
+}
+.juego:hover{
+        cursor: pointer;
+}
+#lol{
+        background-image: url("../../../assets/img/iconos_esports_lol.svg");
+}
+#tft{
+        background-image: url("../../../assets/img/iconos_esports_tft.svg");
+}
+#val{
+        background-image: url("../../../assets/img/iconos_esports_val.svg");
+}
+
+hr{
+        width: 90%;
+        border-color: transparent;
+        border-bottom: solid 1px white;
+}       

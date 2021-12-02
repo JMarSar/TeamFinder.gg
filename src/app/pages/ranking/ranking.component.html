@@ -1,0 +1,40 @@
+<div class="padre">
+        <div class="contieneImagen">
+                <img class="imagen" src="../../../assets/img/draven.png" alt="Garen" >
+        </div>
+        <div class="contenedor">
+                <div class="titulo" >
+                        <p class="scrim">RANKING</p>
+                </div>
+                <div class="descripcion">
+                        <div class="arriba">
+                                <div class="elegir">
+                                        <button [ngClass]="this.elegido == true ? 'elegidoBoton' : 'elegirBoton'" on-click="elegir()">Equipos</button>
+                                        <button [ngClass]="this.elegido == false ? 'elegidoBoton' : 'elegirBoton'" on-click="elegir()">Jugadores</button>
+                                </div>
+                                <div class="filtrar">
+                                        <p class="filtro">Filtrar</p>
+                                        <img class="img" src="../../../assets/img/filter.svg" alt="filter">
+                                </div>
+                        </div>
+                        <div class="equipos">
+                                <div class="lista">
+                                        <div class="etiquetaEquipo" *ngFor="let equipo of equipos">
+                                                <div class="rank">Rank</div>  
+                                                <div class="numeroRank">{{equipo.rank}}</div> 
+                                                <div class="numeroRank linea">|</div>   
+                                                <div class="nombre">{{equipo.nombre}}</div>  
+                                                <div class="stats">
+                                                        <div class="numeroStats">WR </div>
+                                                        <div class="numeroStats wr">{{equipo.wr}} </div>
+                                                        <div class="numeroStats">/ </div>
+                                                        <div class="numeroStats">ELO </div>
+                                                        <div class="numeroStats elo">{{equipo.elo}} </div>
+                                                </div>           
+                                        </div>
+                                </div>
+                                <div class="barrita"></div>
+                        </div>
+                </div>
+        </div>
+</div>

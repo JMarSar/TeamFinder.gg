@@ -1,0 +1,98 @@
+.switch {
+        position: fixed;
+        display: inline-block;
+        width: 3.8em;
+        height: 2.1em;
+}
+
+.switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+}
+
+.lfm{
+        position: absolute;
+        top:25vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: 10vw;
+        border: solid 2px #CE0037;
+        margin-left: 80vw;
+        height: 12vh;
+        border-radius: 5px;
+        gap: 2vh;
+        padding-top: 2vh;
+        box-shadow: 1px 2px 4px rgb(0, 0, 0, 0.4);
+}
+.onOff{
+        width: 90%;
+        display: flex;
+        gap: 3vw;
+        justify-content: space-between;
+        margin-bottom: 10%;
+}
+.tituloLFM{
+        width: 150%;
+        color: white;
+        font-size: var(--sizeCommonBody2);
+        font-family: var(--fontRevxMedium);
+}
+.etiquetaOff{
+        color: white;
+        top: 50%;
+        font-size: var(--sizeCommonBody2);
+        font-family: var(--fontRevxMedium);
+}
+.etiquetaOn{
+        color: white;
+        top: 30%;
+        font-size: var(--sizeCommonBody2);
+        font-family: var(--fontRevxMedium);
+}
+.slider {
+        position: absolute;
+        height: 4.5vh;
+        cursor: pointer;
+        top: 3.5vh;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(148, 148, 148);
+        -webkit-transition: .4s;
+        transition: .4s;
+}
+
+.slider:before {
+        position: absolute;
+        content: "";
+        height: 3.5vh;
+        width: 3.5vh;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+}
+
+input:checked + .slider {
+        background-color:#aaaaaa;
+}
+
+
+input:checked + .slider:before {
+        background-color: var(--colorRojoPrimario);
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+}
+
+.slider.round {
+        border-radius: 34px;
+}
+
+.slider.round:before {
+        border-radius: 50%;
+}

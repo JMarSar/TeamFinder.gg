@@ -1,6 +1,6 @@
 <div class="padre">
         <div class="contieneImagen">
-                <img class="imagen" src="../../../assets/img/580b57fcd9996e24bc43c2f3.png" alt="Seth" >
+                <img class="imagen" src="../../../assets/img/580b57fcd9996e24bc43c2f3.png" alt="Poppy" >
         </div>
         <div class="contenedor">
                 <div class="tipo">
@@ -16,42 +16,27 @@
                         </div>
                         <div class="equipos">
                                 <div class="lista">
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
-                                        <p>EQUIPO</p>
+                                        <div class="etiquetaEquipo" *ngFor="let equipo of equipos" on-click="seleccionar()">
+                                                <div class="rank">Rank</div>  
+                                                <div class="numeroRank">{{equipo.rank}}</div> 
+                                                <div class="numeroRank linea">|</div>   
+                                                <a href="" class="nombre">{{equipo.nombre}}</a>  
+                                                <div class="stats">
+                                                        <div class="numeroStats">WR </div>
+                                                        <div class="numeroStats wr">{{equipo.wr}} </div>
+                                                        <div class="numeroStats">/ </div>
+                                                        <div class="numeroStats">ELO </div>
+                                                        <div class="numeroStats elo">{{equipo.elo}} </div>
+                                                </div>             
+                                        </div>
                                 </div>
                                 <div class="barrita"></div>
 
                         </div>
                 </div>
                 <div class="botones">
-                        <button class="boton1Azul">
-                               <p class="combatir">Buscar</p> 
+                        <button [ngClass]="this.seleccionado == false ? 'boton3' : 'boton1'">
+                               <p class="combatir">Combatir</p> 
                         </button>
                         <button class="boton2">
                                 Volver

@@ -19,6 +19,11 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { RegistroFinalComponent } from './pages/registro-final/registro-final.component';
 import { RegistroCompletaRegistroComponent } from './pages/registro-completa-registro/registro-completa-registro.component';
 
+import { LfmComponent } from './pages/lfm/lfm.component';
+import { VolverComponent } from './pages/volver/volver.component';
+import { SideBarComponent } from './pages/side-bar/side-bar.component';
+import { EquiposComponent } from './pages/equipos/equipos.component';
+import { RankingComponent } from './pages/ranking/ranking.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +42,11 @@ import { RegistroCompletaRegistroComponent } from './pages/registro-completa-reg
     RegistroComponent,
     RegistroFinalComponent,
     RegistroCompletaRegistroComponent,
+    LfmComponent,
+    VolverComponent,
+    SideBarComponent,
+    EquiposComponent,
+    RankingComponent
   ],
   imports: [
     BrowserModule,

@@ -11,8 +11,8 @@ export class PartidaDetalleComponent implements OnInit {
   public jugando : boolean
 
   constructor() { 
-    this.tipo = false
-    this.jugando = true
+    this.tipo = true
+    this.jugando = false
   }
 
   ngOnInit(): void {
