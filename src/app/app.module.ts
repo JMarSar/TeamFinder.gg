@@ -10,15 +10,15 @@ import { SeleccionPartidaComponent } from './pages/seleccion-partida/seleccion-p
 import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
-import { LandingComponent } from './pages/footer/pages/landing/landing.component';
 import { PartidaComponent } from './pages/partida/partida.component';
 import { PartidaDetalleComponent } from './pages/partida-detalle/partida-detalle.component';
 import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
-import { LoginComponent } from './pages/pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { RegistroFinalComponent } from './pages/registro-final/registro-final.component';
 import { RegistroCompletaRegistroComponent } from './pages/registro-completa-registro/registro-completa-registro.component';
 
+import { LandingComponent } from './pages/landing/landing.component';
+import { LoginComponent } from './pages/login/login.component';
 import { LfmComponent } from './pages/lfm/lfm.component';
 import { VolverComponent } from './pages/volver/volver.component';
 import { SideBarComponent } from './pages/side-bar/side-bar.component';

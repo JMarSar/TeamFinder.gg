@@ -5,10 +5,9 @@
     width: 100vw;
 }
 .logo{
-width: 72px;
-height: 76.11px;
-margin-left: 5%;
-margin-top: 2%;
+    width: 4.5vw;
+    margin-left: 5.5%;
+    margin-top: 1.5%;
 }
 .parteMadia{
     display: flex;
@@ -23,14 +22,16 @@ margin-top: 2%;
     
 }
 .title{
-font-family: var(--fontRevxBold);
-font-size: var(--sizeDesktopHeading2);
-color: #FFFFFF;
+    font-family: var(--fontRevxBold);
+    font-size: var(--sizeDesktopHeading2);
+    color: #FFFFFF;
 }
 .nombres{
+    margin-left: 3vw;
     display: flex;
     flex-direction: row;
     margin-top: 5%;
+    text-shadow: 1px 2px 4px rgb(0, 0, 0, 0.8);
 }
 .user{
     margin-left: 20%;
@@ -39,13 +40,14 @@ color: #FFFFFF;
 }
 .circulo{
     margin-top: 4px;
-        width: 12px;
-        height: 12px;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        background: #CE0037;
-        margin-left:1%;
+    width: 12px;
+    height: 12px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #CE0037;
+    margin-left:1%;
+    box-shadow: 1px 2px 4px rgb(0, 0, 0, 0.8);
         
 }
 .email{
@@ -54,21 +56,22 @@ color: #FFFFFF;
     font-size: var(--sizeCommonBody1);
 }
 .cajas1{
-    margin-left: 20%;
-    
+    margin-top: 1vw;
+    display: flex;
+    gap: 4vw;
+    margin-left: 22vw;
+    width: fit-content;
 }
 .cajaUser{
     font-family: var(--fontRevxRegular);
     font-size: var(--sizeCommonBody1);
-    color: black;
 }
-.cajaEmail{
+/* .cajaEmail{
     margin-left: 4.5%;
     font-family: var(--fontRevxRegular);
     font-size: var(--sizeCommonBody1);
-    color: black;
     margin-top: 1%;
-}
+} */
 .pass{
     margin-left: 20%;
     font-family: var(--fontRevxRegular);
@@ -77,22 +80,18 @@ color: #FFFFFF;
 .cajaPass{
     font-family: var(--fontRevxRegular);
     font-size: var(--sizeCommonBody1);
-    color: black;
-    
-
 }
 .pass2{
     margin-left: 9.3%;
     font-family: var(--fontRevxRegular);
     font-size: var(--sizeCommonBody1);
 }
-.cajaPass2{
+/* .cajaPass2{
     font-family: var(--fontRevxRegular);
     font-size: var(--sizeCommonBody1);
-    color: black;
     margin-left: 4.5%;
     margin-top: 1%;
-}
+} */
 .parteInferior{
     justify-content: center;
     display: flex;
@@ -100,12 +99,13 @@ color: #FFFFFF;
     margin-top: 10%;
 }
 .letras{
-text-align: center;
-  font-family: var(--fontRevxRegular);
-  height: 50%;
-  width: 50%;
-  margin-top: 1%;
-  margin-right: 30%;
+    text-align: center;
+    font-family: var(--fontRevxRegular);
+    height: 50%;
+    width: 50%;
+    margin-top: 1%;
+    margin-right: 30%;
+    padding-left: 10%;
 }
 .boton{
     margin-top: 1%;
@@ -131,6 +131,15 @@ text-align: center;
     font-size: var(--sizeCommonBody2);
     color: #FFFFFF;
     border-radius: 4%;
-    
+}
+input{
+    height: 2.5vw;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: solid 2px #CAD2DA;
+    padding-left: 1.5vw;
+}
+input::placeholder{
+    font-size: var(--sizeCommonBody2);
 
 }

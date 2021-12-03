@@ -5,10 +5,9 @@
     background-image: url(../../../assets/img/fondo_extra.jpg);
 }
 .logo{
-    width: 72px;
-height: 76.11px;
-margin-left: 5%;
-margin-top: 2%;
+    width: 4.5vw;
+    margin-left: 5.5%;
+    margin-top: 1.5%;
 }
 .medio{
     display: flex;
