@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TorneosComponent } from './pages/torneos/torneos.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SeleccionPartidaComponent } from './pages/seleccion-partida/seleccion-partida.component';
+<<<<<<< HEAD
 import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
@@ -19,6 +20,11 @@ import { NOequipoComponent } from './pages/noequipo/noequipo.component';
 import { EquipoCreadoComponent } from './pages/equipo-creado/equipo-creado.component';
 import { AdminToolsComponent } from './pages/admin-tools/admin-tools.component';
 import { AdminCreateComponent } from './pages/admin-create/admin-create.component';
+=======
+import { PartidaComponent } from './pages/partida/partida.component';
+import { PartidaDetalleComponent } from './pages/partida-detalle/partida-detalle.component';
+import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
+>>>>>>> 991d9ed (Creado front de detalle partidas, seleccion partida, buscando amistosa en proceso)
 
 @NgModule({
   declarations: [
@@ -26,6 +32,7 @@ import { AdminCreateComponent } from './pages/admin-create/admin-create.componen
     TorneosComponent,
     HomeComponent,
     SeleccionPartidaComponent,
+<<<<<<< HEAD
     DetallesTorneoComponent,
     HeaderComponent,
     FooterComponent,
@@ -39,6 +46,11 @@ import { AdminCreateComponent } from './pages/admin-create/admin-create.componen
     EquipoCreadoComponent,
     AdminToolsComponent,
     AdminCreateComponent
+=======
+    PartidaComponent,
+    PartidaDetalleComponent,
+    BuscarScrimComponent
+>>>>>>> 991d9ed (Creado front de detalle partidas, seleccion partida, buscando amistosa en proceso)
   ],
   imports: [
     BrowserModule,

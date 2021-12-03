@@ -1,0 +1,142 @@
+<div class="padre">
+        <div class="contieneImagen">
+                <img class="imagen" src="../../../assets/img/pngwing.com (10).png" alt="Seth" *ngIf="this.tipo == true">
+                <img class="imagen" src="../../../assets/img/580b57fcd9996e24bc43c2f3.png" alt="Seth" *ngIf="this.tipo == false">
+        </div>
+        <div class="enCurso" *ngIf="this.jugando == true">
+                <div class="modalEnCurso">
+                        <p class="partida">Partida en curso</p>
+                        <p class="explica"> Ligula fermentum mauris aliquet sed sed nam semper sit. Ut suspendisse q
+                                uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.</p>
+                </div>
+        </div>
+        <div class="lfm">
+                <div>
+                        <div class="tituloLFM">LFM Mode</div>
+                </div>
+                <label class="switch">
+
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                </label>
+                <div class="onOff">
+                        <div class="etiquetaOff">Off</div>
+                        <div class="etiquetaOn">On</div>
+                </div>
+        </div>
+        <div class="card" *ngIf="this.tipo == true">
+                <div class=" ranked info">
+                        <div class="tipo">
+                                <p>RANKED</p>
+                        </div>
+                        <div class="descripcion">
+                                <div class="equipo">
+                                        <div>
+                                                <p class="nombreEquipo" >WARRIORS</p>
+                                        </div>
+                                        <div class="circulo">
+                                        </div>
+                                        <div>
+                                                <p class="capitan" >Capitán</p>
+                                        </div>
+                                        <div>
+                                                <p class="nombre" >@JohnDoe</p>
+                                        </div>
+                                </div>
+                                <div>
+                                        <p class="vs">VS</p>
+                                </div>
+                                <div class="equipo">
+                                        <div>
+                                                <p class="nombreEquipo" >CANNES ELVES 22</p>
+                                        </div>
+                                        <div class="circulo2">
+                                        </div>
+                                        <div>
+                                                <p class="capitan" >Capitán</p>
+                                        </div>
+                                        <div>
+                                                <p class="nombre" >@Hunter21</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <a href="#miModal">
+                        <div class="botones" *ngIf="this.jugando == false">
+                                <button class="boton2">
+                                        Cancelar
+                                </button>
+                        </div>
+                </a>
+        </div>
+        <div class="card" *ngIf="this.tipo == false">
+                <div class=" ranked amistosa info" >
+                        <div class="tipo">
+                                <p>AMISTOSA</p>
+                        </div>
+                        <div class="descripcion">
+                                <div class="equipo">
+                                        <div>
+                                                <p class="nombreEquipo" >WARRIORS</p>
+                                        </div>
+                                        <div class="circulo">
+                                        </div>
+                                        <div>
+                                                <p class="capitan" >Capitán</p>
+                                        </div>
+                                        <div>
+                                                <p class="nombre amistoso" >@JohnDoe</p>
+                                        </div>
+                                </div>
+                                <div>
+                                        <p class="vs">VS</p>
+                                </div>
+                                <div class="equipo">
+                                        <div>
+                                                <p class="nombreEquipo" >CANNES ELVES 22</p>
+                                        </div>
+                                        <div class="circulo2">
+                                        </div>
+                                        <div>
+                                                <p class="capitan" >Capitán</p>
+                                        </div>
+                                        <div>
+                                                <p class="nombre amistoso" >@Hunter21</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="botones">
+                        <a href="#miModal">
+                                <button class="boton2" *ngIf="this.jugando == false">
+                                        Cancelar
+                                </button>
+                        </a>
+                </div>
+        </div>
+        <div>
+                <div id="miModal" class="modal">
+                        <div class="modal-contenido">
+                                <!-- <a clas href="#">X</a> -->
+                                <div class="aviso">
+                                        <h2 class="warn" >Vas a cancelar la partida</h2>
+                                        <p class="warnTexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Ligula fermentum mauris aliquet sed sed nam semper sit. Ut suspendisse q
+                                                uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.
+                                                 Eget nullam morbi turpis suspendisse tincidunt venenatis tortor cras.</p>
+                                </div>
+                                <div class="botones2">
+                                        <a href="#">
+                                                <button class="boton1Azul">
+                                                        Volver
+                                                </button>
+                                        </a>
+                                        <button  class="boton2">
+                                                <p class="combatir">Confirmar</p> 
+                                        </button>
+                                </div>
+                        </div>  
+                </div>
+        </div>
+</div>
+

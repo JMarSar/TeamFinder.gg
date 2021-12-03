@@ -1,0 +1,189 @@
+.padre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        background-size: 100%;
+        height: 100vh;
+        background-image: url("../../../assets/img/fondo_basico.jpg");
+        background-color: #142236;
+        overflow-x: hidden;
+}
+.contieneImagen{
+        width: 100%;
+}
+.imagen{
+        position: absolute;
+        margin-top: 20%;
+        height: 45%;
+        margin-left: -9%;
+        margin-top: 24.8%;
+        z-index: 2;
+}
+.tipo{     
+        border-radius: 2px;
+        margin-top: 24vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        background-color: white;
+        height: 1.7em;
+        width: 6em;
+        font-size: var(--sizeDesktopHeading2);
+        font-family: var(--fontRevxBold);
+        box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.5);
+}
+.tipo > p{
+        background: -webkit-linear-gradient(-90deg, #123D66 0%, #102A42 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.descripcion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--colorAzulPrimario);
+        background: var(--colorAzulPrimarioGradient);
+        box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.5);
+        border-radius: 4px;  
+        width: 50vw;
+        height: 24vw;
+}
+.contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.8vh;
+}
+.arriba{
+        height: 6vh;
+        width: 46vw;
+        display: flex;
+        justify-content: space-between;
+}
+.buscar{
+        padding-top: 0.1em;
+        height: 100%;
+        width: 65%;
+        background-color: white;
+        border-radius: 4px;
+        margin-top: 2vh;
+        border: none;
+        background-image: url('../../../assets/img/search.svg');
+        background-position:1vw;
+        background-size: 4vh;
+        background-repeat:no-repeat;
+        padding-left: 3.5vw;
+        outline: none
+}
+.filtrar{
+        height: 100%;
+        width: 8vw;
+        margin-top: 2vh;
+        background-color: white;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+}
+.filtro{
+        color: #102A42;
+        font-family: var(--fontRevxMedium);
+        font-size: var(--sizeCommonBody2);
+}
+.img{
+        margin-top: 1vh;
+        height: 2vw;
+}
+input::placeholder{
+        font-size: var(--sizeCommonCaptionDefault);
+        text-decoration: underline;
+        font-family: var(--fontRevxMedium);
+        opacity: 0.8;
+}
+input:focus, :active :checked,:enabled{
+        border: none;   
+}
+.equipos{
+        display: flex;
+        margin-top: 4vh;
+        border-radius: 4px;
+        color: var(--colorAzulPrimario);
+        background: rgb(7, 34, 58, 0.8);
+        width: 48vw;
+        height: 15.5vw;
+}
+.barrita{
+        margin-top: 0.5vw ;
+        border-radius: 50px;
+        position: fixed;
+        height: 14.8vw;
+        background-color: #242424;
+        width: 0.8vw;
+        margin-left: 46.37vw;
+}
+.lista{
+        position: relative;
+        margin-top: 0.8vw;
+        padding-left: 1.8vw;
+        background: transparent;
+        width: 47vw;
+        height: 14.1vw;
+        overflow: scroll;
+        overflow-x: hidden;
+        z-index: 1;
+}
+.botones{
+        display: flex;
+        gap: 1vw;
+}
+.boton2{
+        background: var(--colorGrisFormularios);
+        color: white;
+        border: transparent;
+}
+button{
+        width: 10rem;
+        height: 6.5vh;
+        font-size: var(--sizeCommonBody2);
+        font-family: var(--fontRevxMedium);
+        border: transparent;
+        border-radius: 2px;
+        box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
+}
+button:hover{
+        cursor: pointer;
+}
+
+.boton1 > p {
+        color: #CE0037;
+}
+.boton1Azul > p {
+        color:#102A42;
+}
+/* width */
+::-webkit-scrollbar {
+        width: 0.5vw;
+        /* border: solid 2px #242424; */
+}
+      
+      /* Track */
+::-webkit-scrollbar-track {
+        background-color: #242424;
+        border-radius: 10px;
+}
+       
+      /* Handle */
+::-webkit-scrollbar-thumb {
+        background: var(--colorGrisGradient); 
+        border-radius: 10px;
+}
+      
+      /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+        background: var(--colorGrisGradient); 
+}
