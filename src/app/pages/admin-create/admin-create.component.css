@@ -1,0 +1,230 @@
+*{
+    font-family: var(--fontRevxMedium);
+}
+.padre{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15.9%;
+    left: 0px;
+    top: 0px;
+    background-color: transparent;
+}
+
+.contenidoHeader{
+    position: fixed;
+    height: 11%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.lineaSeparadora{
+    margin-top: 8%;
+    width: 57%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.nombreUser{
+    position: relative;
+    font-family: Revx Neue;
+    color: #FFFFFF;
+}
+#tool{
+    font-size: var(--sizeDesktopHeading1);
+    font-family: var(--fontTitulos); 
+}
+#adminText{
+    font-family: var(--fontRevxMedium);
+}
+/***************************/
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../../assets/img/fondo_admin.png);
+}
+
+/************************************/
+
+#containerxxl{
+    border: solid 1px red;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#containerxl{
+    /* border: solid 1px red; */
+    height: 65%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    margin-top: 4%;
+}
+#titles{
+    /* border: solid 1px rgb(248, 241, 241); */
+    height: 100%;
+    width: 20%;
+}
+p{
+    /* border: solid 1px red; */
+    width: 100%;
+    height: 16.6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#content{
+    /* border: solid 1px red; */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents{
+    /* border: solid 1px red; */
+    height: 16.6%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#contentButtons{
+    /* border: solid 1px rgb(187, 255, 0); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.gameButton{
+    /* border: solid 1px red; */
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--colorGrisPrimario);
+}
+#lolButton{
+    background-color:var(--colorRojoPrimario);
+}
+input{
+    border: 0;
+    border-radius: 4px;
+    text-align: center;
+    color: black;
+    outline: none;
+}
+
+#nameInput{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+}
+
+#dateInputs{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3%;
+    gap:4% 
+}
+
+.date{
+    height: 50%;
+    width: 25%;
+}
+#teamNum,#codeInput{
+    margin-left: 3%
+}
+#codeInput{
+    width: 50%;
+}
+a{
+    text-decoration: underline;
+    font-size: var(--sizeCommonCaptionDefault);
+}
+
+
+
+
+
+#generate{
+    /* border: solid 1px rgb(0, 255, 42); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#genContainer{
+    /* border: solid 1px white; */
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    text-align: center;
+}
+.gen{
+    width: 80%;
+    height: 20%;
+    background-color: var(--colorRojoPrimario);
+    border: 0;
+    border-radius: 4px;
+}
+
+#clave{
+    height: 25%;
+}
+#containerGenAndRes{
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: row;
+    height: 6%;
+    width: 30%;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+}
+.genb{
+height: 100%;
+width: 35%;
+background-color: var(--colorRojoPrimario);
+border: 0;
+border-radius: 4px;
+}
+
+#reset{
+    background-color: var(--colorGrisPrimario);
+    color: black;
+}
+

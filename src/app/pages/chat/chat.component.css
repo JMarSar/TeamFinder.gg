@@ -1,0 +1,56 @@
+
+#chatTop{
+    height: 7%;
+    width: 30%;
+    background-color: var(--colorAzulPrimario);
+    position: absolute;
+    left: 70%;
+    top: 27%;
+    color: white;
+    text-align: end;
+    border-radius:25px 0 0 0;
+    
+}
+button{
+    color: white;
+    background-color: var(--colorAzulPrimario);
+    width: 30px;
+    height: 35px;
+}
+#chatMain{
+    height: 67%;
+    width: 30%;
+    background-color: var(--colorAzulSecundario);
+    position: absolute;
+    left: 70%;
+    top:33%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+#messageChat{
+    position: absolute;
+    left: 72%;
+    top: 85%;
+    border-radius: 4px;
+    height: 7%;
+    width: 25%;
+    background-color:  var(--colorAzulSecundario);
+    color: white;
+    border-color: white;
+}
+#sendButton{
+    position: absolute;
+    left: 91.5%;
+    top:93%;
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color:  var(--colorAzulSecundario);
+    border-color: white;
+    border-radius: 4px;
+}
+hr{
+    margin-top: 75%;
+    width: 80%;
+    margin-left: 10%;
+}

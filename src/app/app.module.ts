@@ -24,6 +24,14 @@ import { VolverComponent } from './pages/volver/volver.component';
 import { SideBarComponent } from './pages/side-bar/side-bar.component';
 import { EquiposComponent } from './pages/equipos/equipos.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
+import { AdminCreateComponent } from './pages/admin-create/admin-create.component';
+import { AdminToolsComponent } from './pages/admin-tools/admin-tools.component';
+import { AlertsComponent } from './pages/alerts/alerts.component';
+import { ChatComponent } from './pages/chat/chat.component';
+import { TeamCreateComponent } from './pages/team-create/team-create.component';
+import { NewTeamComponent } from './pages/new-team/new-team.component';
+import { NoTeamComponent } from './pages/no-team/no-team.component';
+import { MenuComponent } from './pages/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +54,15 @@ import { RankingComponent } from './pages/ranking/ranking.component';
     VolverComponent,
     SideBarComponent,
     EquiposComponent,
-    RankingComponent
+    RankingComponent,
+    AdminCreateComponent,
+    AdminToolsComponent,
+    AlertsComponent,
+    ChatComponent,
+    TeamCreateComponent,
+    NewTeamComponent,
+    NoTeamComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
