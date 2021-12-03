@@ -1,0 +1,89 @@
+<div class="padre">
+    <div class="superior">
+        <img class="logo" src="../../../assets/img/logo_blac.png">
+    </div>
+    <div class="medio">
+        <div class="Encabezado">
+            <p class="encabezadoLetras">Elige el E-soprt principal </p>
+        </div>
+        <div class="recuadros">
+            <div class="zed"[hidden]="hidenT">
+                <img class="zedBrazo"src="../../../assets/img/zed.png">
+                <img class="pinguF" src="../../../assets/img/pingu.png">
+                <img class="val" src="../../../assets/img/SubtractVa.png">
+            </div>
+            <div [hidden]="hidenZ">
+                <div class="lol">
+                    <div class="inputLol">
+                        <p class="textoIn1">Nick en el juego</p>
+                        <input class="textoLol1" type="text">
+                        <p class="textoIn2">Servidor</p>
+                        <input class="textoLol2" type="text">
+                        <p class="textoIn3">Posicion favorita</p>
+                        <input class="textoLol3" type="text">
+                    </div>
+                    <img class="pinguZ" src="../../../assets/img/pingu.png">
+                    <img class="valZ" src="../../../assets/img/SubtractVa.png">
+                </div>
+            </div>
+
+            </div>
+            <div [hidden]="hidenP">  
+                <div class="lol">
+                    <img class="zedP" src="../../../assets/img/zed.png">
+                    <div class="inputPin">
+                        <p class="textoIn1">Nick en el juego</p>
+                        <input class="textoLol1" type="text">
+                        <p class="textoIn2">Servidor</p>
+                        <input class="textoLol2" type="text">
+                        <p class="textoIn3">Posicion favorita</p>
+                        <input class="textoLol3" type="text">
+                    </div>
+                    <img class="valP" src="../../../assets/img/SubtractVa.png">
+                </div>
+            </div>
+            <div [hidden]="hidenV">
+                <div class="lol">
+                    <img class="zedV" src="../../../assets/img/zed.png">
+                    <img class="pinguV" src="../../../assets/img/pingu.png">
+                    <div class="inputVal">
+                        <p class="textoIn1">Nick en el juego</p>
+                        <input class="textoV1" type="text">
+                        <p class="textoIn2">Servidor</p>
+                        <input class="textoV2" type="text">
+                        <p class="textoIn3">Posicion favorita</p>
+                        <input class="textoV3" type="text">
+                    </div>
+                   
+                </div>
+            </div>
+            
+
+
+            <div class="estela">
+                    <button  class="estella" (click)="zedChange()">
+                    <img class="apagagoZed" src="../../../assets/img/Star 2.png" *ngIf="zedVar == false" >
+                    
+                    <img class="apagadoZed" src="../../../assets/img/Star 1.png" *ngIf="zedVar == true">
+
+                    </button>
+                    <button class="pingu"(click)="pinChange()">
+                        <img class="pingB" src="../../../assets/img/Star 1.png" *ngIf="pinguVar == true">
+                        <img class="pingB" src="../../../assets/img/Star 2.png" *ngIf="pinguVar == false">
+                    </button>
+                    <button class="pium" (click)="piumChange()">
+                        <img class="valorant" src="../../../assets/img/Star 1.png" *ngIf="piumVar == true">
+                        <img class="valorent" src="./../../assets/img/Star 2.png"  *ngIf="piumVar == false">
+                    </button>
+            </div>
+        </div>
+
+    <div class="inferior">
+        <button class="atras">
+            <a href="/home">Volver</a>
+        </button>
+        <button class="sige">Siguiente</button>
+    </div>
+</div>
+
+
