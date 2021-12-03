@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertsComponent implements OnInit {
   alertMsg = ["mensaje de prueba","1","2","3","4","5"]
-
   constructor() { }
 
   ngOnInit(): void {

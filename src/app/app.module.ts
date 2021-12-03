@@ -11,9 +11,6 @@ import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { LandingComponent } from './pages/footer/pages/landing/landing.component';
-import { PartidaComponent } from './pages/partida/partida.component';
-import { PartidaDetalleComponent } from './pages/partida-detalle/partida-detalle.component';
-import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
 import { LoginComponent } from './pages/pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { RegistroFinalComponent } from './pages/registro-final/registro-final.component';
@@ -23,15 +20,21 @@ import { LfmComponent } from './pages/lfm/lfm.component';
 import { VolverComponent } from './pages/volver/volver.component';
 import { SideBarComponent } from './pages/side-bar/side-bar.component';
 import { EquiposComponent } from './pages/equipos/equipos.component';
-import { RankingComponent } from './pages/ranking/ranking.component';
-import { AdminCreateComponent } from './pages/admin-create/admin-create.component';
-import { AdminToolsComponent } from './pages/admin-tools/admin-tools.component';
-import { AlertsComponent } from './pages/alerts/alerts.component';
-import { ChatComponent } from './pages/chat/chat.component';
 import { TeamCreateComponent } from './pages/team-create/team-create.component';
 import { NewTeamComponent } from './pages/new-team/new-team.component';
 import { NoTeamComponent } from './pages/no-team/no-team.component';
+import { AlertsComponent } from './pages/alerts/alerts.component';
+import { CrearEquipoComponent } from './pages/crear-equipo/crear-equipo.component';
+import { NOequipoComponent } from './pages/noequipo/noequipo.component';
+import { EquipoCreadoComponent } from './pages/equipo-creado/equipo-creado.component';
+import { AdminToolsComponent } from './pages/admin-tools/admin-tools.component';
+import { AdminCreateComponent } from './pages/admin-create/admin-create.component';
+import { PartidaComponent } from './pages/partida/partida.component';
+import { PartidaDetalleComponent } from './pages/partida-detalle/partida-detalle.component';
+import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
 import { MenuComponent } from './pages/menu/menu.component';
+import { ChatComponent } from './pages/chat/chat.component';
+import { RankingComponent } from './pages/ranking/ranking.component';
 
 @NgModule({
   declarations: [
@@ -54,15 +57,23 @@ import { MenuComponent } from './pages/menu/menu.component';
     VolverComponent,
     SideBarComponent,
     EquiposComponent,
-    RankingComponent,
     AdminCreateComponent,
     AdminToolsComponent,
     AlertsComponent,
-    ChatComponent,
     TeamCreateComponent,
     NewTeamComponent,
     NoTeamComponent,
-    MenuComponent
+    MenuComponent,
+    ChatComponent,
+    CrearEquipoComponent,
+    RankingComponent,
+    NOequipoComponent,
+    EquipoCreadoComponent,
+    AdminToolsComponent,
+    AdminCreateComponent,
+    PartidaComponent,
+    PartidaDetalleComponent,
+    BuscarScrimComponent
   ],
   imports: [
     BrowserModule,

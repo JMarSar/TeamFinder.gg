@@ -14,14 +14,15 @@
 .imagen{
         position: absolute;
         margin-top: 20%;
-        height: 22vw;
-        margin-left: -10%;
-        margin-top: 24.5%;
+        height: 45%;
+        margin-left: -9%;
+        margin-top: 24.8%;
         z-index: 2;
 }
 .tipo{     
         border-radius: 2px;
         margin-bottom: 1vw;
+        margin-top: 24vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
