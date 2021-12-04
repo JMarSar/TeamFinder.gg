@@ -1,12 +1,12 @@
 <!-- <nav> -->
     <div class="padre">
         <div class="contenidoHeader">
-            <a href="home">
-                <img src="../../assets/img/logo.png.png" class="logo" href="/home">
+            <a routerLink="home">
+                <img src="../../assets/img/logo.png.png" class="logo">
             </a>
             <div class="letrasHeader">
                 
-                <li><a class="texto" href="/Equipos">Equipos</a></li>
+                <li><a class="texto" routerLink="equipos">Equipos</a></li>
                 <div class="dropdown">
 
                     <button class="boton">
@@ -15,21 +15,20 @@
                     <p> <i class="arrow down"></i></p>
 
                     <div class="dropdown-content">
-                        <a  href="/scrims">Scrims</a>
+                        <a  routerLink="seleccion-partida">Scrims</a>
                         <hr>
-                        <a href="/Torneo">Torneos</a>
+                        <a routerLink ="torneos">Torneos</a>
                     </div>
 
                 </div>
-                <li><a class="texto" href="/Ranking">Ranking</a></li>            
+                <li><a class="texto" routerLink="ranking">Ranking</a></li>            
             </div>
-            <div class="colocarImagenPerfil">
-                <div class="iconoPerfil">
+            <a class="colocarImagenPerfil" routerLink="home">
+                <div class="iconoPerfil" >
                     <div class="foto"></div>
                 </div>
-                <p><a class="nombreUser" href="User">John Doe</a></p>
-                
-            </div>
+                <p class="nombreUser">John Doe</p>
+            </a>
         </div>
         <hr class="lineaSeparadora">
     </div>

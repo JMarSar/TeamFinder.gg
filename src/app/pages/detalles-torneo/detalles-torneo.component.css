@@ -44,7 +44,7 @@
         text-shadow: var(--sombraStrongPlus);
         margin-bottom: 11px;
 }
-/*Soy pani te estoy tocando el codigo*/
+
 .fecha-top-heading {
         font-size: var(--sizeCommonSubtitle);
 }
@@ -59,8 +59,11 @@
         overflow-x: scroll;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        box-shadow: inset -15px 0 black;
+        box-shadow:  2px -0px 0px  rgb(0,0,0,0.3);
 }
+.carrousel-partidos::-webkit-scrollbar {
+        display: none; /*chrome*/
+      }
 .card-partida-ganada {
         display: flex;
         flex-direction: column;

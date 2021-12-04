@@ -1,44 +1,34 @@
-
-<!-- <app-header></app-header> -->
-<!-- <app-lfm></app-lfm> -->
-
-<!-- <app-side-bar></app-side-bar> -->
-<!-- <app-volver></app-volver> -->
-<!-- <app-home></app-home>
-<app-menu></app-menu> -->
-<!-- <app-admin-create></app-admin-create> -->
-<!-- <app-admin-tools></app-admin-tools> -->
-<!-- <app-alerts></app-alerts> -->
-<!-- <app-chat></app-chat> -->
-
-<!-- <app-new-team></app-new-team> -->
-<!-- <app-team-create></app-team-create> -->
-<!-- <app-no-team></app-no-team> -->
-
+<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+        && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
+        <app-header></app-header>
+        
+        <div *ngIf="this.routeLocation.path() != '/home' && this.routeLocation.path() != '/torneos' && this.routeLocation.path() != '/detalles-torneo'">
+                <app-lfm></app-lfm>
+        </div>
+        <app-side-bar></app-side-bar>
+</div>
+<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' 
+        && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
+        <app-volver></app-volver>
+</div>
+<app-noequipo></app-noequipo>
+<!-- <app-login></app-login> -->
+<!-- <app-home></app-home> -->
 <!-- <app-ranking></app-ranking> -->
 <!-- <app-detalles-torneo></app-detalles-torneo> -->
 <!-- <app-torneos></app-torneos> -->
-<!-- <app-registro-completa-registro></app-registro-completa-registro> -->
+<!-- <app-registro></app-registro>
+<app-registro-completa-registro></app-registro-completa-registro> -->
 <!-- <app-registro-final></app-registro-final> -->
-<!-- <router-outlet></router-outlet> -->
-<!-- <app-menu></app-menu> -->
-<!-- <app-alerts></app-alerts -->
-<!-- <app-chat></app-chat> -->
-
-<!-- <app-header></app-header> -->
-
-<!-- <app-ranking></app-ranking> -->
-<!-- <app-equipo-creado></app-equipo-creado> -->
-<!-- <app-crear-equipo></app-crear-equipo> -->
-<!-- <app-noequipo></app-noequipo> -->
-<!-- <app-ranking></app-ranking> -->
-<!-- <app-admin-tools></app-admin-tools> -->
-<!-- <app-admin-create></app-admin-create> -->
-<!-- <router-outlet></router-outlet> -->
-<!-- <app-footer></app-footer> -->
+<router-outlet></router-outlet>
 <!-- <app-partida></app-partida> -->
 <!-- <app-seleccion-partida></app-seleccion-partida> -->
 <!-- <app-partida-detalle></app-partida-detalle> -->
 <!-- <app-buscar-scrim></app-buscar-scrim> -->
 <!-- <app-equipos></app-equipos> -->
-<!-- <app-footer></app-footer> -->
+<!-- <app-landing></app-landing> -->
+<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+        && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
+        <app-footer></app-footer>
+</div>
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TipoPartidaService } from '../../shared/tipo-partida.service';
 
 @Component({
   selector: 'app-partida-detalle',
@@ -10,8 +11,9 @@ export class PartidaDetalleComponent implements OnInit {
   public tipo :boolean
   public jugando : boolean
 
-  constructor() { 
-    this.tipo = true
+  constructor(public ServicioTipo : TipoPartidaService) { 
+
+    this.tipo = this.ServicioTipo.obetenerTipo()
     this.jugando = false
   }
 
@@ -19,3 +21,4 @@ export class PartidaDetalleComponent implements OnInit {
   }
 
 }
+
