@@ -3,9 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AlertsComponent } from './pages/alerts/alerts.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { MenuComponent } from './pages/menu/menu.component';
-
-
-
 import { BuscarScrimComponent } from './pages/buscar-scrim/buscar-scrim.component';
 import { DetallesTorneoComponent } from './pages/detalles-torneo/detalles-torneo.component';
 import { EquiposComponent } from './pages/equipos/equipos.component';
@@ -25,10 +22,22 @@ import { SeleccionPartidaComponent } from './pages/seleccion-partida/seleccion-p
 import { SideBarComponent } from './pages/side-bar/side-bar.component';
 import { TorneosComponent } from './pages/torneos/torneos.component';
 import { VolverComponent } from './pages/volver/volver.component';
+import { AdminCreateComponent } from './pages/admin-create/admin-create.component';
+import { AdminToolsComponent } from './pages/admin-tools/admin-tools.component';
+import { CrearEquipoComponent } from './pages/crear-equipo/crear-equipo.component';
+import { EquipoCreadoComponent } from './pages/equipo-creado/equipo-creado.component';
+import { NewTeamComponent } from './pages/new-team/new-team.component';
+import { NoTeamComponent } from './pages/no-team/no-team.component';
+import { TeamCreateComponent } from './pages/team-create/team-create.component';
+import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
 
 const routes: Routes = [
   { path:  '', component: LandingComponent},
+  { path:  'admin-create', component:  AdminCreateComponent},
+  { path:  'admin-tools', component:  AdminToolsComponent},
+  { path:  'alerts', component:  AlertsComponent},
   { path:  'buscar-scrim', component:  BuscarScrimComponent},
+  { path:  'chat', component:  ChatComponent},
   { path:  'detalles-torneo', component:  DetallesTorneoComponent},
   { path:  'equipos', component:  EquiposComponent},
   { path:  'footer', component:  FooterComponent},
@@ -36,7 +45,11 @@ const routes: Routes = [
   { path:  'home', component:  HomeComponent},
   { path:  'landing', component:  LandingComponent},
   { path:  'lfm', component:  LfmComponent},
+  { path:  'lista-chats', component:  ListaChatsComponent},
   { path:  'login', component:  LoginComponent},
+  { path:  'menu', component:  MenuComponent},
+  { path:  'new-team', component:  NewTeamComponent},
+  { path:  'no-team', component:  NoTeamComponent},
   { path:  'partida', component:  PartidaComponent},
   { path:  'partida-detalle', component:  PartidaDetalleComponent},
   { path:  'ranking', component:  RankingComponent},
@@ -45,11 +58,9 @@ const routes: Routes = [
   { path:  'registro-final', component:  RegistroFinalComponent},
   { path:  'seleccion-partida', component:  SeleccionPartidaComponent},
   { path:  'side-bar', component:  SideBarComponent},
+  { path:  'team-create', component:  TeamCreateComponent},
   { path:  'torneos', component:  TorneosComponent},
   { path:  'volver', component:  VolverComponent},
-  {path: "menu", component: MenuComponent},
-  {path: "alerts", component: AlertsComponent},
-  {path: "mensajes", component: ChatComponent}
 ];
 
 @NgModule({
