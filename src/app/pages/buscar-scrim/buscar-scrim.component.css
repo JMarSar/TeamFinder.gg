@@ -6,7 +6,7 @@
         height: 100vh;
         background-image: url("../../../assets/img/fondo_basico.jpg");
         background-color: #142236;
-        overflow-x: hidden;
+        overflow: hidden;
 }
 .contieneImagen{
         width: 100%;
@@ -22,7 +22,6 @@
 .tipo{     
         border-radius: 2px;
         margin-bottom: 1vw;
-        margin-top: 24vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -52,7 +51,7 @@
         width: 55vw;
         height: 24vw;
 }
-.contenedor{
+.contenedor{ 
         display: flex;
         flex-direction: column;
         align-items: center;

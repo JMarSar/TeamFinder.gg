@@ -14,7 +14,7 @@ export class PartidaDetalleComponent implements OnInit {
   constructor(public ServicioTipo : TipoPartidaService) { 
 
     this.tipo = this.ServicioTipo.obetenerTipo()
-    this.jugando = false
+    this.jugando = true
   }
 
   ngOnInit(): void {
