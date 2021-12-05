@@ -38,7 +38,8 @@
 }
 #tool{
     font-size: var(--sizeDesktopHeading1);
-    font-family: var(--fontTitulos); 
+    font-family: var(--fontTitulos);
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.8); 
 }
 #adminText{
     font-family: var(--fontRevxMedium);
@@ -48,6 +49,7 @@
 main{
     width: 100vw;
     height: 100vh;
+    background-size: 100%;
     background-image: url(../../../assets/img/fondo_admin.png);
 }
 header{
@@ -181,20 +183,20 @@ input{
 
 }
 #date{
-    
     width: 14%;
     height: 75%;
     margin-top: 0.6%;
     background-color: white;
-    color: var(--colorRojoPrimario);
     display: flex;
-    flex-direction: row;
     justify-items: center;
     align-items: center;
-    padding-left: 1%;
+    padding: 1.2vw;
     margin-left: 1.5%;
     margin-right: 0.5%;
     font-family:var(--fontRevxMedium);
+}
+#date >p{
+    color: var(--colorRojoPrimario);
 }
 #data{
     /* border: solid 1px white; */
@@ -241,13 +243,13 @@ input{
 }
 
 #newsButton,#accessButton{
-width: 5vw;
-height: 80%;
-border: 0;
-border-radius: 4px;
-background-color: black;
-color: white;
-font-family: var(--fontRevxMedium);
+    width: 5vw;
+    height: 80%;
+    border: 0;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-family: var(--fontRevxMedium);
 }
 
 #accessButton{
@@ -281,8 +283,16 @@ font-family: var(--fontRevxMedium);
 #createTournamentButton{
     width: 13%;
     color: white;
+    height: 90%;
     background-color: var(--colorRojoPrimario);
     border: 0;
     border-radius: 4px;
     font-family: var(--fontRevxMedium);
+    font-size: var(--sizeDesktopHeading4);
+    background: var(--colorRojoGradiente);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.363);
 }
+#createTournamentButton:hover{
+    cursor: pointer;
+}
+

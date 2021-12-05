@@ -164,7 +164,7 @@ input:focus, :active :checked,:enabled{
         cursor: pointer;
 }
 .etiquetaEquipo:active{
-        border: solid 1px red
+        border: solid 1px red;
 }
 .rank{
         font-size: var(--sizeDesktopHeading4);

@@ -1,13 +1,13 @@
-<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+<div *ngIf="this.routeLocation.path() != '' &&  this.routeLocation.path() != '/admin-create' && this.routeLocation.path() != '/admin-tools' && this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
         <app-header></app-header>
         
-        <div *ngIf="this.routeLocation.path() != '/home' && this.routeLocation.path() != '/torneos' && this.routeLocation.path() != '/detalles-torneo'">
+        <div *ngIf="this.routeLocation.path() != '' && this.routeLocation.path() != '/home' && this.routeLocation.path() != '/torneos' && this.routeLocation.path() != '/detalles-torneo'">
                 <app-lfm></app-lfm>
         </div>
         <app-side-bar></app-side-bar>
 </div>
-<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' 
+<div *ngIf="this.routeLocation.path() != '' &&  this.routeLocation.path() != '/crear-admin' && this.routeLocation.path() != '/admin-tools' && this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
         <app-volver></app-volver>
 </div>
@@ -32,7 +32,7 @@
 <!-- <app-buscar-scrim></app-buscar-scrim> -->
 <!-- <app-equipos></app-equipos> -->
 <!-- <app-landing></app-landing> -->
-<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+<div *ngIf="this.routeLocation.path() != '' &&  this.routeLocation.path() != '/admin-create' && this.routeLocation.path() != '/admin-tools' && this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
         <app-footer></app-footer>
 </div>
