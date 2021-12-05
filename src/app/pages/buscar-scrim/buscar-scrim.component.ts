@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buscar-scrim',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class BuscarScrimComponent implements OnInit {
   public equipos : Equipo[]
   public seleccionado : boolean
-  constructor() {
+  constructor(public navigate: Router) {
     this.equipos = [team,team2,team3,team4,team5,team6,team7,team8]
     this.seleccionado = false
    }
@@ -21,6 +22,10 @@ export class BuscarScrimComponent implements OnInit {
       this.seleccionado =true}
     else{this.seleccionado =false}
     }
+    redireccionarRanked(){
+      this.navigate.navigate(["../partida-detalle"])
+    }
+
 }
 
 class Equipo {

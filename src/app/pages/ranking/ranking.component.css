@@ -12,12 +12,11 @@
         width: 100%;
 }
 .imagen{
-        position: absolute;
+        position: fixed;
         height: 45vw;
         margin-left: 0vw;
         margin-top: 8vw;
         transform: scaleX(-1);
-        z-index: 0;
 }
 .titulo{
         display: flex;

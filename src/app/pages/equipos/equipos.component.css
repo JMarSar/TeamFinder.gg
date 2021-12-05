@@ -87,6 +87,9 @@
         gap: 1vw;
         box-shadow: 1px 0px 4px rgb(14, 14, 14, 0.5);
 }
+.filtrar:hover{
+        cursor: pointer;
+}
 .filtro{
         color: white;
         font-family: var(--fontRevxMedium);

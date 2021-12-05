@@ -1,0 +1,31 @@
+<div class="padre">
+        <div class="chatTop" >
+                <div>
+                        <p class="titulo">Chats</p>
+                </div>
+                <div>
+                        <button disabled="disabled">≡</button> 
+                        <button disabled="disabled">﹀</button> 
+                        <button disabled="disabled">X</button>
+                </div>
+ 
+        </div>
+        <div class="chatMain">
+                <div class="listaChats" on-click="anadir()">
+                        <div class="lista">
+                                <div class="chat" *ngFor="let chat of chats" routerLink="../chat">
+                                        <div class="info">
+                                                <div class="foto" id="foto"></div>
+                                                <div class="mensaje">
+                                                        <div class="nombre">{{chat.nombre}}</div>
+                                                        <div class="texto">{{chat.mensaje}}</div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="barrita"></div>
+                </div>
+        </div> 
+
+</div>

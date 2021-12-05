@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-volver',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VolverComponent implements OnInit {
 
-  constructor() { }
+  constructor( public navegar: Location ) { }
 
   ngOnInit(): void {
   }
+  volver(){
+    this.navegar.back()
 
+  }
 }
