@@ -36,6 +36,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
+import { CrearAdminComponent } from './pages/crear-admin/crear-admin.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
     PartidaComponent,
     PartidaDetalleComponent,
     BuscarScrimComponent,
-    ListaChatsComponent
+    ListaChatsComponent,
+    CrearAdminComponent
   ],
   imports: [
     BrowserModule,
