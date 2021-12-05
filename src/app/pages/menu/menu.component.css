@@ -1,0 +1,45 @@
+*{
+    font-family: var(--fontRevxMedium);
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: white;
+}
+a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+#aPlayer{
+    font-size: var(--sizeDesktopHeading4);
+    
+}
+#avatar{
+    border-radius: 100%;
+    padding-left: 2px;
+}
+hr{
+    width: 50%;
+}
+#navMenu{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 80vh;
+width: 20%;
+border-radius: 0px;
+text-align: center;
+text-decoration: none;
+background-color: var(--colorAzulPrimario);
+position: absolute;
+left: 80%;
+border-radius: 0 0 0 4px;
+}
+#aCloseSession{
+    padding-top: 25px;
+    text-decoration: underline;
+}

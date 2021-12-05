@@ -2,7 +2,7 @@
         display: flex;
         flex-direction: row;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         /* background: -webkit-linear-gradient(0deg, rgba(29, 40, 49, 0.96) 41.88%, rgba(10, 14, 18, 0.65) 100.88%); */
         background-blend-mode: color-dodge;
         overflow: hidden;
@@ -44,7 +44,7 @@
         text-shadow: var(--sombraStrongPlus);
         margin-bottom: 11px;
 }
-/*Soy pani te estoy tocando el codigo*/
+
 .fecha-top-heading {
         font-size: var(--sizeCommonSubtitle);
 }
@@ -59,8 +59,11 @@
         overflow-x: scroll;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        box-shadow: inset -15px 0 black;
+        box-shadow:  2px -0px 0px  rgb(0,0,0,0.3);
 }
+.carrousel-partidos::-webkit-scrollbar {
+        display: none; /*chrome*/
+      }
 .card-partida-ganada {
         display: flex;
         flex-direction: column;

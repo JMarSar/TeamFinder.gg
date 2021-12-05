@@ -4,6 +4,9 @@
                 <img class="imagen" src="../../../assets/img/580b57fcd9996e24bc43c2f3.png" alt="Poppy" *ngIf="this.tipo == false">
         </div>
         <!-- <div class="lfm">
+                <img class="imagen" src="../../../assets/img/580b57fcd9996e24bc43c2f3.png" alt="Seth" *ngIf="this.tipo == false">
+        </div>
+        <div class="lfm">
                 <div>
                         <div class="tituloLFM">LFM Mode</div>
                 </div>
@@ -17,6 +20,7 @@
                         <div class="etiquetaOn">On</div>
                 </div>
         </div> -->
+        </div>
         <div class="titulo" >
                 <p class="scrim">SCRIM</p>
         </div>
@@ -29,7 +33,7 @@
                                 <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat maecenas est commodo, massa aliquam, vivamus tincidunt quisque. Venenatis, montes, vestibulum aliquet porttitor phasellus sit. Odio a tincidunt nisl, 
                                         iaculis eget. Odio luctus tincidunt ut massa ipsum mattis proin habitasse ipsum. Mattis accumsan non elit.</p>
                         </div>
-                        <div class="descripcion bloque" *ngIf="this.buscando == true">
+                        <div class="descripcion bloque" *ngIf="this.buscando == true" on-click="redireccionarRanked()">
                                 <p class="texto">Buscando partida</p>
                                 <img  class="load" src="../../../assets/img/load.svg" alt="load">
                         </div>
@@ -37,7 +41,7 @@
                 </div>
                 <div class="botones">
                         <!-- <button [ngClass]="this.tipo == true ? 'boton1Rojo': 'boton1Azul'"> -->
-                        <button class="boton1" *ngIf="this.buscando == false">
+                        <button class="boton1" *ngIf="this.buscando == false" on-click="buscar()">
                                <p class="combatir">Combatir</p> 
                         </button>
                         <button class="boton2">
@@ -56,8 +60,8 @@
                         </div>
                 </div>
                 <div class="botones">
-                        <button class="boton1Azul">
-                               <p class="combatir">Buscar</p> 
+                        <button class="boton1Azul" on-click="redireccionarAmistosa()">
+                               <p class="combatir" >Buscar</p> 
                         </button>
                         <button class="boton2">
                                 Volver
@@ -65,4 +69,4 @@
                 </div>
         </div>
 
-</div>
+<!-- </div> -->
