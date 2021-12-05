@@ -16,6 +16,15 @@
         <app-chat></app-chat>
 </div> -->
 
+<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+        && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
+        <app-chat></app-chat>
+</div>
+
+<!-- <app-header></app-header> -->
+<!-- <app-lfm></app-lfm> -->
+<!-- <app-side-bar></app-side-bar> -->
+<!-- <app-volver></app-volver> -->
 <!-- <app-noequipo></app-noequipo> -->
 <!-- <app-login></app-login> -->
 <!-- <app-home></app-home> -->
