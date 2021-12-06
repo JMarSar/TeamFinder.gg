@@ -142,7 +142,7 @@ input{
         font-size: var(--sizeCommonBody2);
         color: #FFFFFF;
         border-radius: 4%;
-        margin-top: 2% ;
+        margin-top: 50%;
     }
     .botonDesactivado{
      
