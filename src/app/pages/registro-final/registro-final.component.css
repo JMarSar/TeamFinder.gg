@@ -1,5 +1,5 @@
 .padre{
-    background-image: url(../../../assets/img/fondo_badass.png);
+    background-image: url(../../../assets/img/6270801.png), url(../../../assets/img/fondo_dos.png);
     height: 100vh;
     width: 100vw;
     background-size: 100%;
@@ -15,11 +15,12 @@ margin-left: 9%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .titulo{
 font-family: var(--fontRevxBold);
-font-size: var(--sizeGrande);
+font-size: 110px;
+margin-left: -3%;
 }
 .confir{
     font-family: var(--fontRevxMedium);
@@ -34,7 +35,7 @@ height: 65px;
 background: linear-gradient(179.84deg, #FFFFFF 0.14%, #D6D6D6 84.23%);
 border-radius: 4px;
 margin-left: 37%;
-margin-top: 7%;
+margin-top: 6%;
 box-shadow: var(--sombraStrongPlus);
 }
 
