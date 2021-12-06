@@ -38,10 +38,14 @@ import { ChatComponent } from './pages/chat/chat.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
 import { CrearAdminComponent } from './pages/crear-admin/crear-admin.component';
+<<<<<<< HEAD
 import { InfoEquipoPersonalComponent } from './pages/info-equipo-personal/info-equipo-personal.component';
 import { InfoUsuarioPersonalComponent } from './pages/info-usuario-personal/info-usuario-personal.component';
 import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-usuario-publico.component';
 import { InfoEquipoPublicoComponent } from './pages/info-equipo-publico/info-equipo-publico.component';
+=======
+import { RegistroFavComponent } from './pages/registro-fav/registro-fav.component';
+>>>>>>> Izan
 
 @NgModule({
   declarations: [
@@ -83,10 +87,14 @@ import { InfoEquipoPublicoComponent } from './pages/info-equipo-publico/info-equ
     BuscarScrimComponent,
     ListaChatsComponent,
     CrearAdminComponent,
+<<<<<<< HEAD
     InfoEquipoPersonalComponent,
     InfoUsuarioPersonalComponent,
     InfoUsuarioPublicoComponent,
     InfoEquipoPublicoComponent
+=======
+    RegistroFavComponent
+>>>>>>> Izan
   ],
   imports: [
     BrowserModule,

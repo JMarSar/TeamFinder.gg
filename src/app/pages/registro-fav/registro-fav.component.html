@@ -1,0 +1,103 @@
+<div class="padre">
+    <div class="parteArriba">
+        <img src="../../../assets/img/logo_blac.png" class="logo">
+    </div>
+    <div class="parteMedia">
+        <div class="letrasSuperiores">
+            <p class="letrasSuperiores">Elige los Esports a los que juegas</p>
+        </div>
+        <div class="juegos">
+            <div class="zed" [hidden]="!hidenZ">
+               <button class="zedBoton" (click)="cambiarFondoZed()">
+                </button> 
+            </div>
+            <div class="zedFormulario" [hidden]="hidenZ">
+                <div class="formularioPingu">
+                    <p class="nickP">Nick en el juego</p>
+                    <input type="text" class="nickFP" placeholder="@example">
+                    <p class="servidorP">Servidor</p>
+                    <input type="text" class="serverFP" placeholder="@example">
+                    <p class="posicionP">Posicion Favorita</p>
+                    <input type="text" class="posicionFP" placeholder="@example">
+                    
+                </div>
+                <img src="../../../assets/img/letr.png" class="lol">
+            </div>
+            <div class="pingu" [hidden]="!hidenP">
+                <button class="pinguBoton" (click)="cambiarFondoPingu()"></button>
+            </div>
+            <div class="pinguFormulario" [hidden]="hidenP">
+                <div class="formularioPingu">
+                    <p class="nickP">Nick en el juego</p>
+                    <input type="text" class="nickFP" placeholder="@example">
+                    <p class="servidorP">Servidor</p>
+                    <input type="text" class="serverFP" placeholder="@example">
+                    <p class="posicionP">Posicion Favorita</p>
+                    <input type="text" class="posicionFP" placeholder="@example">
+                </div>
+                <img class="letrasForm" src="../../../assets/img/letra.png">
+            </div>
+            <div class="valorant" [hidden]="!hidenV">
+            <button class="valorantBoton"(click)="cambiarFondoValorant()"></button>
+            </div>
+            <div class="valorantFormulario" [hidden]="hidenV">
+                <div class="formularioPingu">
+                    <p class="nickP">Nick en el juego</p>
+                    <input type="text" class="nickFP" placeholder="@example">
+                    <p class="servidorP">Servidor</p>
+                    <input type="text" class="serverFP" placeholder="@example">
+                    <p class="posicionP">Posicion Favorita</p>
+                    <input type="text" class="posicionFP" placeholder="@example">
+                </div>
+                <img class="letrasVal" src="../../../assets/img/Valorant_logo1.png">
+            </div>
+            
+        </div>
+        <div class="estrellas" *ngIf="hidenT==false">
+            <button class="botonZedEstrella"(click)="cambiarZed()" *ngIf="hidenZ==true">
+                <img src="../../../assets/img/Star 2.png" *ngIf="zedVar==false">
+                <img src="../../../assets/img/Star 1.png" *ngIf="zedVar==true">
+            </button>
+            <button class="botonZedEstrellaB"(click)="cambiarZed()" *ngIf="hidenZ==false">
+                <img src="../../../assets/img/Star 2.png" *ngIf="zedVar==false">
+                <img src="../../../assets/img/Star 1.png" *ngIf="zedVar==true">
+            </button>
+            <button class="botonPinguEstrella"(click)="cambiarPingu()" *ngIf="hidenP==true">
+                <img src="../../../assets/img/Star 2.png" *ngIf="pinguVar==false">
+                <img src="../../../assets/img/Star 1.png" *ngIf="pinguVar==true">
+            </button>
+            <button class="botonPinguEstrellaB"(click)="cambiarPingu()" *ngIf="hidenP==false">
+                <img src="../../../assets/img/Star 2.png" *ngIf="pinguVar==false">
+                <img src="../../../assets/img/Star 1.png" *ngIf="pinguVar==true">
+            </button>
+
+            <button class="botonValorantEstrella"(click)="cambiarValo()">
+                <img src="../../../assets/img/Star 2.png" *ngIf="valoVar==false">
+                <img src="../../../assets/img/Star 1.png" *ngIf="valoVar==true">
+            </button>
+        </div>
+        <div class="estrellasB" *ngIf="hidenT==true">
+            <button class="botonZedEstrellaB"(click)="cambiarZed()">
+                <img src="../../../assets/img/Star 2.png" *ngIf="zedVar==false">
+                <img src="../../../assets/img/Star 1.png" *ngIf="zedVar==true">
+            </button>
+            <button class="botonPinguEstrellaB"(click)="cambiarPingu()">
+                <img src="../../../assets/img/Star 2.png" *ngIf="pinguVar==false">
+                <img src="../../../assets/img/Star 1.png" *ngIf="pinguVar==true">
+            </button>
+            <button class="botonValorantEstrellaB"(click)="cambiarValo()">
+                <img src="../../../assets/img/Star 2.png" *ngIf="valoVar==false">
+                <img src="../../../assets/img/Star 1.png" *ngIf="valoVar==true">
+            </button>
+        </div>
+        
+        
+    </div>
+    <div class="parteInferior">
+        <p class="letrasAbajo">Indica tu juego favorito clicando en una de las estrellas </p>
+        <div>
+            <button class="sige">Siguiente</button>
+        </div>
+    
+    </div>
+</div>

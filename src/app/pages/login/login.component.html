@@ -13,7 +13,7 @@
                                 <p class="user">User</p>
                                 </div>
                                 <div class="CirculoGrande">
-                                <p class="circulo"></p>
+                                <p class="circulo1"></p>
                                 </div>
                         </div>
                         <label>
@@ -31,8 +31,15 @@
                         <label>
                                 <input type="text"[(ngModel)]="loginForm.contrasena.val" id="pass" class="userCaja" placeholder="Pass" >
                         </label>
+                        <div class="crear">
+                                <p class="textoCrear">¿No tienes una cuenta? Accede a
+                                        <a href="/registro">Registro</a>
+                                 </p>
+                        
+                        </div>
                 </div>
                 <div class="bot">
+                        
                 <div class="letras">
                         <p class="terminos">
                         Al registrarte, confirmas que estás de acuerdo con nuestros Términos de Servicio y has leído la
@@ -40,7 +47,7 @@
                         </p>
                 </div>
                 <div class="boton" routerLink="../home">
-                        <button  [ngClass]="isValidForm() ? 'registro' : 'botonDesactivado'" [disabled]="!isValidForm()">Aceptar</button>
+                        <button  [ngClass]="isValidForm() ? 'registro' : 'botonDesactivado'" [disabled]="!isValidForm()">Siguiente</button>
                 </div>
                 
         </div>
