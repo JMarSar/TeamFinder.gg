@@ -1,0 +1,99 @@
+<div id="total">
+    <div class="header"></div>
+    <div class="info1">
+        <div class="infoNombre">
+            <div class="texto">JohnDoe</div>
+            <div class="adorno"></div>
+        </div>
+        
+        <img class="imagenEquipo" src="./../../../../assets/img/iconoJugador.jpg" alt="">
+        <div class="ranked">
+            <div class="textoRanked">
+                <img class="logoRanking" src="./../../../../assets/img/logoRango.PNG" alt="">
+                <div>
+                    <p>Grangmaster - 689 LP</p>
+                </div>
+            </div>
+            <div class="adorno1"></div>
+        </div>
+        <div class="rankedEquipo">
+            <div class="textoRanked">
+                <img class="logoRanking" src="./../../../../assets/img/iconooEquipo.png" alt="">
+                <p>| KoP-T |</p>
+            </div>
+            <div class="adorno1"></div>
+        </div>
+        <div class="rankedEquipo">
+            <div class="textoRanked">
+                <div>
+                    <img class="logosPersonajes" src="./../../../../assets/img/img_iconos.PNG" alt="">
+                    <p>Ornn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jax &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Darius</p>
+                </div>
+            </div>
+            <div class="adorno1"></div>
+        </div>
+    </div>
+<div class="info2">
+    <div class="titulo">
+        <div class="texto1">Estadisticas</div>
+        <div class="adorno"></div>
+    </div>
+    <div class="info2Primero">
+        <div class="estadisticaWL">{{estadistica.win}} W / {{estadistica.loses}} L</div>
+        <div>
+            <img class="imagenLugar" src="./../../../../assets/img/EEUU.png" alt="">
+            <div class="lugarText">{{estadistica.zona}}</div>
+        </div>
+    </div>
+    <div class="info2Segunda">
+        <div>
+            <p>K</p>
+            <p>D</p>
+            <p>A</p>
+        </div>
+        <div>
+            <p>{{estadistica.kills}}</p>/<p>{{estadistica.deaths}}</p>/<p>{{estadistica.asistencias}}</p>
+        </div>
+        <div>
+            2.20 : 1  (29%)
+        </div>
+    </div>
+    
+    <div class="graph" style="display: block">
+        <div class="porcenGanados">
+            {{porcenGanados}}%
+        </div>
+        <canvas mdbChart
+            [chartType]="chartType"
+            [datasets]="chartDatasets"
+            [labels]="chartLabels"
+            [colors]="chartColors"
+            [options]="chartOptions"
+            [legend]="false"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)">
+        </canvas>
+        
+    </div>
+</div>
+<div class="info3">
+    <div class="titulo">
+        <div class="botonCalen" [ngClass]="mostrarTorneos == true ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarTorneos = true">Torneos</div>
+        <div class="botonConex" [ngClass]="mostrarTorneos == false ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarTorneos = false">Ranking</div>
+    </div>
+    <div class="torneos" *ngIf="mostrarTorneos == true">
+        <div class="torneo" *ngFor="let torne of torneosTotal">
+            <img src="{{torne.img}}" alt="">
+            <div class="nombreEquipo">{{torne.equipoNom}}</div>
+        </div>
+    </div>
+    <div class="ranking" *ngIf="mostrarTorneos == false">
+        <div *ngFor="let rank of rankingP" [ngClass]="rank.usuario == true ? 'filaRankingUsuario' :'filaRanking'">
+            <div [ngClass]="rank.usuario == true ? 'nombreJRUsuario' :'nombreJR'">{{rank.nombre}}</div>
+            <div [ngClass]="rank.usuario == true ? 'posicionJRUsuario' :'posicionJR'">Rank {{rank.rank}}</div>
+        </div>
+    </div>
+</div>
+
+<footer></footer>
+</div>

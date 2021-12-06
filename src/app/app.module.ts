@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,6 +38,10 @@ import { ChatComponent } from './pages/chat/chat.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
 import { CrearAdminComponent } from './pages/crear-admin/crear-admin.component';
+import { InfoEquipoPersonalComponent } from './pages/info-equipo-personal/info-equipo-personal.component';
+import { InfoUsuarioPersonalComponent } from './pages/info-usuario-personal/info-usuario-personal.component';
+import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-usuario-publico.component';
+import { InfoEquipoPublicoComponent } from './pages/info-equipo-publico/info-equipo-publico.component';
 
 @NgModule({
   declarations: [
@@ -77,12 +82,17 @@ import { CrearAdminComponent } from './pages/crear-admin/crear-admin.component';
     PartidaDetalleComponent,
     BuscarScrimComponent,
     ListaChatsComponent,
-    CrearAdminComponent
+    CrearAdminComponent,
+    InfoEquipoPersonalComponent,
+    InfoUsuarioPersonalComponent,
+    InfoUsuarioPublicoComponent,
+    InfoEquipoPublicoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
