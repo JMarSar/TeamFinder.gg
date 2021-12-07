@@ -8,6 +8,12 @@ width: 100%;
 height: 15%;
 
 }
+a:hover,button:hover{
+    cursor: pointer;
+}
+button{
+    box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.4) ;
+}
 #containerBig{
     display: flex;
     flex-direction: row;
@@ -61,7 +67,7 @@ button{
 }
 #createButton{
     color: white;
-    background-color: var(--colorAzulPrimario);
+    background: -webkit-linear-gradient(-90deg, #123D66 0%, #102A42 100%);
 }
 #lorem{
     margin-top: 5%;

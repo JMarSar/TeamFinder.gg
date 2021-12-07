@@ -1,4 +1,9 @@
-
+a:hover,button:hover{
+    cursor: pointer;
+}
+button{
+    box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.4) ;
+}
 /*******************************************HEADER************************************************/
 .padre{
     position: fixed;
@@ -38,7 +43,8 @@
 }
 #tool{
     font-size: var(--sizeDesktopHeading1);
-    font-family: var(--fontTitulos); 
+    font-family: var(--fontTitulos);
+    text-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
 }
 #adminText{
     font-family: var(--fontRevxMedium);
@@ -74,6 +80,7 @@ header{
     background-color: var(--colorAzulOscuroPrimario);
     overflow: scroll;
     overflow-x: hidden;
+    
 }
 
 /***********************BUSCADOR E ICONOS*****************************/
@@ -104,15 +111,17 @@ input{
     margin-left: 12%;
     border-radius: 4px;
     border: 0;
+    text-align: center;
+    color: black;
 }
 
-/* LUPA PENDIENTE
+
  input::placeholder{
     background-image: url('../../../assets/img/search.svg');
     background-position:1vw;
-    background-size: 4vh;
+    background-size: 3vh;
     background-repeat:no-repeat;
-} */
+}
 
 #containerButtons{
     height: 100%;
@@ -143,19 +152,19 @@ input{
     
 }
 #lolButton{
-    background-image: url(../../../assets/img/iconos_esports_lol.svg);
+    background-image: url(../../../assets/img/iconos-esports-01.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
 }
 #valButton{
-    background-image: url(../../../assets/img/iconos_esports_val.svg);
+    background-image: url(../../../assets/img/iconos-esports-02.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
 }
 #tftButton{
-    background-image: url(../../../assets/img/iconos_esports_tft.svg);
+    background-image: url(../../../assets/img/iconos-esports-03.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -167,6 +176,8 @@ input{
     width: 100%;
     height: 14%;
     display: flex;
+    
+    
     /* border: solid 1px white; */
 
 }
@@ -176,6 +187,7 @@ input{
     justify-content: center;
     align-items: center;
     width: 100%;
+    border: solid 1px white
     /* border: solid 1px white; */
 
 
@@ -241,7 +253,7 @@ input{
 }
 
 #newsButton,#accessButton{
-width: 5vw;
+width: 4vw;
 height: 80%;
 border: 0;
 border-radius: 4px;
@@ -281,8 +293,51 @@ font-family: var(--fontRevxMedium);
 #createTournamentButton{
     width: 13%;
     color: white;
-    background-color: var(--colorRojoPrimario);
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
+    box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.4) ;
     border: 0;
     border-radius: 4px;
     font-family: var(--fontRevxMedium);
 }
+
+
+
+
+
+    /* pendiente html
+<div class="barrita"></div> */
+
+/* 
+pendiente scroll
+
+.barrita{
+    margin-top: 0.5vw ;
+    border-radius: 50px;
+    position: fixed;
+    height: 19vw;
+    background-color: #242424;
+    width: 0.8vw;
+    margin-left: 48.86vw;
+}
+
+
+
+/* width */
+/* ::-webkit-scrollbar {
+    width: 0.5vw;
+    border: solid 2px #242424; 
+/* Track */
+/* ::-webkit-scrollbar-track {
+    background-color: #242424;
+    border-radius: 10px;
+}       */
+  /* Handle */
+/* ::-webkit-scrollbar-thumb {
+    background: var(--colorGrisGradient); 
+    border-radius: 10px;
+} */
+  
+  /* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: var(--colorGrisGradient); 
+} */

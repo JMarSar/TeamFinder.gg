@@ -36,6 +36,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
+import { CreateTournamentComponent } from './pages/create-tournament/create-tournament.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
     PartidaComponent,
     PartidaDetalleComponent,
     BuscarScrimComponent,
-    ListaChatsComponent
+    ListaChatsComponent,
+    CreateTournamentComponent,
   ],
   imports: [
     BrowserModule,

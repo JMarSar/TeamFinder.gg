@@ -1,6 +1,12 @@
 *{
     font-family: var(--fontRevxMedium);
 }
+a:hover,button:hover{
+    cursor: pointer;
+}
+button{
+    box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.4) ;
+}
 .padre{
     position: fixed;
     display: flex;
@@ -124,10 +130,17 @@ p{
     justify-content: center;
     border: 0;
     border-radius: 4px;
-    background-color: var(--colorGrisPrimario);
+}
+#valorantButton{
+    background: linear-gradient(179.84deg, #ffffff 0.14%, #adadad 84.23%);
+    
+}
+#tftButton{
+    background: linear-gradient(179.84deg, #ffffff 0.14%, #adadad 84.23%);
 }
 #lolButton{
-    background-color:var(--colorRojoPrimario);
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
+
 }
 input{
     border: 0;
@@ -197,7 +210,7 @@ a{
 .gen{
     width: 80%;
     height: 20%;
-    background-color: var(--colorRojoPrimario);
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
     border: 0;
     border-radius: 4px;
 }
@@ -218,13 +231,13 @@ a{
 .genb{
 height: 100%;
 width: 35%;
-background-color: var(--colorRojoPrimario);
+background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
 border: 0;
 border-radius: 4px;
 }
 
 #reset{
-    background-color: var(--colorGrisPrimario);
+    background: linear-gradient(179.84deg, #ffffff 0.14%, #adadad 84.23%);
     color: black;
 }
 

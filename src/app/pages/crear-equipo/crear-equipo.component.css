@@ -1,3 +1,9 @@
+button{
+    box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.4) ;
+}
+a:hover,button:hover{
+    cursor: pointer;
+}
 main{
     background-image: url(../../../assets/img/fondo_basico.jpg);
     width: 100vw;
@@ -126,7 +132,7 @@ input{
     color: white;
     font-family: var(--fontRevxBold);
     font-size:x-large;
-    background-color:#CE0037;
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
     text-align: center;
     height: 100%;
     width: 10%;
@@ -175,6 +181,7 @@ input{
     border: 0;
     background-color: transparent;
     margin-left: 2%;
+    width: 10%;
 }
 
 .dropdown{
