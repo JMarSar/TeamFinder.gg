@@ -1,28 +1,27 @@
-<!-- <div *ngIf="this.routeLocation.path() != '' &&  this.routeLocation.path() != '/admin-create' && this.routeLocation.path() != '/admin-tools' && this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
         <app-header></app-header>
         
-        <div *ngIf="this.routeLocation.path() != '' && this.routeLocation.path() != '/home' && this.routeLocation.path() != '/torneos' && this.routeLocation.path() != '/detalles-torneo'">
+        <div *ngIf="this.routeLocation.path() != '/home' && this.routeLocation.path() != '/torneos' && this.routeLocation.path() != '/detalles-torneo'">
                 <app-lfm></app-lfm>
         </div>
         <app-side-bar></app-side-bar>
 </div>
-<div *ngIf="this.routeLocation.path() != '' &&  this.routeLocation.path() != '/crear-admin' && this.routeLocation.path() != '/admin-tools' && this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' 
+<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
         <app-volver></app-volver>
-</div> -->
+</div>
 <!-- <div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
         <app-chat></app-chat>
 </div> -->
 
-<!-- <div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
-        <app-lista-chats></app-lista-chats>
         <app-chat></app-chat>
-</div> -->
+</div>
 
-<app-header></app-header>
+<!-- <app-header></app-header> -->
 <!-- <app-lfm></app-lfm> -->
 <!-- <app-side-bar></app-side-bar> -->
 <!-- <app-volver></app-volver> -->
@@ -41,10 +40,9 @@
 <!-- <app-partida-detalle></app-partida-detalle> -->
 <!-- <app-buscar-scrim></app-buscar-scrim> -->
 <!-- <app-equipos></app-equipos> -->
-<!-- <app-login></app-login> -->
-<!-- <app-registro-completa-registro></app-registro-completa-registro> -->
-<!-- <div *ngIf="this.routeLocation.path() != '' &&  this.routeLocation.path() != '/admin-create' && this.routeLocation.path() != '/admin-tools' && this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+<!-- <app-landing></app-landing> -->
+<div *ngIf="this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
-        <app-footer></app-footer> -->
-<!-- </div> -->
-<app-footer></app-footer>
+        <app-footer></app-footer>
+</div>
+

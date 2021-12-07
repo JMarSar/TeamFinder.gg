@@ -40,7 +40,6 @@
 #tool{
     font-size: var(--sizeDesktopHeading1);
     font-family: var(--fontTitulos); 
-    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.8);    
 }
 #adminText{
     font-family: var(--fontRevxMedium);
@@ -50,13 +49,13 @@
 main{
     width: 100vw;
     height: 100vh;
-    background-size: 100%;
     background-image: url(../../../assets/img/fondo_admin.png);
 }
 
 /************************************/
 
 #containerxxl{
+    border: solid 1px red;
     height: 100%;
     width: 100%;
     display: flex;
@@ -114,7 +113,6 @@ p{
     justify-content: center;
     align-items: center;
     gap: 2%;
-    
 }
 .gameButton{
     /* border: solid 1px red; */
@@ -126,13 +124,10 @@ p{
     justify-content: center;
     border: 0;
     border-radius: 4px;
-    background: var(--colorGrisGradient);
-    color: var(--colorAzulOscuroPrimario);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.363);
+    background-color: var(--colorGrisPrimario);
 }
 #lolButton{
-    background:var(--colorRojoPrimario);
-    color: white
+    background-color:var(--colorRojoPrimario);
 }
 input{
     border: 0;
@@ -174,6 +169,11 @@ a{
     text-decoration: underline;
     font-size: var(--sizeCommonCaptionDefault);
 }
+
+
+
+
+
 #generate{
     /* border: solid 1px rgb(0, 255, 42); */
     height: 100%;
@@ -216,21 +216,15 @@ a{
     justify-content: center;
 }
 .genb{
-    height: 100%;
-    width: 35%;
-    background: var(--colorRojoGradiente);
-    border: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.363);
+height: 100%;
+width: 35%;
+background-color: var(--colorRojoPrimario);
+border: 0;
+border-radius: 4px;
 }
 
 #reset{
-    background: var(--colorGrisGradient);
-    color: var(--colorAzulOscuroPrimario);
+    background-color: var(--colorGrisPrimario);
+    color: black;
 }
-.gameButton:hover{
-    cursor: pointer;
-}
-
 

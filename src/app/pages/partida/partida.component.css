@@ -1,5 +1,5 @@
 .padre{
-
+        border: solid 1px red;
         display: flex;
         flex-direction: column;
         align-items: center;    
@@ -8,20 +8,20 @@
         background-image: url("../../../assets/img/fondo_basico.jpg");
         background-color: #142236;
         overflow-x: hidden;
-
 }
 .contieneImagen{
         width: 100%;
 }
 .imagen{
         position: absolute;
+        margin-top: 20%;
         height: 45%;
         margin-left: -9%;
         margin-top: 24.8%;
         z-index: 0;
 }
 .titulo{
-
+        border: solid 1px green;
         display: flex;
         width: fit-content;
         justify-content: center;
@@ -134,17 +134,7 @@ p{
 .load{
         height:7vh;
         transform : scaleX(-1);
-        animation: rotation 2s infinite linear;
-
 }
-@keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(359deg);
-        }
-      }
 .ranked{
         color: var(--colorRojoPrimario);
         background: var(--colorRojoGradiente);

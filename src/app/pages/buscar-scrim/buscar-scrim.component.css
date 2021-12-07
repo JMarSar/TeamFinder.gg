@@ -15,7 +15,7 @@
         position: absolute;
         margin-top: 20%;
         height: 22vw;
-        margin-left: -8.9%;
+        margin-left: -9%;
         margin-top: 24.8%;
         z-index: 2;
 }
@@ -185,8 +185,6 @@ input:focus, :active :checked,:enabled{
 }
 .nombre:hover{
         color: #a1a1a1;
-        font-family: var(--fontRevxBold);
-        font-size: 2.1rem;
 }
 .stats{
         margin-left: 2vw;

@@ -1,4 +1,4 @@
-<!-- <div class="padre">
+<div class="padre">
     <div class="parteSuperior">
         <img src="../../../assets/img/logo_blac.png" class="logo">
     </div>
@@ -37,57 +37,6 @@
              </p>
         </div>
         <div class="boton">
-            <button  [ngClass]="isValidReg() === false ? 'registro' : 'botonDesactivado'" [disabled]="isValidReg()" routerLink="registro-completa-registro">Siguiente</button>
-        </div>
-
-    </div>
-</div> -->
-<div class="padre">
-    <div class="parteSuperior">
-        <img src="../../../assets/img/logo_blac.png" class="logo">
-    </div>
-    <div class="parteMedia">
-       <div class="titulo">
-           <p class="title">Rellena tus datos</p>
-       </div> 
-       <div class="inputs">
-           <div class="nombres">
-               <p class="user">User</p>
-               <p class="circulo"></p>
-               <p class="email">Email</p>
-               <p class="circulo"></p>
-           </div>
-           <div class="cajas1">
-               <input type="text"[(ngModel)]="regisForm.nombre.val" class="cajaUser" placeholder="User">
-               <input type="text"[(ngModel)]="regisForm.email.val" class="cajaEmail" placeholder="Email">
-           </div>
-           <div class="nombres">
-            <p class="pass">Contraseña</p>
-            <p class="circulo"></p>
-            <p class="pass2">Repite la contraseña</p>
-            <p class="circulo"></p>
-        </div>
-           <div class="cajas1">
-            <input type="text"[(ngModel)]="regisForm.contrasena.val" class="cajaPass" placeholder="Contraseña">
-            <input type="text"[(ngModel)]="regisForm.passRep.val" class="cajaPass2" placeholder="Repite la contraseña">
-           </div>
-       </div>
-       <div class="regresoLogin">
-            <p class="cozas">¿Ya tienes cuenta? Accede a 
-                <a href="/login" class="cozasLogin">Login</a>
-            </p>
-           
-       </div>
-    </div>
-    <div class="parteInferior">
-        <div class="letras">
-            <p class="terminos">
-                Al registrarte, confirmas que estás de acuerdo con nuestros Términos de Servicio y has leído la
-                Política de privacidad, y accedes a hacer público tu perfil de jugador.
-             </p>
-        </div>
-        <div class="boton">
-            
             <button  [ngClass]="isValidReg() === false ? 'registro' : 'botonDesactivado'" [disabled]="isValidReg()" routerLink="registro-completa-registro">Siguiente</button>
         </div>
 
