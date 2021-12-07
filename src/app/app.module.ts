@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,12 +36,6 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
-import { CrearAdminComponent } from './pages/crear-admin/crear-admin.component';
-import { InfoEquipoPersonalComponent } from './pages/info-equipo-personal/info-equipo-personal.component';
-import { InfoUsuarioPersonalComponent } from './pages/info-usuario-personal/info-usuario-personal.component';
-import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-usuario-publico.component';
-import { InfoEquipoPublicoComponent } from './pages/info-equipo-publico/info-equipo-publico.component';
-import { RegistroFavComponent } from './pages/registro-fav/registro-fav.component';
 
 @NgModule({
   declarations: [
@@ -82,19 +75,12 @@ import { RegistroFavComponent } from './pages/registro-fav/registro-fav.componen
     PartidaComponent,
     PartidaDetalleComponent,
     BuscarScrimComponent,
-    ListaChatsComponent,
-    CrearAdminComponent,
-    InfoEquipoPersonalComponent,
-    InfoUsuarioPersonalComponent,
-    InfoUsuarioPublicoComponent,
-    InfoEquipoPublicoComponent,
-    RegistroFavComponent
+    ListaChatsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

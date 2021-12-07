@@ -42,22 +42,20 @@
 }
 .inputs{
         margin-top: 5%;
+
         font-family: var(--fontRevxMedium);
-        font-weight: var(--sizeCommonBody1);
-        
+        font-weight: var(--sizeCommonBody2);
 }
 input{
         height: 2.5vw;
         margin-top: 0.5vw;
         margin-left: 8vw;
         outline: none;
-        margin-left: 0%;
 }
 
 .user{
-        font-family: var(--fontRevxMedium);
-        font-size: var(--sizeCommonSubtitle);
-        margin-left: -4em;
+        position: relative;
+        padding-left: 12px;
         margin-bottom: 1px;
 }
     
@@ -66,8 +64,6 @@ input{
         font-family: var(--fontRevxMedium);
         font-size: var(--sizeCommonSubtitle);
         color: black;
-        border-radius: 4px;
-        
         
 }
 .datosArriba{
@@ -77,37 +73,25 @@ input{
         margin-right: 9.9%; 
 }
 .circulo{
-        margin-top: 0.3vw;
+        margin-top: 0.2vw;
         width: 12px;
         height: 12px;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
         background: #CE0037;
-        
-        
-}
-.circulo1{
-        margin-top: 0.4vw;
-        width: 12px;
-        height: 12px;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        background: #CE0037;
-        margin-left: -1.5vw;   
+        padding-left: 19%;
 }
     .circuloGrande{
-        
+        margin-left: 1px;
     }
     .placeholder{
         margin-right: 10px;
     }
-    .contaseña{
-        margin-left: -4.2em;
+    .contraseña{
+        position: relative;
+        padding-left: 20px;
         margin-bottom: 1px;
-        font-family: var(--fontRevxMedium);
-        font-size: var(--sizeCommonSubtitle);
     }
     .datosAbajo
     {
@@ -142,7 +126,6 @@ input{
         font-size: var(--sizeCommonBody2);
         color: #FFFFFF;
         border-radius: 4%;
-        margin-top: 50%;
     }
     .botonDesactivado{
      
@@ -155,14 +138,5 @@ input{
         color: #FFFFFF;
         border-radius: 4%;
     }
-    .crear{
-        margin-top:2%;
-        background-color: #102A42 ;
-        height: 2em;
-        width: 20em;
-        background-size: 100%;
-        margin-left: 39%;
-        padding-top: 0.4%;
-        border-radius: 4px;
-    }
+    
     
