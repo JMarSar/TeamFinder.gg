@@ -20,17 +20,16 @@ export class PartidaComponent implements OnInit {
   ngOnInit(): void {
   }
   redireccionarRanked(){
+    console.log(this.navigate.url)
     this.navigate.navigate(["../partida-detalle"])
 
   }
   redireccionarAmistosa(){
     this.navigate.navigate(["../buscar-scrim"])
   }
-  buscar(){
-    if(this.buscando == false){
-      this.buscando = true
-    }
-    else {this.buscando = false}
+  buscar(tipo:boolean){
+    this.buscando = tipo
+    console.log(this.buscando)
 
   }
 

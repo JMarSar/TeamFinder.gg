@@ -13,7 +13,7 @@
         gap: 0.3vw;
         margin-left: 3vw;
         box-shadow: 2px 2px 5px rgb(0, 0, 0);
-        z-index: 1
+        z-index: 3
 }
 button:hover{
         cursor: pointer;

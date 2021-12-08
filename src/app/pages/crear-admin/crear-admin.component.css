@@ -74,13 +74,19 @@ header{
 }
 .input{
         width: 15vw;
-        height: 2.2vw;
+        height: 2.5vw;
         border: none;
         border-radius: 2px;
+        outline: none;
+        color: var(--colorAzulOscuroPrimario);
+        font-family: var(--fontRevxMedium);
+        padding-left: 1vw;
+
 }
 .boton{
         font-family: var(--fontRevxMedium);
-        height: 2vw;
+        font-size: var(--fontTitulos);
+        height: 2.5vw;
         width: 9vw;
         border-radius: 2px;
         border: none;

@@ -93,7 +93,7 @@ header{
     align-items: center;
     gap: 4%;
 }
-#search{
+.search{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,7 +104,7 @@ header{
     margin-left: 8%;
     /* border: solid 1px white */
 }
-input{
+.search >input{
     outline: none;
     width: 100%;
     height: 50%;
@@ -278,6 +278,9 @@ font-family: var(--fontRevxMedium);
 #gameLogoBar{ 
     height: 80%;
 }
+.colocarImagenPerfil{
+    cursor: pointer;
+}
 /*************** BOTON CREAR **************************/
 
 #containerButton{
@@ -291,6 +294,7 @@ font-family: var(--fontRevxMedium);
    
 }
 #createTournamentButton{
+    cursor: pointer;
     width: 13%;
     color: white;
     background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
@@ -299,6 +303,7 @@ font-family: var(--fontRevxMedium);
     border-radius: 4px;
     font-family: var(--fontRevxMedium);
 }
+<<<<<<< HEAD
 
 
 
@@ -341,3 +346,82 @@ pendiente scroll
 /* ::-webkit-scrollbar-thumb:hover {
     background: var(--colorGrisGradient); 
 } */
+=======
+/* **************MODAL************ */
+
+.modal{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    background-color: transparent;
+    display: block;
+}
+.fondo{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    opacity: 0.6;
+    background-color: black;
+    display: block;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 60%;
+    position: absolute;
+    z-index: 1;
+    width: 25%;
+    top: 20%;
+    left: 37.5%;
+    background: var(--colorAzulPrimarioGradient);
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.363);
+}
+h2{
+    font-family:var(--fontRevxBold);
+}
+.datos{
+    font-family: var(--fontRevxMedium);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+    width: 100%;
+
+}
+label{
+    font-size: var(--sizeCommonSubtitle);
+    margin-bottom: -0.1vw;
+}
+.input{
+    width: 19vw;
+    height: 2.5vw;
+    border-radius: 3px;
+    border: none;
+    padding-left: 1vw;
+    font-family: var(--fontRevxMedium);
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.363); */
+}
+.boton{
+    cursor: pointer;
+    border: none;
+    height: 3vw;
+    width: 6vw;
+    border-radius: 4px;
+    background: var(--colorRojoGradiente);
+    font-family: var(--fontRevxMedium);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.363);
+}
+.boton:active{
+    border: none;
+}
+>>>>>>> pani
