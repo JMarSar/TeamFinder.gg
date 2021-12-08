@@ -8,7 +8,7 @@
                 <div class="letrasHeader">
                     <p id="tool">HERRAMIENTA DE ADMINISTRACIÓN</p>
                 </div>
-                <div class="colocarImagenPerfil">
+                <div class="colocarImagenPerfil" on-click="cambiarPass(true)" >
                     <img src="../../assets/img/admin-modified.png" class="iconoPerfil">
                     <p id="adminText">Admin</p>
 
@@ -26,7 +26,7 @@
 
             <div id="containerSearch">
 
-                <div id=search>
+                <div class=search>
                     <input type="text" placeholder=" &nbsp;&nbsp; Buscar torneo">
                 </div>
                 <div id="containerButtons">
@@ -72,7 +72,30 @@
 
 
     <!------------------------------------------------------------------------------------>
-    <div id="containerButton">
+    <div id="containerButton" routerLink="../torneo-creado">
         <button id="createTournamentButton"> Crear Torneo </button>
     </div>
+
+        <!-----------------------------Cambiar pass------------------------------------->
+        <div *ngIf="this.pass==true">
+            <div class="fondo" on-click="cambiarPass(false)" ></div>
+            <div class="mensaje">
+                <h2>Cambia tus datos</h2>
+                <div>
+                    <div class="datos">
+                        <label for="nombre">Nombre</label>
+                        <input  class="input" type="text" name="nombre" id="nombre" placeholder="Cambiar nombre">
+                    </div>
+                    <div class="datos">
+                        <label for="pass">Nueva contraseña</label>
+                        <input class="input" type="text" name="pass" id="pass" placeholder="Introduce tu nueva contraseña">
+                    </div>
+                    <div class="datos">
+                        <label for="pass2">Confirma contraseña</label>
+                        <input class="input" type="text" name="pass2" id="pass2" placeholder="Confirma tu nueva contraseña">
+                    </div>
+                </div>
+                <button class="boton" on-click="cambiarPass(false)">Aplicar</button>
+            </div>
+        </div>
 </main>

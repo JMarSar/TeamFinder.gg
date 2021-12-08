@@ -30,9 +30,10 @@ import { NewTeamComponent } from './pages/new-team/new-team.component';
 import { NoTeamComponent } from './pages/no-team/no-team.component';
 import { TeamCreateComponent } from './pages/team-create/team-create.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
+import { CrearAdminComponent } from './pages/crear-admin/crear-admin.component';
 
 const routes: Routes = [
-  { path:  '', component: LandingComponent},
+  { path:  '', component: CrearAdminComponent},
   { path:  'admin-create', component:  AdminCreateComponent},
   { path:  'admin-tools', component:  AdminToolsComponent},
   { path:  'alerts', component:  AlertsComponent},

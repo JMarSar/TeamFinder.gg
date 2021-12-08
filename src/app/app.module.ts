@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +36,7 @@ import { NOequipoComponent } from './pages/noequipo/noequipo.component';
 import { EquipoCreadoComponent } from './pages/equipo-creado/equipo-creado.component';
 import { AdminToolsComponent } from './pages/admin-tools/admin-tools.component';
 import { AdminCreateComponent } from './pages/admin-create/admin-create.component';
+import { CrearAdminComponent } from './pages/crear-admin/crear-admin.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
@@ -40,6 +45,7 @@ import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
 @NgModule({
   declarations: [
     AppComponent,
+    CrearAdminComponent,
     TorneosComponent,
     HomeComponent,
     SeleccionPartidaComponent,
@@ -78,6 +84,9 @@ import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
     ListaChatsComponent
   ],
   imports: [
+    CommonModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     FormsModule,

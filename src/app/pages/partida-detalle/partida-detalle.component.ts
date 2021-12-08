@@ -9,16 +9,20 @@ import { TipoPartidaService } from '../../shared/tipo-partida.service';
 export class PartidaDetalleComponent implements OnInit {
 
   public tipo :boolean
+  public cancelar : boolean
   public jugando : boolean
 
   constructor(public ServicioTipo : TipoPartidaService) { 
-
     this.tipo = this.ServicioTipo.obetenerTipo()
-    this.jugando = true
+    this.cancelar =false
+    this.jugando = false
   }
 
   ngOnInit(): void {
   }
+  cambiarCancelar(tipo:boolean){
+    this.cancelar = tipo
+    console.log(this.cancelar)}
+  }
 
-}
 

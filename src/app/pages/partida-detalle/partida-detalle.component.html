@@ -10,6 +10,23 @@
                                 uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.</p>
                 </div>
         </div>
+        <div class="modalCancelar" *ngIf="this.cancelar == true">
+                <div class="mensaje">
+                        <div class="infoModal">
+                                <div class="titulo">Vas a cancelar la partida</div>
+                                <div class="texto"> Ligula fermentum mauris aliquet sed sed nam semper sit. Ut suspendisse q
+                                        uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.Ligula fermentum mauris aliquet sed sed nam semper sit. Ut suspendisse q
+                                        uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.</div>
+                        </div>
+                        <div class="botones">
+                                <button class="botonD" on-click="cambiarCancelar(false)">Deshacer</button>
+                                <button class="botonC" routerLink="../home">Confirmar</button>
+                        </div>
+                </div>
+                <div class="fondo" on-click="cambiarCancelar(false)">
+
+                </div>
+        </div>
         <!-- <div class="lfm">
         <div class="lfm">
                 <div>
@@ -63,13 +80,13 @@
                                 </div>
                         </div>
                 </div>
-                <a href="#miModal">
+                <div on-click="cambiarCancelar(true)">
                         <div class="botones" *ngIf="this.jugando == false">
                                 <button class="boton2">
                                         Cancelar
                                 </button>
                         </div>
-                </a>
+                </div>
         </div>
         <div class="card" *ngIf="this.tipo == false">
                 <div class=" ranked amistosa info" >
@@ -109,36 +126,13 @@
                         </div>
                 </div>
                 <div class="botones">
-                        <a href="#miModal">
+                        <div on-click="cambiarCancelar(true)">
                                 <button class="boton2" *ngIf="this.jugando == false">
                                         Cancelar
                                 </button>
-                        </a>
+                        </div>
                 </div>
         </div>
-        <div>
-                <div id="miModal" class="modal">
-                        <div class="modal-contenido">
-                                <!-- <a clas href="#">X</a> -->
-                                <div class="aviso">
-                                        <h2 class="warn" >Vas a cancelar la partida</h2>
-                                        <p class="warnTexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                                Ligula fermentum mauris aliquet sed sed nam semper sit. Ut suspendisse q
-                                                uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.
-                                                 Eget nullam morbi turpis suspendisse tincidunt venenatis tortor cras.</p>
-                                </div>
-                                <div class="botones2">
-                                        <a href="#">
-                                                <button class="boton1Azul">
-                                                        Volver
-                                                </button>
-                                        </a>
-                                        <button  class="boton2">
-                                                <p class="combatir">Confirmar</p> 
-                                        </button>
-                                </div>
-                        </div>  
-                </div>
-        </div>
+</div>
 <!-- </div> -->
 

@@ -167,58 +167,61 @@ p{
 .amistoso{
         background-color: #CE0037;
 }  
-.aviso{
-        margin-top: 2vh;
+.modalCancelar{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px green;
+        position: absolute;
+        height: 100vh;
+        width:  100vw;
+        z-index: 4;
+}
+.mensaje{
+        margin-top: 6vw;
+        display: flex;
+        gap: 1vw;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        height: 50%;
+        width: 50%;
+        position: absolute;
+        z-index: 2;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
-.modal-contenido{
-        background: #FFFFFF;
-        background: linear-gradient(179.84deg, #FFFFFF 14%, #858585 94.23%);
-        width:40vw;
-        height: 30vh;
-        padding: 10px 40px;
-        margin: 20% auto;
-        position: relative;
-        border-radius: 6px;
-}
-.modal{
-        background-color: rgba(0, 0, 0, 0.6);
-        position:fixed;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
-        opacity:0;
-        pointer-events:none;
-        transition: all 1s;
-}
-#miModal:target{
-        opacity:1;
-        pointer-events:auto;
-}
-.warn{
-        color: var(--colorAzulPrimario);
-        font-size: var(--sizeDesktopHeading2);
+.titulo{
         font-family: var(--fontRevxBold);
+        color: var(--colorAzulOscuroPrimario);
+        font-size: var(--sizeDesktopHeading2);
 }
-.warnTexto{
+.texto{
+        width: 80%;
+        font-family: var(--fontRevxMedium);
+        color: var(--colorAzulOscuroPrimario);
+}
+.botonC{
+        background: var(--colorGrisFormularios);
+}
+.botonD{
         color: var(--colorAzulPrimario);
-        font-size: var(--sizeCommonBody2);
-        font-family: var(--fontRevxMedium)
 }
-.botones2{
+.infoModal{
         display: flex;
-        gap:1vw;
-        margin-top: 15vh;
-        display:flex ;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vw;
+        border-radius: 4px;
+        height: 60%;
+        width: 100%;
+        background:var(--colorBlancoGradient);
+
 }
-.boton1Azul{
-        color: #102A42;
+.fondo{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
 }
 .enCurso{
         display: flex;
