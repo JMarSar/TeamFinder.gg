@@ -43,6 +43,7 @@ import { RankingComponent } from './pages/ranking/ranking.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
 import { CreateTournamentComponent } from './pages/create-tournament/create-tournament.component';
 import { RegistroFavComponent } from './pages/registro-fav/registro-fav.component';
+import { NormasTorneoComponent } from './pages/normas-torneo/normas-torneo.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +87,7 @@ import { RegistroFavComponent } from './pages/registro-fav/registro-fav.componen
     ListaChatsComponent,
     CreateTournamentComponent,
     RegistroFavComponent,
+    NormasTorneoComponent,
   ],
   imports: [
     CommonModule,
