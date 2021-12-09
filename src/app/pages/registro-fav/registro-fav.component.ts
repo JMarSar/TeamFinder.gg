@@ -56,7 +56,6 @@ cambiarValo(){
   this.pinguVar=false;
   this.valoVar=true;
 }
-
   ngOnInit(): void {
   }
 
