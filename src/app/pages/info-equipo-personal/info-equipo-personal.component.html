@@ -70,7 +70,7 @@
     <div class="graph" style="display: block">
         <div class="porcenGanados">
             {{porcenGanados}}%
-        </div>
+        <!-- </div>
         <canvas mdbChart
             [chartType]="chartType"
             [datasets]="chartDatasets"
@@ -80,14 +80,16 @@
             [legend]="false"
             (chartHover)="chartHovered($event)"
             (chartClick)="chartClicked($event)">
-        </canvas>
+        </canvas> -->
         
     </div>
 </div>
 <div class="info3">
     <div class="titulo">
-        <div class="botonCalen" [ngClass]="mostrarConexiones == false ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarConexiones = false">Calendario</div>
-        <div class="botonConex" [ngClass]="mostrarConexiones == true ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarConexiones = true">Conexiones</div>
+        <!-- <div class="botonCalen" [ngClass]="this.mostrarConexiones == false ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarConexiones = false">Calendario</div>
+        <div class="botonConex" [ngClass]="this.mostrarConexiones == true ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarConexiones = true">Conexiones</div> -->
+        <div class="botonCalen" (click)="mostrarConexiones = false">Calendario</div>
+        <div class="botonConex" (click)="mostrarConexiones = true">Conexiones</div>
     </div>
     <div class="conexiones" *ngIf="mostrarConexiones == true">
         <div class="conexion" *ngFor="let conex of conexionesTotal">
@@ -99,7 +101,8 @@
         <div class="semana">
             <div class="dias" *ngFor="let dia of dias">
                 <div>{{dia.diaSemana}}</div>
-                <div class="diaNumero" [ngClass]="dia.date >= fechaHoy ? (dia.partido == true ? 'diasOcupados' : 'diasRestantes') : 'diaNumero'">{{dia.date.getDate()}}</div>
+                <!-- <div class="diaNumero" [ngClass]="this.dia.date >= fechaHoy ? (dia.partido == true ? 'diasOcupados' : 'diasRestantes') : 'diaNumero'">{{dia.date.getDate()}}</div> -->
+                <div class="diaNumero">{{dia.date.getDate()}}</div>
             </div>
         </div>
         <div class="partidos">

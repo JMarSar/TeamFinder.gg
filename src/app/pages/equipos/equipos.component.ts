@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService, Toast } from 'ngx-toastr';
 
 @Component({
   selector: 'app-equipos',
@@ -7,11 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquiposComponent implements OnInit {
   public equipos : Equipo[]
-  constructor() {
+  public admin :boolean
+  public tieneEquipo :boolean
+
+  constructor( private toastr:ToastrService) {
     this.equipos = [team,team2,team3,team4,team5,team6,team7,team8]
+    this.tieneEquipo = false
+    this.admin = true
+    if(this.tieneEquipo == false){
+      this.admin = false
+    }
+
+    if (this.admin ==true){
+      this.tieneEquipo = true}
    }
 
   ngOnInit(): void {
+  }
+  showToastr(mensaje: string, titulo:string){
+    this.toastr.success(mensaje, titulo) 
   }
 
 }
