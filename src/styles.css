@@ -26,9 +26,8 @@
         color: var(--colorBlancoPrimario);
         box-sizing: border-box;
 }
-
 :root {
-        /* COLORES */
+        /* COLORES .*/
         --colorRojoPrimario: #CE0037;
         --colorRojoGradiente: linear-gradient(180deg, #CE0037 0%, #560505 100%);
         --colorAzulPrimario: #123D66;
@@ -54,12 +53,12 @@
         --sizeGrande: 96px;
         --sizeDisplay: 90px;
         --sizeTitulares: 64px;
-        --sizeDesktopHeading1: 48px;
+        --sizeDesktopHeading1: 3rem;
         --sizeTitulos: 45px;
         --sizeTitulosHeader: 42px;
         --sizeDesktopHeading2: 40px;
         --sizeNames: 32px;
-        --sizeDesktopHeading3: 32px;
+        --sizeDesktopHeading3: 2rem;
         --sizeDesktopHeading4: 24px;
         --sizeCommonSubtitle: 20px;
         --sizeCommonBody1: 20px;
@@ -73,4 +72,14 @@
         --fontRevxMedium: RevxMedium;
         --fontRevxRegular: RevxRegular;
         --fontRevxBlack: RevxBlack;
+}
+.toast-container{
+        font-family: var(--fontRevxRegular);
+}
+.toast-title{
+        font-size: var(--sizeCommonBody2);
+}
+
+.toast-message{
+        font-size: var(--sizeCommonCaptionDefault);
 }

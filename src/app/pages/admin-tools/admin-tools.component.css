@@ -52,9 +52,10 @@ button{
 /************************************PRINCIPAL*****************************************************************/
 
 main{
-    width: 100vw;
+    border: solid 1px green;
     height: 100vh;
     background-image: url(../../../assets/img/fondo_admin.png);
+    background-size: 100%;
 }
 header{
     height: 15%;

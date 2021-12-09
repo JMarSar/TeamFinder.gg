@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
+import { Toast, ToastrModule } from 'ngx-toastr';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -92,7 +92,12 @@ import { NormasTorneoComponent } from './pages/normas-torneo/normas-torneo.compo
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut:5000,
+      closeButton: true,
+      progressBar: true,
+      preventDuplicates:true,
+    }),
     BrowserModule,
     AppRoutingModule,
     FormsModule,

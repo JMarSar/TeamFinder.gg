@@ -49,6 +49,7 @@ main{
         height: 100vh;
         background-size: 100%;
         background-image: url(../../../assets/img/fondo_admin.png);
+        background-size: 100%;
 }
 header{
         height: 15%;
