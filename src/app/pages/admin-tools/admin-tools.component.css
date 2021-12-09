@@ -303,7 +303,6 @@ font-family: var(--fontRevxMedium);
     border-radius: 4px;
     font-family: var(--fontRevxMedium);
 }
-<<<<<<< HEAD
 
 
 
@@ -346,7 +345,6 @@ pendiente scroll
 /* ::-webkit-scrollbar-thumb:hover {
     background: var(--colorGrisGradient); 
 } */
-=======
 /* **************MODAL************ */
 
 .modal{
@@ -424,4 +422,3 @@ label{
 .boton:active{
     border: none;
 }
->>>>>>> pani
