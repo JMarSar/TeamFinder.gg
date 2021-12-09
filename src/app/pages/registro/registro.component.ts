@@ -67,7 +67,6 @@ export class RegistroComponent implements OnInit {
     isValidReg() {
       return !(this.regisForm.nombre.isValid()== true && (this.regisForm.contrasena.val == this.regisForm.passRep.val ) && this.regisForm.contrasena.isValid() && this.regisForm.email.isValid())
     }
-   
 
   ngOnInit(): void {
   }
