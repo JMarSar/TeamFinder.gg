@@ -37,6 +37,7 @@ import { ChatComponent } from './pages/chat/chat.component';
 import { RankingComponent } from './pages/ranking/ranking.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
 import { CreateTournamentComponent } from './pages/create-tournament/create-tournament.component';
+import { RegistroFavComponent } from './pages/registro-fav/registro-fav.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { CreateTournamentComponent } from './pages/create-tournament/create-tour
     BuscarScrimComponent,
     ListaChatsComponent,
     CreateTournamentComponent,
+    RegistroFavComponent
   ],
   imports: [
     BrowserModule,
