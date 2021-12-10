@@ -1,6 +1,6 @@
 <div class="padre">
         <div class="contieneImagen">
-                <img class="imagen" src="../../../assets/img/garen.png" alt="Garen" >
+                <img class="imagen" src="../../../assets/img/garen.png" alt="Garen">
         </div>
         <div class="contenedor">
                 <div class="titulo" >
@@ -8,7 +8,7 @@
                 </div>
                 <div class="descripcion">
                         <div class="arriba">
-                                <input class="buscar" placeholder="Buscar por nombre">
+                                <input class="buscar" placeholder="Buscar por nombre" >
                                 <!-- <div class="filtrar">
                                         <p class="filtro">Filtrar</p>
                                         <img class="img" src="../../../assets/img/filter_blanco.svg" alt="filter">
@@ -17,10 +17,12 @@
                         <div class="equipos">
                                 <div class="lista">
                                         <div class="etiquetaEquipo" *ngFor="let equipo of equipos">
-                                                <div class="rank">Rank</div>  
-                                                <div class="numeroRank">{{equipo.rank}}</div> 
-                                                <div class="numeroRank linea">|</div>   
-                                                <div class="nombre">{{equipo.nombre}}</div>  
+                                                <div class="informacion"  routerLink="../info-equipo-publico" >
+                                                        <div class="rank">Rank</div>  
+                                                        <div class="numeroRank">{{equipo.rank}}</div> 
+                                                        <div class="numeroRank linea">|</div>   
+                                                        <div class="nombre">{{equipo.nombre}}</div>  
+                                                </div>
                                                 <div class="botones">
 
                                                                 <button *ngIf="this.admin == true" class="conectar" (click)="showToastr('Recibirás una alerta con la respuesta del equipo','Solicitud de conexión enviada')">Conectar</button>

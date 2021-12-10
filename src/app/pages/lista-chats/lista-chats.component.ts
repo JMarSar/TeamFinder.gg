@@ -9,8 +9,10 @@ import { Url, UrlObject } from 'url';
 export class ListaChatsComponent implements OnInit {
 
   public chats: Chat[]
+  public chat: boolean
   constructor() {
     this.chats =[]
+    this.chat = false
    }
 
   ngOnInit(): void {
@@ -36,6 +38,10 @@ export class ListaChatsComponent implements OnInit {
       return err
     }
 
+  }
+  abrirChat(){
+    this.chat = true
+    document.getElementById("padre").style.display = "none"
   }
 
 }

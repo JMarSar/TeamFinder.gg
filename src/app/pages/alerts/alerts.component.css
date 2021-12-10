@@ -5,29 +5,31 @@ body{
     display: flex;
     flex-direction: column;
     color: white;
-    height: 70vh;
+    height: 50vh;
     width: 27%;
     border-radius: 0px;
     background-color: var(--colorAzulPrimario);
     position: absolute;
     left: 73%;
-    border-radius: 0 0 0 4px;
+    border-radius: 0 0 0 2vw;
     text-align: center;
     }
 #textAlert{
     font-size: var(--sizeDesktopHeading4);
     font-family: var(--fontRevxMedium);
     color: white;
-    padding-top: 20px;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
 }
 #containerAlertMsg{
     display: flex;
     flex-direction: column;
     background-color: var(--colorAzulOscuroPrimario);
     width: 88,8%;
-    height: 75%;
+    height: 50%;
     margin-left: 7%;
     margin-top: 2%;
+    margin-right: 2%;
     border-radius: 0 0 0 4px;
     overflow: scroll;
     overflow-x: hidden;  
@@ -39,6 +41,7 @@ p{
     color: white;
     padding-top: 20px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 hr{
     width: 70%;

@@ -1,4 +1,4 @@
-<div class="padre">
+<div id="padre">
         <div class="chatTop" >
                 <div>
                         <p class="titulo">Chats</p>
@@ -13,7 +13,7 @@
         <div class="chatMain">
                 <div class="listaChats" on-click="anadir()">
                         <div class="lista">
-                                <div class="chat" *ngFor="let chat of chats" routerLink="../chat">
+                                <div class="chat" *ngFor="let chat of chats" (click)="abrirChat()">
                                         <div class="info">
                                                 <div class="foto" id="foto"></div>
                                                 <div class="mensaje">
@@ -27,5 +27,7 @@
                         <div class="barrita"></div>
                 </div>
         </div> 
-
+</div>
+<div class = "chatInd" *ngIf="this.chat == true">
+        <app-chat></app-chat>
 </div>

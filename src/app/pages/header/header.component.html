@@ -23,12 +23,26 @@
                 </div>
                 <li><a class="texto" routerLink="ranking">Ranking</a></li>            
             </div>
-            <a class="colocarImagenPerfil" routerLink="home">
+            <div class="colocarImagenPerfil" (click) = "abrirMenu()" >
                 <div class="iconoPerfil" >
                     <div class="foto"></div>
                 </div>
                 <p class="nombreUser">John Doe</p>
-            </a>
+            </div>
         </div>
         <hr class="lineaSeparadora">
+    </div>
+    <div  id="menu" >
+        <div class="equis" (click) = "cerrarMenu(); refresh()" ></div>
+        <div class="fondo" ></div>
+        <div id = "lateral">
+            <app-menu></app-menu>
+        </div>
+        <!-- <div id="alertas">
+            <app-alerts></app-alerts>
+        </div>
+        <div id="chat">
+            <app-lista-chats></app-lista-chats>
+        </div> -->
+
     </div>

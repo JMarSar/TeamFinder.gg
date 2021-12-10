@@ -15,6 +15,31 @@
 .logo{
     height: 70%; 
 }
+.equis{
+    position: absolute;
+    z-index: 20;
+    right:3vw;
+    top:2vw;
+    height: 2vw;
+    width: 2vw;
+    background-image: url(../../../assets/img/cerrar.svg);
+    cursor: pointer;
+}
+#menu{
+    position: absolute;
+    z-index: 2;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.fondo{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0,0,0.5)
+}
 .contenidoHeader{
     position: fixed;
     height: 11%;
@@ -76,6 +101,7 @@ li{
     align-items: center;
     gap: 0.5vw;
     width: 7%;
+    cursor: pointer;
 }
 .nombreIcono{
     position: absolute;

@@ -99,6 +99,7 @@
     height: 90%;
     width: 90%;
     background-color: transparent;
+    outline: none;
     padding-top: 0.5vw;
 }
 .text::placeholder{
