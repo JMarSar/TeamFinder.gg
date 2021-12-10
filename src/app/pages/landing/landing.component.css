@@ -49,6 +49,7 @@
         align-items: center;
         text-align: center;
         font-size: var(--sizeCommonLabel);
+        cursor: pointer;
     }
     .registro{
     width: 149px;
@@ -56,6 +57,7 @@
     background: #1D2831;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
     }
     .letrasReg{   
     font-family: var(--fontRevxMedium);

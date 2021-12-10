@@ -76,20 +76,7 @@
         padding-left: 3.5vw;
         outline: none
 }
-.filtrar{
-        height: 100%;
-        width: 8vw;
-        background-color: var(--colorAzulPrimario);
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1vw;
-        box-shadow: 1px 0px 4px rgb(14, 14, 14, 0.5);
-}
-.filtrar:hover{
-        cursor: pointer;
-}
+
 .filtro{
         color: white;
         font-family: var(--fontRevxMedium);
@@ -160,7 +147,7 @@ input:focus, :active :checked,:enabled{
 .etiquetaEquipo:hover{
         background-color: rgba(1, 28, 63, 0.8);
         width: 48vw;
-        padding: 1vw;
+        padding: 0.5vw;
         cursor: pointer;
 }
 .etiquetaEquipo:active{
@@ -206,6 +193,15 @@ button:hover{
         cursor: pointer;
         width: 9.3vw;
         height: 2.5vw;
+}
+.informacion{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:2vw
+        
 }
 .conectar{
         color: var(--colorRojoPrimario);

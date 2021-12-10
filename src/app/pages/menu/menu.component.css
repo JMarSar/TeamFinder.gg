@@ -1,45 +1,75 @@
 *{
     font-family: var(--fontRevxMedium);
 }
-a:link, a:visited, a:active {
-    text-decoration:none;
-    color: white;
+#containerMenu{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    overflow: hidden;
 }
-a{
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+.apartado{
+    height: 3vw;
+    width: 10vw;
     display:flex;
-    flex-direction: row;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    border-bottom: solid 1px white;
+}
+.apartado:hover{
+    cursor: pointer;
+}
+.apartado >div:hover{
+    color: rgb(143, 143, 143);
+}
+.chats{
+    position: absolute;
+    z-index: 15;
 }
 #aPlayer{
-    font-size: var(--sizeDesktopHeading4);
-    
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 2vw;
+    font-size: var(--sizeDesktopHeading4);margin-bottom: 1vw;
+}
+.imagen{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/img/avatar.jpg);
 }
 #avatar{
     border-radius: 100%;
     padding-left: 2px;
 }
-hr{
-    width: 50%;
-}
+
 #navMenu{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 80vh;
-width: 20%;
-border-radius: 0px;
-text-align: center;
-text-decoration: none;
-background-color: var(--colorAzulPrimario);
-position: absolute;
-left: 80%;
-border-radius: 0 0 0 4px;
+    position: absolute;
+    right: 0;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 18%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--colorAzulPrimario);
+    border-radius: 0 0 0 2vw;
 }
 #aCloseSession{
     padding-top: 25px;
     text-decoration: underline;
+    cursor: pointer;
+}
+#aCloseSession:hover{
+    color: brown;
 }

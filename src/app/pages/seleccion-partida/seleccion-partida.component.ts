@@ -10,7 +10,7 @@ import { TipoPartidaService } from '../../shared/tipo-partida.service';
 })
 export class SeleccionPartidaComponent implements OnInit {
 
-  constructor( public navigate: Router, public volver: Location,public ServicioTipo: TipoPartidaService) { }
+  constructor( public navigate: Router,public ServicioTipo: TipoPartidaService) { }
 
 
   redireccionar(tipo:boolean){
