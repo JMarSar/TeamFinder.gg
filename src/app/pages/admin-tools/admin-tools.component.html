@@ -23,6 +23,7 @@
 
     <div id="containerBigger">
         <div id="containerBig">
+            
 
             <div id="containerSearch">
 
@@ -39,7 +40,7 @@
             </div>
 
 
-            <div id="tournamentBar">
+            <div id="tournamentBar" *ngFor="let torneo of torneos">
                 <div id="date">
                     <!-- fecha -->
                     10-15 Nov
@@ -47,7 +48,7 @@
 
 
                 <div id="info">
-                    <div id="data">
+                    <div id="data" [ngClass]="this.torneo.patrocinado == false ? 'normal' : 'special'">
                         <div id="name">
                             Pretorians of the Tomb
                         </div>
@@ -55,7 +56,7 @@
                             Equipos: 20 | Tier 4
                         </div>
                         <div id="buttons">
-                            <button id="newsButton">Noticia</button>
+                            <button id="newsButton">Noticias</button>
                             <button id="accessButton">Acceder</button>
                         </div>
                     </div>

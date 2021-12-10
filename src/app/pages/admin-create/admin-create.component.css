@@ -46,9 +46,11 @@ button{
 #tool{
     font-size: var(--sizeDesktopHeading1);
     font-family: var(--fontTitulos); 
+    text-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
 }
 #adminText{
     font-family: var(--fontRevxMedium);
+    margin-left: -15%;
 }
 /***************************/
 
@@ -131,7 +133,7 @@ p{
     border: 0;
     border-radius: 4px;
 }
-#valorantButton{
+/* #valorantButton{
     background: linear-gradient(179.84deg, #ffffff 0.14%, #adadad 84.23%);
     
 }
@@ -141,7 +143,32 @@ p{
 #lolButton{
     background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
 
+} */
+
+.selectButton{
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 4px;
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
 }
+.selectedButton{
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 4px;
+    background: linear-gradient(179.84deg, #ffffff 0.14%, #adadad 84.23%);
+}
+
+
 input{
     border: 0;
     border-radius: 4px;

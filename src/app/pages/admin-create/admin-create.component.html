@@ -33,9 +33,12 @@
 
                 <div class="contents">
                     <div id="contentButtons">
-                        <button  id="lolButton" class="gameButton">League of legends</button>
+                        <!-- <button id="lolButton" class="gameButton">League of legends</button>
                         <button id="valorantButton" class="gameButton">Valorant</button>
-                        <button id="tftButton" class="gameButton">Team fight tactics</button> 
+                        <button id="tftButton" class="gameButton">Team fight tactics</button>  -->
+                        <button [ngClass]="this.selected == 1 ? 'selectButton' : 'selectedButton'" on-click="select(1)">League of legends</button>
+                        <button [ngClass]="this.selected == 2 ? 'selectButton' : 'selectedButton'" on-click="select(2)">Valorant</button>
+                        <button [ngClass]="this.selected == 3 ? 'selectButton' : 'selectedButton'" on-click="select(3)">Team fight tactics</button>
                     </div>
                 </div> 
 

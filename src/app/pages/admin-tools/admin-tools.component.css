@@ -48,6 +48,7 @@ button{
 }
 #adminText{
     font-family: var(--fontRevxMedium);
+    margin-left: -15%;
 }
 /************************************PRINCIPAL*****************************************************************/
 
@@ -81,6 +82,7 @@ header{
     background-color: var(--colorAzulOscuroPrimario);
     overflow: scroll;
     overflow-x: hidden;
+    gap: 1%;
     
 }
 
@@ -188,7 +190,6 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: solid 1px white
     /* border: solid 1px white; */
 
 
@@ -211,7 +212,7 @@ header{
 }
 #data{
     /* border: solid 1px white; */
-    background-color: var(--colorRojoPrimario);
+   
     width: 100%;
     height: 100%;
     display: flex;
@@ -220,6 +221,13 @@ header{
     align-items: center;
     font-family:var(--fontRevxMedium);
     gap: 1%;
+    
+}
+.special{
+    background-color: var(--colorRojoPrimario);
+}
+.normal{
+    background-color: var(--colorAzulPrimario);
 }
 
 #name{

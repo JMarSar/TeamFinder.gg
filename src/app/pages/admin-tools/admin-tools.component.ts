@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Torneo } from '../../models/torneo';
 
 @Component({
   selector: 'app-admin-tools',
@@ -8,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class AdminToolsComponent implements OnInit {
 
   public pass: boolean
+  public torneos:Torneo[]
+  public torneo:Torneo;
   constructor() {
     this.pass = false
+    this.torneos = [
+      // new Torneo("PREDATORIANS OF THE TOMB", "20", "4", false),
+      new Torneo("PREDATORIANS OF THE TOMB", "20", "4", false),
+      new Torneo("PREDATORIANS OF THE TOMB", "20", "4", true),
+      // new Torneo("PREDATORIANS OF THE TOMB", "20", "4", false),
+      new Torneo("PREDATORIANS OF THE TOMB", "20", "4", true),
+      new Torneo("PREDATORIANS OF THE TOMB", "20", "4", false),
+      
+    ]
    }
 
   ngOnInit(): void {
