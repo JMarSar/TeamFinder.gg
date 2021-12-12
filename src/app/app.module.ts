@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Toast, ToastrModule } from 'ngx-toastr';
+import { HttpClientModule} from '@angular/common/http'
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -101,6 +102,7 @@ import { NormasTorneoComponent } from './pages/normas-torneo/normas-torneo.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

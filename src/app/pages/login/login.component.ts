@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Login } from 'src/app/models/login';
+import { LoginService } from 'src/app/shared/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +22,9 @@ export class LoginComponent implements OnInit {
       isValid: () => boolean;
     }
   }
-  constructor() { 
+
+  public alerta :string
+  constructor( private ServicioLogin:LoginService,public navegar: Router) { 
   
   this.loginForm ={
     nombre:{
@@ -40,6 +45,35 @@ export class LoginComponent implements OnInit {
   }
   isValidForm() {
     return (this.loginForm.nombre.isValid()== true && this.loginForm.contrasena.isValid())
+  }
+
+  login(nombre:string,pass:string){
+    let login = new Login(nombre,pass)
+    this.ServicioLogin.login(login)
+    
+    .subscribe((data:any) =>{
+      console.log(data)
+
+      if(data.resultado.length > 0){
+        this.ServicioLogin.id = data.resultado[0].id_user
+        this.ServicioLogin.nombre = data.resultado[0].nickname
+        this.ServicioLogin.password = data.resultado[0].password
+        this.ServicioLogin.idioma = data.resultado[0].idioma
+        this.ServicioLogin.manager = data.resultado[0].G_manager
+        this.ServicioLogin.imagen = data.resultado[0].imagen
+        this.ServicioLogin.lfm = data.resultado[0].lfm
+        this.ServicioLogin.juego_fav = data.resultado[0].id_juego_fav
+        console.log(this.ServicioLogin.id, this.ServicioLogin.nombre,this.ServicioLogin.password,this.ServicioLogin.idioma,
+          this.ServicioLogin.id,this.ServicioLogin.imagen, this.ServicioLogin.lfm, this.ServicioLogin.juego_fav)
+        this.navegar.navigate(["../home"]) 
+      }
+      else{
+        console.log("flag")
+        console.log(data.msg)
+        this.alerta = data.msg
+      }
+
+    })
   }
    
   ngOnInit(): void {
