@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user';
+import { RankingJugadoresService } from 'src/app/shared/ranking-jugadores.service';
+import { RankingService } from 'src/app/shared/ranking.service';
 
 @Component({
   selector: 'app-ranking',
@@ -7,66 +10,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RankingComponent implements OnInit {
 
-  public equipos : Equipo[]
-  public jugadores :Jugador[]
   public elegido : boolean
-  constructor() {
-    this.equipos = [team,team2,team3,team4,team5,team6,team7,team8]
-    this.jugadores = []
+  constructor( public ServicioRankJugador:RankingJugadoresService, public ServicioRank:RankingService) {
     this.elegido = true
    }
 
   ngOnInit(): void {
+    this.mostrarEquipos()
+    this.mostrarJugadores()
   }
   elegir(tipo:boolean){
     this.elegido = tipo
     }
-
-    anadir(){
-      for(let i =0; i<10; i++){
-        let player = new Jugador(223,"Arkhan_Shufle",76, 24371)
-        this.jugadores.push(player)
-        }
-      }
-}
-
-
-class Equipo {
-
-  public rank: number
-  public nombre: string
-  public wr:number
-  public elo: number
-  constructor(rank:number,nombre:string,wr:number,elo:number) {
-    this.rank = rank;
-    this.nombre = nombre;
-    this.wr = wr;
-    this.elo = elo
+  
+  mostrarJugadores(){
+    this.ServicioRankJugador.Jugadores()
+    .subscribe((data:any) =>{
+      console.log(data)
+      this.ServicioRankJugador.listaJugadores = data.resultado
+    })
   }
-}
-class Jugador {
+  mostrarEquipos(){
+    this.ServicioRank.Equipos()
+    .subscribe((data:any) =>{
+      console.log(data)
+      this.ServicioRank.listaEquipos = data.resultado
 
-  public rank: number
-  public nombre: string
-  public wr:number
-  public elo: number
-  constructor(rank:number,nombre:string,wr:number,elo:number) {
-    this.rank = rank;
-    this.nombre = nombre;
-    this.wr = wr;
-    this.elo = elo
+    })
   }
-}
 
-let team = new Equipo(223,"Freedom Fighters",76, 24371)
-let team1 = new Equipo(223,"Freedom Fighters",76, 24371)
-let team2 = new Equipo(223,"Freedom Fighters",76, 24371)
-let team3 = new Equipo(223,"Freedom Fighters",76, 24371)
-let team4 = new Equipo(223,"Freedom Fighters",76, 24371)
-let team5 = new Equipo(223,"Freedom Fighters",76, 24371)
-let team6= new Equipo(223,"Freedom Fighters",76, 24371)
-let team7 = new Equipo(223,"Freedom Fighters",76, 24371)
-let team8 = new Equipo(223,"Freedom Fighters",76, 24371)
+}
 
 
 

@@ -1,6 +1,6 @@
-<div class="padre">
+<div class="padre" on-load="mostrarEquipos()">
         <div class="contieneImagen">
-                <img class="imagen" src="../../../assets/img/ashe.png" alt="Garen" >
+                <img class="imagen" src="../../../assets/img/ahri.png" alt="Garen" >
         </div>
         <div class="contenedor">
                 <div class="titulo" >
@@ -10,7 +10,7 @@
                         <div class="arriba">
                                 <div class="elegir">
                                         <button [ngClass]="this.elegido == true ? 'elegidoBoton' : 'elegirBoton'" on-click="elegir(true)">Equipos</button>
-                                        <button [ngClass]="this.elegido == false ? 'elegidoBoton' : 'elegirBoton'" on-click="elegir(false)" on-click="anadir()">Jugadores</button>
+                                        <button [ngClass]="this.elegido == false ? 'elegidoBoton' : 'elegirBoton'" on-click="elegir(false)">Jugadores</button>
                                 </div>
                                 <!-- <div class="filtrar">
                                         <p class="filtro">Filtrar</p>
@@ -20,32 +20,42 @@
                         <div class="equipos">
                                 <div class="lista">
                                         <ng-container *ngIf="this.elegido == true">
-                                                <div class="etiquetaEquipo" *ngFor="let equipo of equipos" >
-                                                        <div class="rank">Rank</div>  
-                                                        <div class="numeroRank">{{equipo.rank}}</div> 
-                                                        <div class="numeroRank linea">|</div>   
-                                                        <div class="nombre" routerLink="../info-equipo-publico">{{equipo.nombre}}</div>  
+                                                <div class="etiquetaEquipo" *ngFor="let equipo of this.ServicioRank.listaEquipos" >
+                                                        <div class="ranking">
+                                                                <div class="rank">Rank</div>  
+                                                                <div class="numeroRank">223</div> 
+                                                                <div class="numeroRank linea">|</div> 
+                                                        </div>  
+                                                        <div class="nick">
+                                                                <div class="nombre" routerLink="../info-equipo-publico">{{equipo.nombre_equipo}}</div>  
+                                                        </div>
                                                         <div class="stats">
                                                                 <div class="numeroStats">WR </div>
-                                                                <div class="numeroStats wr">{{equipo.wr}} </div>
+                                                                <div class="numeroStats wr">12</div>
                                                                 <div class="numeroStats">/ </div>
                                                                 <div class="numeroStats">ELO </div>
-                                                                <div class="numeroStats elo">{{equipo.elo}} </div>
+                                                                <div class="numeroStats elo">233</div>
                                                         </div>           
                                                 </div>
                                         </ng-container>
                                         <ng-container *ngIf="this.elegido == false">
-                                                <div class="etiquetaEquipo" *ngFor="let equipo of jugadores" >
-                                                        <div class="rank">Rank</div>  
-                                                        <div class="numeroRank">{{equipo.rank}}</div> 
-                                                        <div class="numeroRank linea">|</div>   
-                                                        <div class="nombre" routerLink="../info-usuario-publico">{{equipo.nombre}}</div>  
+                                                <div class="etiquetaEquipo" *ngFor="let jugador of this.ServicioRankJugador.listaJugadores" >
+                                                        <div class="ranking">
+                                                                <div class="rank">Rank</div>  
+                                                                <div class="numeroRank">{{jugador.rk_servidor}}</div> 
+                                                                <div class="numeroRank linea">|</div>   
+                                                        </div>
+                                                        <div class="nick">
+                                                                <div class="nombre" routerLink="../info-usuario-publico">{{jugador.nickname}}</div>  
+                                                                <div class="posicion">{{jugador.posicion}}</div>
+                                                        </div>
+
                                                         <div class="stats">
                                                                 <div class="numeroStats">WR </div>
-                                                                <div class="numeroStats wr">{{equipo.wr}} </div>
+                                                                <div class="numeroStats wr">{{jugador.wr}} </div>
                                                                 <div class="numeroStats">/ </div>
                                                                 <div class="numeroStats">ELO </div>
-                                                                <div class="numeroStats elo">{{equipo.elo}} </div>
+                                                                <div class="numeroStats elo">{{jugador.kda}} </div>
                                                         </div>           
                                                 </div>
                                         </ng-container>
