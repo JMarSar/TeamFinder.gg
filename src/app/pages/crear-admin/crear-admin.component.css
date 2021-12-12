@@ -1,5 +1,22 @@
 
-/*******************************************HEADER************************************************/
+.colocarImagenPerfil{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5vw;
+        height: 6vw;
+}
+.imagen{
+        height: 3.5vw;
+        width: 3.5vw;
+        border-radius: 50%;
+        background-image: url(../../../assets/img/manager.jpg);
+        background-repeat: no-repeat;
+        background-size: 180%;
+        background-position: center;
+}
 .padre{
         position: fixed;
         display: flex;

@@ -9,7 +9,7 @@
                         <p id="tool">CREAR USUARIO MANAGER</p>
                     </div>
                     <div class="colocarImagenPerfil">
-                        <img src="../../assets/img/admin-modified.png" class="iconoPerfil">
+                        <div class="imagen"></div>
                         <p id="adminText">Manager</p>
     
                     </div>
@@ -21,11 +21,11 @@
                 <div class="datos">
                         <div class="info">
                                 <label class="texto" for="mail">Mail</label>
-                                <input class="input" type="text" name="mail">
+                                <input #mail class="input" type="text" name="mail">
                         </div>
                         <div class="info">
                                 <label class="texto" for="Pass">Contraseña</label>
-                                <input class="input"  type="text" name="Pass">
+                                <input #pass class="input"  type="text" name="Pass">
                         </div>
                         <div class="info">
                                 <label class="texto" for="confirmaPass">Repite tu contraseña</label>
@@ -33,7 +33,7 @@
                         </div>
                 </div>
                 <div class="confirmar">
-                        <button class="boton" routerLink="../admin-tools"> Crear Manager</button>
+                        <button class="boton" on-click="crearAdmin( mail.value,pass.value)" routerLink="../admin-tools"> Crear Manager</button>
                 </div>
         </div>
 </main>

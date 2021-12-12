@@ -53,7 +53,7 @@ button{
 /************************************PRINCIPAL*****************************************************************/
 
 main{
-    border: solid 1px green;
+
     height: 100vh;
     background-image: url(../../../assets/img/fondo_admin.png);
     background-size: 100%;
