@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Torneos } from 'src/app/models/torneos';
 import { TorneosService } from 'src/app/shared/torneos.service';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-admin-create',
@@ -14,7 +16,7 @@ export class AdminCreateComponent implements OnInit {
   public patrocinado:number;
 
 
-  constructor(public apiService : TorneosService) {
+  constructor(public apiService : TorneosService, public navegar:Router, public toastr:ToastrService) {
     this.patrocinado = 0
     this.pass = false
     this.selected = 1
@@ -40,6 +42,9 @@ public patrocinadoChanged(){
     }
 }
 
+  showToast(){
+    this.toastr.success("Torneo creado con exito", "")
+  }
 
   anadirTorneo(nombre:string,fechainicio:string,fechafin:string,nEquipos:string,tier:string,clave:string,reglas:string){
     let numEquipos = parseInt(nEquipos)
@@ -50,6 +55,12 @@ public patrocinadoChanged(){
       console.log(data)
     }
       )
-  }
+        this.navegar.navigate(["../admin-tools"])
+        
+        this.showToast()
+    }
+
 }
+
+
 
