@@ -31,6 +31,10 @@ import { NoTeamComponent } from './pages/no-team/no-team.component';
 import { TeamCreateComponent } from './pages/team-create/team-create.component';
 import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
 import { CrearAdminComponent } from './pages/crear-admin/crear-admin.component';
+import { InfoEquipoPersonalComponent } from './pages/info-equipo-personal/info-equipo-personal.component';
+import { InfoEquipoPublicoComponent } from './pages/info-equipo-publico/info-equipo-publico.component';
+import { InfoUsuarioPersonalComponent } from './pages/info-usuario-personal/info-usuario-personal.component';
+import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-usuario-publico.component';
 
 const routes: Routes = [
   { path:  '', component: CrearAdminComponent},
