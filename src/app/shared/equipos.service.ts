@@ -17,6 +17,9 @@ export class EquiposService {
   }
 
   equipoMarcado(index:number){
+    console.log(this.listaEquipos[index])
+
     this.seleccionado= this.listaEquipos[index];
+    console.log(this.seleccionado)
   }
 }
