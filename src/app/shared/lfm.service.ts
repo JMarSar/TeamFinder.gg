@@ -8,11 +8,11 @@ export class LfmService {
 
   public url = "https://api-team-finder.herokuapp.com/lfm"
   public id : number
-  public lfm :boolean
+  public lfm :number
 
   constructor( private http:HttpClient) { }
 
-  cambiarLfm(id:number,lfm:boolean){
+  cambiarLfm(id:number,lfm:number){
     let data = {
       id :id,
       lfm:lfm

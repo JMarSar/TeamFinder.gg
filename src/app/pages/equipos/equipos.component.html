@@ -16,12 +16,12 @@
                         </div>
                         <div class="equipos">
                                 <div class="lista">
-                                        <div class="etiquetaEquipo" *ngFor="let equipo of equipos">
-                                                <div class="informacion"  routerLink="../info-equipo-publico" >
+                                        <div class="etiquetaEquipo" *ngFor="let equipo of this.ServicioEquipos.listaEquipos let i=index">
+                                                <div class="informacion"  on-click ="llevar(i)">
                                                         <div class="rank">Rank</div>  
-                                                        <div class="numeroRank">{{equipo.rank}}</div> 
+                                                        <div class="numeroRank">222</div> 
                                                         <div class="numeroRank linea">|</div>   
-                                                        <div class="nombre">{{equipo.nombre}}</div>  
+                                                        <div class="nombre">{{equipo.nombre_equipo}}</div>  
                                                 </div>
                                                 <div class="botones">
 

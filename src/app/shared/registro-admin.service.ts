@@ -19,7 +19,7 @@ export class RegistroAdminService {
       nickname : "manager",
       email:mail,
       password:password,
-      G_manager:true,
+      G_manager:1,
       lfm:false,
       fecha_nacimiento:"none",
       info_ad:"none",
