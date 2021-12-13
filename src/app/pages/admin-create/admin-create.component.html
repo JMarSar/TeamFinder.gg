@@ -25,7 +25,7 @@
                 <p>eSports</p>
                 <p>Nombre de torneo</p> 
                 <p>Fecha de torneo</p>
-                <p>Nº de equipo</p>  
+                <p>Nº equipos & tier</p>  
                 <p>Clave de torneo</p>  
                 <p>Reglas del torneo</p>  
             </div>
@@ -33,9 +33,6 @@
 
                 <div class="contents">
                     <div id="contentButtons">
-                        <!-- <button id="lolButton" class="gameButton">League of legends</button>
-                        <button id="valorantButton" class="gameButton">Valorant</button>
-                        <button id="tftButton" class="gameButton">Team fight tactics</button>  -->
                         <button [ngClass]="this.selected == 1 ? 'selectButton' : 'selectedButton'" on-click="select(1)">League of legends</button>
                         <button [ngClass]="this.selected == 2 ? 'selectButton' : 'selectedButton'" on-click="select(2)">Valorant</button>
                         <button [ngClass]="this.selected == 3 ? 'selectButton' : 'selectedButton'" on-click="select(3)">Team fight tactics</button>
@@ -45,7 +42,7 @@
 
 
                 <div class="contents">
-                    <input id="nameInput" type="text" placeholder=" Máximo 100 caracteres ">
+                    <input id="nameInput" type="text" #nombre placeholder=" Máximo 100 caracteres ">
                 </div>
 
 
@@ -53,43 +50,56 @@
                 <div class="contents">
                     <div id="dateInputs">
                     <label for=""> Desde</label>
-                    <input class="date"type="text" placeholder="dd/mm/aa">
+                    <input class="date"type="text" #fechainicio placeholder="dd/mm/aa">
                     <label for=""> Hasta</label>
-                    <input class="date"type="text" placeholder="dd/mm/aa">
+                    <input class="date"type="text" #fechafin placeholder="dd/mm/aa">
                 </div>
             </div>
 
 
                 <div class="contents">
-                    <input id="teamNum" class="date"type="text" placeholder="Entre 6 y 60">
+                    <input id="teamNum" class="date"type="text" #nEquipos placeholder="Entre 6 y 60">
+                    <label for=""> Tier </label>
+                    <input class="date" #tier placeholder="T1 a T4">
                 </div>
 
 
                 <div class="contents">
-                    <input id="codeInput" class="date" type="text" placeholder="Introduce la clave generada">
+                    <input id="codeInput" #clave class="date" type="text" placeholder="Introduce la clave generada">
                 </div>
 
 
                 <div class="contents">
-                    <input id="codeInput" class="date" type="text" placeholder="Dropdown"> &nbsp; &nbsp;<a> Ver tipos de reglas </a>
+                    <input id="codeInput" #reglas class="date" type="text" placeholder="Introduce el tipo de reglas"> &nbsp; &nbsp;<a> Ver tipos de reglas </a>
                 </div>
 
             </div>
             <div id="generate">
                 
                 <div id="genContainer">
-                    <button class="gen"> Generar clave </button>
-                    <input id="clave" type="text" placeholder="xxx-xxx-xxx-xxx">
+                    <button class="gen" > Generar clave </button>
+                    <input id="clave" type="text" #claveGen placeholder="xxx-xxx-xxx-xxx">
+                </div>
+                <div id="patrocinate">
+                    <p>Patrocinado</p>
+                    <input #patrocinadoCheckBox
+                     id="patrocinadoCheckBox" 
+                     type="checkbox" 
+                     [checked]="patrocinado" 
+                     (change)="patrocinadoChanged()"/>
                 </div>
             </div>
         </div>
 
-        <div id="containerGenAndRes" routerLink="../torneo-creado">
-            <button class="genb">Generar torneo</button>
+        <div id="containerGenAndRes">
+            <button class="genb" on-click="anadirTorneo(nombre.value,fechainicio.value,fechafin.value,nEquipos.value,
+                                           tier.value,clave.value,reglas.value)" >Generar torneo</button>
             <button class="genb" id="reset" routerLink="../admin-tools">Resetear campos</button>
         </div>
     </div>
+
         <!-----------------------------Cambiar pass------------------------------------->
+
         <div *ngIf="this.pass==true">
             <div class="fondo" on-click="cambiarPass(false)" ></div>
             <div class="mensaje">
