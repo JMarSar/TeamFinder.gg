@@ -45,6 +45,10 @@ import { ListaChatsComponent } from './pages/lista-chats/lista-chats.component';
 import { CreateTournamentComponent } from './pages/create-tournament/create-tournament.component';
 import { RegistroFavComponent } from './pages/registro-fav/registro-fav.component';
 import { NormasTorneoComponent } from './pages/normas-torneo/normas-torneo.component';
+import { InfoEquipoPersonalComponent } from './pages/info-equipo-personal/info-equipo-personal.component';
+import { InfoEquipoPublicoComponent } from './pages/info-equipo-publico/info-equipo-publico.component';
+import { InfoUsuarioPersonalComponent } from './pages/info-usuario-personal/info-usuario-personal.component';
+import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-usuario-publico.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +93,10 @@ import { NormasTorneoComponent } from './pages/normas-torneo/normas-torneo.compo
     CreateTournamentComponent,
     RegistroFavComponent,
     NormasTorneoComponent,
+    InfoEquipoPersonalComponent,
+    InfoEquipoPublicoComponent,
+    InfoUsuarioPersonalComponent,
+    InfoUsuarioPublicoComponent,
   ],
   imports: [
     CommonModule,

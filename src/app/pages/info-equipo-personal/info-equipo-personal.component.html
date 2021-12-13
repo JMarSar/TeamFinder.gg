@@ -1,131 +1,155 @@
-<div id="total">
-    <div class="header"></div>
-<div class="info1">
-    <div class="infoNombre">
-        <div class="texto">1upEs</div>
-        <div class="adorno"></div>
-    </div>
-    
-    <img class="imagenEquipo" src="./../../../../assets/img/iconooEquipo.png" alt="">
-    <div class="roaster">Roster</div>
-    <div class="jugadores">
-    <div class="ranked">
-        <div class="textoRanked">
-                JohnDoe
-        </div>
-        <div class="adorno1"></div>
-    </div>
-    <div class="ranked">
-        <div class="adorno1"></div>
-        <div class="textoRanked">
-                BreadWater
-        </div>
-    </div>
-    <div class="ranked">
-        <div class="textoRanked">
-                GeorG
-        </div>
-        <div class="adorno1"></div>
-    </div>
-    <div class="ranked">
-        <div class="adorno1"></div>
-        <div class="textoRanked">
-                Gui-Y
-        </div>
-    </div>
-    <div class="ranked">
-        <div class="textoRanked">
-                Ethan
-        </div>
-        <div class="adorno1"></div>
-    </div>
-</div>
-</div>
-<div class="info2">
-    <div class="titulo">
-        <div class="texto1">Estadisticas</div>
-        <div class="adorno"></div>
-    </div>
-    <div class="info2Primero">
-        <div class="estadisticaWL">{{estadistica.win}} W / {{estadistica.loses}} L</div>
-        <div>
-            <img class="imagenLugar" src="./../../../../assets/img/EEUU.png" alt="">
-            <div class="lugarText">{{estadistica.zona}}</div>
-        </div>
-    </div>
-    <div class="info2Segunda">
-        <div>
-            <p>K</p>
-            <p>D</p>
-            <p>A</p>
-        </div>
-        <div>
-            <p>{{estadistica.kills}}</p>/<p>{{estadistica.deaths}}</p>/<p>{{estadistica.asistencias}}</p>
-        </div>
-        <div>
-            2.20 : 1  (29%)
-        </div>
-    </div>
-    
-    <div class="graph" style="display: block">
-        <div class="porcenGanados">
-            {{porcenGanados}}%
-        <!-- </div>
-        <canvas mdbChart
-            [chartType]="chartType"
-            [datasets]="chartDatasets"
-            [labels]="chartLabels"
-            [colors]="chartColors"
-            [options]="chartOptions"
-            [legend]="false"
-            (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)">
-        </canvas> -->
-        
-    </div>
-</div>
-<div class="info3">
-    <div class="titulo">
-        <!-- <div class="botonCalen" [ngClass]="this.mostrarConexiones == false ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarConexiones = false">Calendario</div>
-        <div class="botonConex" [ngClass]="this.mostrarConexiones == true ? 'botonActivado' : 'botonDesactivado'" (click)="mostrarConexiones = true">Conexiones</div> -->
-        <div class="botonCalen" (click)="mostrarConexiones = false">Calendario</div>
-        <div class="botonConex" (click)="mostrarConexiones = true">Conexiones</div>
-    </div>
-    <div class="conexiones" *ngIf="mostrarConexiones == true">
-        <div class="conexion" *ngFor="let conex of conexionesTotal">
-            <img src="{{conex.img}}" alt="">
-            <div class="nombreEquipo">{{conex.equipoNom}}</div>
-        </div>
-    </div>
-    <div class="calendario" *ngIf="mostrarConexiones == false">
-        <div class="semana">
-            <div class="dias" *ngFor="let dia of dias">
-                <div>{{dia.diaSemana}}</div>
-                <!-- <div class="diaNumero" [ngClass]="this.dia.date >= fechaHoy ? (dia.partido == true ? 'diasOcupados' : 'diasRestantes') : 'diaNumero'">{{dia.date.getDate()}}</div> -->
-                <div class="diaNumero">{{dia.date.getDate()}}</div>
-            </div>
-        </div>
-        <div class="partidos">
-            <div>
-                Proximo Partido
-            </div>
-            <div class="partidoProx">
-                <div>
-                    <img class="imagenEquipoPart" src="./../../../../assets/img/iconooEquipo.png" alt="">
-                    <div>1upX</div>
+<div class="main-container">
+    <div class="left-container">
+        <div class="perfil">
+            <div class="perfil-nombre">
+                <div class="perfil-nombre-barra-azul">
+                    <h3>eLves</h3>
                 </div>
-                <div class="vs">VS</div>
-                <div>
-                    <img class="imagenEquipoPart" src="./../../../../assets/img/logoEquipoEne.png" alt="">
-                    <div>1upX</div>
+                <div class="perfil-nombre-barra-blanco"></div>
+            </div>
+            <div class="perfil-logo">
+                <img class="perfil-logo-imagen" src="../../../assets/img/elves.png" alt="">
+            </div>
+            <div class="perfil-roster">
+                <h3>Roster</h3>
+                <div class="perfil-roster-players"> <!-- CAMBIAR A NGFOR-->
+                    <div class="perfil-roster-player">
+                        <div class="perfil-roster-player-barra-blanca"></div>
+                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                    </div>
+                    <div class="perfil-roster-player">
+                        <div class="perfil-roster-player-barra-blanca"></div>
+                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                    </div>
+                    <div class="perfil-roster-player">
+                        <div class="perfil-roster-player-barra-blanca"></div>
+                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                    </div>
+                    <div class="perfil-roster-player">
+                        <div class="perfil-roster-player-barra-blanca"></div>
+                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                    </div>
+                    <div class="perfil-roster-player">
+                        <div class="perfil-roster-player-barra-blanca"></div>
+                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                    </div>
+                    <div class="perfil-roster-player">
+                        <div class="perfil-roster-player-barra-blanca"></div>
+                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="estadisticas">        
+            <div class="estadisticas-header">
+                <div class="estadisticas-header-barra-chica"></div>
+                <div class="estadisticas-header-barra-grande">
+                    <h4>Estadísticas</h4>
+                </div>
+            </div>
+            <div class="mid-container-estadisticas">
+                <div class="chart-info">
+                    <span class="chart-top-info">
+                        507W / 340L
+                    </span>
+                    <div class="chart-bottom-info">
+                        <div class="chart-container">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="estadisticas-datos">
+                            <div class="estadisticas-datos-top">
+                                <div class="kda-datos">
+                                    <div class="k1">5.1</div>
+                                    /
+                                    <div class="d1">4.3</div>
+                                    /
+                                    <div class="a1">4.2</div>
+                                </div>
+                            </div>
+                            <div class="estadisticas-datos-bottom">
+                                <div class="kda-ratio">
+                                    3.72:1
+                                </div>
+                                <div class="ckrate">
+                                    (51%)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-container-stadisticas">
+                <div class="bottom-container-stadisticas-header">
+                    <div class="bottom-container-stadisticas-header-barra-grande">
+                        <h4>Servidor</h4>
+                    </div>
+                    <div class="bottom-container-stadisticas-header-barra-chica"></div>
+                </div>
+                <div class="server">
+                    <div class="server-image">
+                        <img src="../../../assets/img/EUW_server.png" alt="">
+                    </div>
+                    <h5>EUW</h5>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<button class="abandonar" *ngIf="admin == false">Abandonar</button>
-<button class="eliminar" *ngIf="admin == true">Eliminar</button>
-<button class="back">< Volver</button>
-
-<footer></footer>
+    <div class="right-container">
+        <div class="right-container-header">
+            <div class="right-container-header-barra-chica"></div>
+            <div class="right-container-header-barra-grande">
+                <h4>Rendimiento</h4>
+            </div>
+        </div>
+        <div class="wrap-estadisticas">
+            <div class="cuadro-estadistica">
+                <div class="dato-estadistica">
+                    27%
+                </div>
+                <div class="titulo-estadistica">
+                    FB%
+                </div>
+            </div>
+            <div class="cuadro-estadistica">
+                <div class="dato-estadistica">
+                    21,9%
+                </div>
+                <div class="titulo-estadistica">
+                    FRH%
+                </div>
+            </div>
+            <div class="cuadro-estadistica">
+                <div class="dato-estadistica">
+                    19.8%
+                </div>
+                <div class="titulo-estadistica">
+                    FT%
+                </div>
+            </div>
+            <div class="cuadro-estadistica">
+                <div class="dato-estadistica">
+                    60%
+                </div>
+                <div class="titulo-estadistica">
+                    FNASH%
+                </div>
+            </div>
+            <div class="cuadro-estadistica">
+                <div class="dato-champ-fav">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/Leblanc.png" alt="">
+                </div>
+                <div class="titulo-estadistica">
+                    FAV CHAMP
+                </div>
+            </div>
+            <div class="cuadro-estadistica">
+                <div class="dato-estadistica">
+                    2
+                </div>
+                <div class="titulo-estadistica">
+                    HOT STREAK
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
