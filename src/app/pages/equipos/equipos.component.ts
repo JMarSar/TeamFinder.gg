@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService, Toast } from 'ngx-toastr';
+import { EquiposService } from 'src/app/shared/equipos.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-equipos',
@@ -7,12 +9,10 @@ import { ToastrService, Toast } from 'ngx-toastr';
   styleUrls: ['./equipos.component.css']
 })
 export class EquiposComponent implements OnInit {
-  public equipos : Equipo[]
   public admin :boolean
   public tieneEquipo :boolean
 
-  constructor( private toastr:ToastrService) {
-    this.equipos = [team,team2,team3,team4,team5,team6,team7,team8]
+  constructor( private toastr:ToastrService, public ServicioEquipos:EquiposService, public navegar : Router ) {
     this.tieneEquipo = false
     this.admin = true
     if(this.tieneEquipo == false){
@@ -24,34 +24,25 @@ export class EquiposComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.mostrarEquipos()
   }
   showToastr(mensaje: string, titulo:string){
     this.toastr.success(mensaje, titulo) 
   }
 
-}
+  mostrarEquipos(){
+    this.ServicioEquipos.Equipos()
+    .subscribe((data:any) =>{
+      console.log(data)
+      this.ServicioEquipos.listaEquipos = data.resultado
 
-class Equipo {
-
-  public rank: number
-  public nombre: string
-  public wr:number
-  public elo: number
-  constructor(rank:number,nombre:string,wr:number,elo:number) {
-    this.rank = rank;
-    this.nombre = nombre;
-    this.wr = wr;
-    this.elo = elo
+    })
+  }
+  llevar(index:number){
+    console.log(index)
+    this.ServicioEquipos.equipoMarcado(index)
+    this.navegar.navigate(["../info-equipo-publico"])
   }
 }
 
-let team = new Equipo(223,"Freedom Figthers",76, 24371)
-let team1 = new Equipo(223,"Freedom Figthers",76, 24371)
-let team2 = new Equipo(223,"Freedom Figthers",76, 24371)
-let team3 = new Equipo(223,"Freedom Figthers",76, 24371)
-let team4 = new Equipo(223,"Freedom Figthers",76, 24371)
-let team5 = new Equipo(223,"Freedom Figthers",76, 24371)
-let team6= new Equipo(223,"Freedom Figthers",76, 24371)
-let team7 = new Equipo(223,"Freedom Figthers",76, 24371)
-let team8 = new Equipo(223,"Freedom Figthers",76, 24371)
 
