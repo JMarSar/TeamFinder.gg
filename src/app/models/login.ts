@@ -17,6 +17,7 @@ export class Login {
         public rk_global: number
         public kda:number
         public wr:number
+        public creador: number
 
         constructor(nombre:string,pass:string){
                 this.nombre = nombre

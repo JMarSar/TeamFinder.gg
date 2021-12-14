@@ -1,8 +1,8 @@
-<div *ngIf="this.routeLocation.path() != '/info-usuario-publico' && this.routeLocation.path() != '/info-usuario-personal' && this.routeLocation.path() != '/info-equipo-publico' && this.routeLocation.path() != '/info-equipo-personal' && this.routeLocation.path() != '' && this.routeLocation.path() != '/admin-create' && this.routeLocation.path() != '/admin-tools' && this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
+<div *ngIf="this.routeLocation.path() != '' && this.routeLocation.path() != '/admin-create' && this.routeLocation.path() != '/admin-tools' && this.routeLocation.path() != '/landing' && this.routeLocation.path() != '/registro' && this.routeLocation.path() != '/registro-completa-registro' 
         && this.routeLocation.path() != '/registro-final' &&this.routeLocation.path() != '/login' ">
         <app-header></app-header>
         
-        <div *ngIf="this.routeLocation.path() != '/home' && this.routeLocation.path() != '/torneos' && this.routeLocation.path() != '/detalles-torneo'">
+        <div *ngIf="this.routeLocation.path() != '/info-usuario-publico' && this.routeLocation.path() != '/info-usuario-personal' && this.routeLocation.path() != '/info-equipo-publico' && this.routeLocation.path() != '/info-equipo-personal' && this.routeLocation.path() != '/seleccion-partida' && this.routeLocation.path() != '/partida-detalle' && this.routeLocation.path() != '/partida' && this.routeLocation.path() != '/home' && this.routeLocation.path() != '/torneos' && this.routeLocation.path() != '/detalles-torneo'">
                 <app-lfm></app-lfm>
         </div>
         <app-side-bar></app-side-bar>
