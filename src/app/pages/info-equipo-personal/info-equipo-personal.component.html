@@ -50,7 +50,7 @@
             <div class="mid-container-estadisticas">
                 <div class="chart-info">
                     <span class="chart-top-info">
-                        507W / 340L
+                    {{this.info.victorias}}W / {{this.info.derrotas}}L
                     </span>
                     <div class="chart-bottom-info">
                         <div class="chart-container">
@@ -86,10 +86,10 @@
                     <div class="bottom-container-stadisticas-header-barra-chica"></div>
                 </div>
                 <div class="server">
-                    <div class="server-image">
+                    <!-- <div class="server-image">
                         <img src="../../../assets/img/EUW_server.png" alt="">
-                    </div>
-                    <h5>EUW</h5>
+                    </div> -->
+                    <h5>{{this.info.servidor}}</h5>
                 </div>
             </div>
         </div>
@@ -104,34 +104,34 @@
         <div class="wrap-estadisticas">
             <div class="cuadro-estadistica">
                 <div class="dato-estadistica">
-                    27%
+                    {{this.fbR}}%
                 </div>
                 <div class="titulo-estadistica">
-                    FB%
+                    First Blood
                 </div>
             </div>
             <div class="cuadro-estadistica">
                 <div class="dato-estadistica">
-                    21,9%
+                    {{this.frhR}}%
                 </div>
                 <div class="titulo-estadistica">
-                    FRH%
+                    First Herald
                 </div>
             </div>
             <div class="cuadro-estadistica">
                 <div class="dato-estadistica">
-                    19.8%
+                    {{this.ftR}}%
                 </div>
                 <div class="titulo-estadistica">
-                    FT%
+                    First Tower
                 </div>
             </div>
             <div class="cuadro-estadistica">
                 <div class="dato-estadistica">
-                    60%
+                    {{this.fnashR}}%
                 </div>
                 <div class="titulo-estadistica">
-                    FNASH%
+                    First Nashor
                 </div>
             </div>
             <div class="cuadro-estadistica">

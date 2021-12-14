@@ -229,6 +229,7 @@
 .bottom-container-stadisticas {
         display: flex;
         flex-direction: column;
+        height: 30%;
 }
 .bottom-container-stadisticas-header {
         display: flex;
