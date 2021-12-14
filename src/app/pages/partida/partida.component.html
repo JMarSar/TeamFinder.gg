@@ -34,7 +34,7 @@
                                         iaculis eget. Odio luctus tincidunt ut massa ipsum mattis proin habitasse ipsum. Mattis accumsan non elit.</p>
                         </div>
                         <div class="descripcion bloque" *ngIf="this.buscando == true" >
-                                <p class="texto" on-click="redireccionarRanked()">Buscando partida</p>
+                                <p class="texto">Buscando partida</p>
                                 <img  class="load" src="../../../assets/img/load.svg" alt="load">
                         </div>
 
@@ -44,7 +44,7 @@
                         <button class="boton1" *ngIf="this.buscando == false" on-click="buscar(true)">
                                <p class="combatir">Combatir</p> 
                         </button>
-                        <button class="boton2" routerLink="../seleccion-partida" >
+                        <button class="boton2" routerLink="../seleccion-partida" on-click="buscar(true)" >
                                 Cancelar
                         </button>
                 </div>
@@ -60,7 +60,7 @@
                         </div>
                 </div>
                 <div class="botones">
-                        <button class="boton1Azul" on-click="redireccionarAmistosa()">
+                        <button class="boton1Azul" on-click="cancelar(true)">
                                <p class="combatir" >Buscar</p> 
                         </button>
                         <button class="boton2" routerLink="../seleccion-partida">

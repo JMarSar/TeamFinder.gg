@@ -16,15 +16,15 @@ export class LfmComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  cambiarLfm(id:number){
+  cambioLfm(id:number){
     console.log(id)
-    console.log(this.ServicioLogin.lfm)
     if(this.Serviciolfm.lfm ==0){
       this.Serviciolfm.cambiarLfm(id,1)
       .subscribe((data:any) =>{
         console.log(data)
       })
       this.Serviciolfm.lfm = 1
+      console.log("debajo")
       console.log(this.Serviciolfm.lfm)
     }
     

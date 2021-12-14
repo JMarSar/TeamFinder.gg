@@ -130,9 +130,22 @@ p{
         flex-direction: column;
         gap: 3vh;
 }
+
 .load{
         height:7vh;
-        transform : scaleX(-1);
+        /* transform : scaleX(-1); */
+        animation-name: girar;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        background-color: transparent;
+        }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
 }
 .ranked{
         color: var(--colorRojoPrimario);

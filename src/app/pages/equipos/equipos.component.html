@@ -8,7 +8,8 @@
                 </div>
                 <div class="descripcion">
                         <div class="arriba">
-                                <input class="buscar" placeholder="Buscar por nombre" >
+                                <input class="buscar" #buscar placeholder="Buscar por nombre">
+                                <div class ="botonBuscar" on-click="busqueda(buscar.value)" >Buscar</div>
                                 <!-- <div class="filtrar">
                                         <p class="filtro">Filtrar</p>
                                         <img class="img" src="../../../assets/img/filter_blanco.svg" alt="filter">
@@ -18,16 +19,20 @@
                                 <div class="lista">
                                         <div class="etiquetaEquipo" *ngFor="let equipo of this.ServicioEquipos.listaEquipos let i=index">
                                                 <div class="informacion"  on-click ="llevar(i)">
-                                                        <div class="rank">Rank</div>  
-                                                        <div class="numeroRank">222</div> 
-                                                        <div class="numeroRank linea">|</div>   
-                                                        <div class="nombre">{{equipo.nombre_equipo}}</div>  
+                                                        <div class="ranking">
+                                                                <div class="rank">Rank</div> 
+                                                                <div class="numeroRank">222</div> 
+                                                                <div class="numeroRank linea">|</div>   
+                                                        </div>
+                                                        <div class="nick">
+                                                                <div class="nombre">{{equipo.nombre_equipo}}</div> 
+                                                        </div> 
                                                 </div>
                                                 <div class="botones">
 
-                                                                <button *ngIf="this.admin == true" class="conectar" (click)="showToastr('Recibirás una alerta con la respuesta del equipo','Solicitud de conexión enviada')">Conectar</button>
+                                                                <button *ngIf="this.admin == true" class="conectar" on-click="conectar(i)">Conectar</button>
 
-                                                                <button *ngIf="this.tieneEquipo == false"class="unirse" (click)="showToastr('Recibirás una alerta con la respuesta del equipo','Solicitud de unión enviada')">Unirse</button>
+                                                                <button *ngIf="this.tieneEquipo == false"class="unirse" on-click="unirse(i)">Unirse</button>
                                                 </div>             
                                         </div>
                                 </div>

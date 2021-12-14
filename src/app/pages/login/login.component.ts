@@ -49,8 +49,8 @@ export class LoginComponent implements OnInit {
 
   login(nombre:string,pass:string){
     let login = new Login(nombre,pass)
+    console.log(login)
     this.ServicioLogin.login(login)
-    
     .subscribe((data:any) =>{
       console.log(data)
 
@@ -63,8 +63,13 @@ export class LoginComponent implements OnInit {
         this.ServicioLogin.imagen = data.resultado[0].imagen
         this.ServicioLogin.lfm = data.resultado[0].lfm
         this.ServicioLogin.juego_fav = data.resultado[0].id_juego_fav
-        console.log(this.ServicioLogin.id, this.ServicioLogin.nombre,this.ServicioLogin.password,this.ServicioLogin.idioma,
-          this.ServicioLogin.id,this.ServicioLogin.imagen, this.ServicioLogin.lfm, this.ServicioLogin.juego_fav)
+        this.ServicioLogin.nombre_equipo = data.resultado[0].nombre_equipo
+        this.ServicioLogin.equipo_id = data.resultado[0].equipo_id
+        this.ServicioLogin.creador = data.resultado[0].creador
+
+        console.log(data.resultado[0],
+          this.ServicioLogin.id, this.ServicioLogin.nombre,this.ServicioLogin.password,this.ServicioLogin.idioma,
+          this.ServicioLogin.id,this.ServicioLogin.imagen, this.ServicioLogin.lfm, this.ServicioLogin.juego_fav, this.ServicioLogin.nombre_equipo)
         this.navegar.navigate(["../home"]) 
       }
       else{

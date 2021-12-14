@@ -57,7 +57,8 @@
         height: 6vh;
         width: 46vw;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        gap:1.5vw
 }
 .buscar{
         padding-top: 0.1em;
@@ -75,6 +76,21 @@
         background-repeat:no-repeat;
         padding-left: 3.5vw;
         outline: none
+}
+.botonBuscar{
+        background: var(--colorAzulOscuroGradient);
+        font-family: var(--fontRevxMedium);
+        width: 6vw;
+        height: 2vw;
+        display: flex;
+        padding-top: 0.2vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer;
+}
+.botonBuscar:hover{
+        box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.4);
 }
 
 .filtro{
@@ -153,6 +169,11 @@ input:focus, :active :checked,:enabled{
 .etiquetaEquipo:active{
         border: solid 1px red
 }
+.ranking{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+}
 .rank{
         font-size: var(--sizeDesktopHeading4);
 }
@@ -160,6 +181,13 @@ input:focus, :active :checked,:enabled{
         font-size: var(--sizeCommonBody1);
         margin-top: 0.2vw;
         font-family: var(--fontRevxMedium);
+}
+.nick{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+        
 }
 .nombre{
         background: -webkit-linear-gradient(-90deg, #FFFFFF 0.14%, #c9c9c9 84.23%);
