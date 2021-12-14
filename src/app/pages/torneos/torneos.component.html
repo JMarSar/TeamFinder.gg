@@ -4,10 +4,10 @@
                         <div class="torneo-activado" *ngIf="torneo; else esFalso">
                                 <div class="info-torneo-activado">
                                         <div class="nombre-torneo-activado">
-                                                {{torneo.nombre}}
+                                                {{torneo.nombre_torneo}}
                                         </div>
                                         <div class="fecha-torneo-activado">
-                                               Empieza el {{torneo.fecha}}
+                                               Empieza el {{torneo.fecha_inicio}}
                                         </div>
                                 </div>
                                 <div class="botones-torneo-activado">
@@ -34,11 +34,11 @@
                 <div class="bottom-container">
                         <h3>Torneos</h3>
                         <div class="carrousel-torneos">
-                                <div [ngClass]="torneo.patrocinado === true && i==myIndex  ? 'card-torneo-rojo blanco' : torneo.patrocinado === true ? 'card-torneo-rojo': torneo.patrocinado === false && i == myIndex ? 'card-torneo-azul blanco': 'card-torneo-azul' " on-click="mostrarTorneo(i)" *ngFor="let torneo of torneos; let i = index">
-                                        <div class="card-title">{{torneo.nombre}}</div>
+                                <div [ngClass]="torneo.patrocinado === 1 && i==myIndex  ? 'card-torneo-rojo blanco' : torneo.patrocinado === 1 ? 'card-torneo-rojo': torneo.patrocinado === 0 && i == myIndex ? 'card-torneo-azul blanco': 'card-torneo-azul' " on-click="mostrarTorneo(i)" *ngFor="let torneo of torneos; let i = index">
+                                        <div class="card-title">{{torneo.nombre_torneo}}</div>
                                         <div class="card-info">
                                                 <div class="card-tier">Tier {{torneo.tier}}</div>
-                                        <div class="card-fecha">{{torneo.fecha}}</div>
+                                        <div class="card-fecha">{{torneo.fecha_inicio}}</div>
                                         </div>
                                 </div>
                         </div>

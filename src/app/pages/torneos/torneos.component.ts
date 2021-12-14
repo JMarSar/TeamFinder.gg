@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Torneo } from '../../models/torneo';
+import { Torneos } from 'src/app/models/torneos';
+import { TorneosService } from 'src/app/shared/torneos.service';
 import { Partida } from '../../models/partida';
 
 @Component({
@@ -9,24 +10,13 @@ import { Partida } from '../../models/partida';
 })
 export class TorneosComponent implements OnInit {
 
-  public torneos:Torneo[]
-  public torneo:Torneo;
+  public torneos:Torneos[]
+  public torneo:Torneos;
   public myIndex:number;
   public partida:Partida;
 
-  constructor() { 
-    this.torneos = [
-      new Torneo("PREDATORIANS OF THE TOMB", "1", "10/11/2021", true),
-      new Torneo("TEST2", "2", "10/11/2021", true),
-      new Torneo("PREDATORIANS OF THE GUARD", "3", "10/11/2121", true),
-      new Torneo("PREDATORIANS FROM SPAIN", "4", "10/11/2121", true),
-      new Torneo("TESTING OF THE TOMB", "1", "10/11/2121", false),
-      new Torneo("TESTEO OF THE TOMB", "2", "10/11/2121", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "3", "10/11/2121", false)
-    ]
+  constructor(public apiService : TorneosService) { 
+    this.torneos = []
   }
 
   mostrarTorneo(i:number){
@@ -35,6 +25,13 @@ export class TorneosComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.obtenerTorneos()
+  }
+  obtenerTorneos(){
+    this.apiService.obtenerTorneos().subscribe((data:any) =>{
+      console.log(data)
+      this.torneos = data.resultado
+    })
   }
 
 }
