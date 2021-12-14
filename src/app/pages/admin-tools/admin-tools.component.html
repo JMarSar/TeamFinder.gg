@@ -39,20 +39,24 @@
             </div>
 
 
-            <div id="tournamentBar">
+
+            <div id="tournamentBar"*ngFor="let torneo of torneos; let i = index">
                 <div id="date">
                     <!-- fecha -->
-                    10-15 Nov
+                    {{torneo.fecha_inicio}}
+                    <!-- {{torneo.fecha_fin}} -->
+
+
                 </div>
 
 
                 <div id="info">
-                    <div id="data">
+                    <div id="data" [ngClass]="torneo.patrocinado === 1 ? 'special' : 'normal'">
                         <div id="name">
-                            Pretorians of the Tomb
+                           {{torneo.nombre_torneo}}
                         </div>
                         <div id="teamsAndTier">
-                            Equipos: 20 | Tier 4
+                            Equipos: {{torneo.numero_equipos}} | Tier {{torneo.tier}}
                         </div>
                         <div id="buttons">
                             <button id="newsButton">Noticia</button>
@@ -75,6 +79,7 @@
     <div id="containerButton" routerLink="../admin-create">
         <button id="createTournamentButton"> Crear Torneo </button>
     </div>
+ 
 
         <!-----------------------------Cambiar pass------------------------------------->
         <div *ngIf="this.pass==true">
@@ -95,7 +100,6 @@
                         <input class="input" type="text" name="pass2" id="pass2" placeholder="Confirma tu nueva contraseña">
                     </div>
                 </div>
-                <button class="boton" on-click="cambiarPass(false)">Aplicar</button>
             </div>
         </div>
 </main>

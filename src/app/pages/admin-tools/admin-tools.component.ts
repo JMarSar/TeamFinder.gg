@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Torneo } from '../../models/torneo';
+import { Torneos } from 'src/app/models/torneos';
+import { TorneosService } from 'src/app/shared/torneos.service';
+
 
 @Component({
   selector: 'app-admin-tools',
@@ -9,25 +11,34 @@ import { Torneo } from '../../models/torneo';
 export class AdminToolsComponent implements OnInit {
 
   public pass: boolean
-  public torneos:Torneo[]
-  public torneo:Torneo;
-  constructor() {
+  public torneos:Torneos[]
+  public torneo:Torneos;
+  public myIndex:number;
+
+  constructor(public apiService : TorneosService) {
     this.pass = false
-    this.torneos = [
-      // new Torneo("PREDATORIANS OF THE TOMB", "20", "4", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "20", "4", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "20", "4", true),
-      // new Torneo("PREDATORIANS OF THE TOMB", "20", "4", false),
-      new Torneo("PREDATORIANS OF THE TOMB", "20", "4", true),
-      new Torneo("PREDATORIANS OF THE TOMB", "20", "4", false),
-      
-    ]
+    this.torneos = []
    }
 
   ngOnInit(): void {
+    this.obtenerTorneos()
   }
+
   cambiarPass(tipo:boolean){
     console.log(this.pass)
     this.pass = tipo
   }
+
+  mostrarTorneo(i:number){
+    this.torneo = this.torneos[i]
+    this.myIndex = i
+  }
+
+  obtenerTorneos(){
+      this.apiService.obtenerTorneos().subscribe((data:any) =>{
+        console.log(data)
+        this.torneos = data.resultado
+      })
+    }
+
 }
