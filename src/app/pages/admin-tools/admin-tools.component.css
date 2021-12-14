@@ -91,10 +91,11 @@ header{
 #containerSearch{
     display: flex;
     flex-direction: row;
-    height: 16%;
+    min-height: 16%;
     width: 100%;
     align-items: center;
     gap: 4%;
+
 }
 .search{
     display: flex;
@@ -177,7 +178,7 @@ header{
 
 #tournamentBar{
     width: 100%;
-    height: 14%;
+    min-height: 14%;
     display: flex;
     
     
@@ -205,10 +206,12 @@ header{
     flex-direction: row;
     justify-items: center;
     align-items: center;
-    padding-left: 1%;
+    text-align: center;
+    padding-left: 0.5%;
     margin-left: 1.5%;
     margin-right: 0.5%;
     font-family:var(--fontRevxMedium);
+    /* font-size: small; */
 }
 #data{
     /* border: solid 1px white; */
@@ -315,6 +318,10 @@ font-family: var(--fontRevxMedium);
 
 
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 
     /* pendiente html
@@ -365,6 +372,7 @@ pendiente scroll
     background-color: transparent;
     display: block;
 }
+
 .fondo{
     height: 100vh;
     position: fixed;
@@ -430,4 +438,11 @@ label{
 }
 .boton:active{
     border: none;
+}
+
+.normal{
+background-color: var(--colorAzulPrimario)
+}
+.Special{
+    background-color: var(--colorRojoPrimario);
 }
