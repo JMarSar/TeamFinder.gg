@@ -1,8 +1,13 @@
+input{ /* arreglado*/
+    padding-left: 1.5vw;
+    border: none;
+    outline: none;
+}
 .padre{
     height: 100vh;
     width: 100vw;
     background-size:100%;
-    background-image: url(../../../assets/img/6270801.png),url(../../../assets/img/fondo_regcom.png); 
+    background-image: url(../../../assets/img/6270801.png),url(../../../assets/img/fondo_regcom.png); /*Arreglado*/
 }
 .logo{
     width: 4.5vw;
@@ -121,9 +126,10 @@
 padding: 12px 16px;
 width: 100px;
 height: 48px;
-background: #CE0037;
-border-radius: 2px;
+background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%); /*Arreglado */
+border-radius: 4px;
 margin-right: 4%;
+border: 0; /*Arreglado */
 }
 .circulo {
     width: 100px;

@@ -120,7 +120,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 10px -20px 20px;
+        margin: 0 10px -10px 20px; /*Arreglo visual */
         font-family: var(--fontTitulos);
         font-size: 138px;
         text-shadow: var(--sombraStrongPlus);

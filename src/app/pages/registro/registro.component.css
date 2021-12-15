@@ -1,8 +1,14 @@
+input{ /* arreglado*/
+    padding-left: 1.5vw;
+    border: none;
+    outline: none;
+}
+
 .padre{
     background-image:url(../../../assets/img/fondo_reg.png);
     height: 100vh;
     background-size: 100%;
-    width: 100vw;
+    width: 100%;
 }
 .logo{
 width: 72px;
@@ -119,9 +125,7 @@ text-align: center;
   width: 50%;
   margin-right: 30%;
 }
-.boton{
- 
-}
+
 .registro{
     
     width: 100px;
@@ -133,6 +137,12 @@ text-align: center;
     border-radius: 4%;
 
 }
+.boton{ /*Arreglado*/
+    margin-top: -4%; 
+    border: 0;
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
+}
+
 .botonDesactivado{
  
     width: 100px;
@@ -142,10 +152,9 @@ text-align: center;
     font-family: var(--fontRevxMedium);
     font-size: var(--sizeCommonBody2);
     color: #FFFFFF;
-    border-radius: 4%;
-    
-
+    border-radius: 4px; /*Arreglado*/
 }
+
 .regresoLogin{
     margin-left: 22%;
     background-color: #560505;
