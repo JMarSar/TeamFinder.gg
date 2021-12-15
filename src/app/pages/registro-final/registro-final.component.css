@@ -20,7 +20,8 @@ margin-left: 9%;
 .titulo{
 font-family: var(--fontRevxBold);
 font-size: 110px;
-margin-left: -3%;
+font-weight: 900;
+margin-left: 2%;
 }
 .confir{
     font-family: var(--fontRevxMedium);
@@ -37,6 +38,8 @@ border-radius: 4px;
 margin-left: 37%;
 margin-top: 6%;
 box-shadow: var(--sombraStrongPlus);
+cursor: pointer;
+border: none;
 }
 
 .leta{

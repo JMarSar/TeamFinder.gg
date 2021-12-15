@@ -25,6 +25,7 @@ margin-top: 2%;
 .title{
 font-family: var(--fontRevxBold);
 font-size: var(--sizeDesktopHeading2);
+font-weight: 900;
 color: #FFFFFF;
 }
 .nombres{

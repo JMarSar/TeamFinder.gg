@@ -33,6 +33,7 @@
         width: 6em;
         font-size: var(--sizeDesktopHeading2);
         font-family: var(--fontRevxBold);
+        font-weight: 900;
         box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.5);
 }
 .tipo > p{
@@ -151,6 +152,7 @@ input:focus, :active :checked,:enabled{
         margin-right: 2vw;
         gap: 1vw;
         font-family: var(--fontRevxBold);
+        font-weight: 900;
         width: 47vw;
         height: 3.8vw;
         padding: 0.3vw;
@@ -176,22 +178,25 @@ input:focus, :active :checked,:enabled{
         font-size: var(--sizeCommonBody1);
         margin-top: 0.2vw;
         font-family: var(--fontRevxMedium);
+        font-weight: 300;
 }
 .nombre{
         font-size: var(--sizeDesktopHeading3);
         font-family: var(--fontRevxBold);
+        font-weight: 800;
+        width: 42%;
         text-shadow: 0px 3px 5px rgb(0, 0, 0, 0.4);
 }
 .nombre:hover{
         color: #a1a1a1;
 }
 .stats{
-        margin-left: 2vw;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 0.2vw;
         font-family: var(--fontRevxMedium);
+        font-weight: 300;
         font-size: var(--sizeCommonBody1);
         background-color:var(--colorAzulOscuroPrimario);
         width: 15vw;
@@ -223,6 +228,7 @@ button{
         height: 6.5vh;
         font-size: var(--sizeCommonBody2);
         font-family: var(--fontRevxMedium);
+        font-weight: 500;
         border: transparent;
         border-radius: 2px;
         box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);

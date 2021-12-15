@@ -55,7 +55,7 @@ public patrocinadoChanged(){
       console.log(data)
     }
       )
-        this.navegar.navigate(["../admin-tools"])
+        this.navegar.navigate(["../crear-torneo"])
         
         this.showToast()
     }

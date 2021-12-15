@@ -68,8 +68,9 @@
     font-size: var(--sizeCommonLabel);
     }
     .titular{
+
         font-family: var(--fontTitulos);
-        font-size: 281px;
+        font-size: 350px;
         text-shadow: var(--sombraStrongPlus)
     }
     .contenido{

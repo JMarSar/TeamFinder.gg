@@ -17,6 +17,7 @@
     margin-top: 1%;
     font-family: var(--fontRevxBold);
     font-size: var(--sizeDesktopHeading2);
+    font-weight: 900;
 }
 .juegos{
     display: flex;

@@ -19,6 +19,7 @@
 .titulo{
     font-family: var(--fontRevxBold);
     font-size: var(--sizeDesktopHeading1);
+    font-weight: 900;
     margin-right: 12%;
 }
 .letrasMitad{

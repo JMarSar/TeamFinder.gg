@@ -59,6 +59,7 @@
         width: 6em;
         font-size: var(--sizeDesktopHeading2);
         font-family: var(--fontRevxBold);
+        font-weight: 900;
         box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.3);
 }
 .ranked > .tipo > p{

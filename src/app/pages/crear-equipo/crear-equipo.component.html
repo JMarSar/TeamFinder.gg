@@ -2,10 +2,10 @@
     <header></header>
     <div id="containerTexts">
         <div id="containerRosterText">
-            Perfil
+            PERFIL
         </div>
         <div id="containerProfileText">
-            Roster
+            ROSTER
         </div>
     </div>
 
@@ -13,12 +13,12 @@
  
     <div id="containerProfile" >
         <img id="logo" src="../../../assets/img/logo_blanco.png" alt="logo" width="30%" height="30%">
-        <p>Imagen</p>
-        <input type="text" name="imagen_url" #imagen_url placeholder="   Url de la imagen" [(ngModel)]="equipoForm.url_imagen.val">
-        <p>Nombre del equipo</p>
-        <input type="text" name="nombre_equipo" #nombre_equipo placeholder="  Introduce el nombre" [(ngModel)]="equipoForm.nombre_equipo.val">
-        <p>Acrónimo del equipo</p>
-        <input type="text" name="acronimo_equipo" #acronimo_equipo placeholder="  Introduce el acrónimo" [(ngModel)]="equipoForm.acronimo_equipo.val">
+        <label>Imagen</label>
+        <input type="text" placeholder="   Url de la imagen">
+        <label>Nombre del equipo</label>
+        <input type="text" placeholder="  Introduce el nombre">
+        <label>Acrónimo del equipo</label>
+        <input type="text" placeholder="  Introduce el acrónimo">
     </div>
    
     <div id="containerRoster">
@@ -63,7 +63,7 @@
     </div>
 </div>
 <div id="containerCreateButton">
-    <button [ngClass]="isValidForm() ? 'createButton' : 'botonDesactivado'" [disabled]="!isValidForm()" on-click="crearEquipo(imagen_url.value, nombre_equipo.value, acronimo_equipo.value)"> CREAR </button>
+    <button [ngClass]="isValidForm() ? 'createButton' : 'botonDesactivado'" [disabled]="!isValidForm()" > CREAR </button>
 </div>
 
 

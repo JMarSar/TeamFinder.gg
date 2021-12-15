@@ -12,6 +12,7 @@
     height: 3vw;
     width: 100%;
     font-family: var(--fontRevxBold);
+    font-weight: 800;
     border-radius: 2vw 0 0 0;
     background-color: var(--colorAzulOscuroPrimario);
 }
@@ -72,6 +73,7 @@
     margin-bottom: 0.8vw;
     padding: 0.5vw 1vw;
     font-family: var(--fontRevxRegular);
+    font-weight: 500;
 }
 .mensaje1{
     border-radius: 5px 5px 0 5px;
@@ -104,6 +106,7 @@
 }
 .text::placeholder{
     font-family:var(--fontRevxRegular); 
+    font-weight: 500;
     color: aliceblue;
 }
 .boton{
@@ -112,6 +115,7 @@
     justify-content: center;
     align-items: center;
     font-family: var(--fontRevxMedium);
+    font-weight: 300;
     font-size: var(--sizeCommonCaptionDefault);
     box-shadow:  0 1px 4px rgb(14, 14, 14, 0.5);
     position: absolute;

@@ -40,16 +40,19 @@ button{
 
 .nombreUser{
     position: relative;
-    font-family: Revx Neue;
+    font-family: var(--fontRevxRegular);
+    font-weight: 600;
     color: #FFFFFF;
 }
 #tool{
     font-size: var(--sizeDesktopHeading1);
     font-family: var(--fontTitulos); 
+    font-weight: 300;
     text-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
 }
 #adminText{
     font-family: var(--fontRevxMedium);
+    font-weight: 500;
     margin-left: -15%;
 }
 /***************************/
@@ -93,6 +96,7 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
     
 }
 
@@ -174,7 +178,7 @@ input{
     border: 0;
     border-radius: 4px;
     text-align: center;
-    color: black;
+    color: var(--colorAzulOscuroPrimario);
     outline: none;
 }
 
@@ -307,6 +311,7 @@ border-radius: 4px;
 }
 h2{
     font-family:var(--fontRevxBold);
+    font-weight: 700;
 }
 .datos{
     font-family: var(--fontRevxMedium);
@@ -357,4 +362,7 @@ width: 100%;
 height: 100%;
 }
 
+button{
+    font-weight: 500;
+}
 

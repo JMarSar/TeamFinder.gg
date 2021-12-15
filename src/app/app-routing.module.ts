@@ -35,6 +35,10 @@ import { InfoEquipoPersonalComponent } from './pages/info-equipo-personal/info-e
 import { InfoEquipoPublicoComponent } from './pages/info-equipo-publico/info-equipo-publico.component';
 import { InfoUsuarioPersonalComponent } from './pages/info-usuario-personal/info-usuario-personal.component';
 import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-usuario-publico.component';
+import { CreateTournamentComponent } from './pages/create-tournament/create-tournament.component';
+import { NormasTorneoComponent } from './pages/normas-torneo/normas-torneo.component';
+import { RegistroFavComponent } from './pages/registro-fav/registro-fav.component';
+
 
 const routes: Routes = [
   { path:  '', component: CrearAdminComponent},
@@ -70,6 +74,11 @@ const routes: Routes = [
   { path:  'info-usuario-personal', component:  InfoUsuarioPersonalComponent},
   { path:  'info-equipo-publico', component:  InfoEquipoPublicoComponent},
   { path:  'info-equipo-personal', component:  InfoEquipoPersonalComponent},
+  { path: 'crear-torneo', component:CreateTournamentComponent},
+  { path: 'crear-equipo', component:CrearEquipoComponent},
+  { path: 'equipo-creado', component:EquipoCreadoComponent},
+  { path: 'normas-torneo', component:NormasTorneoComponent},
+  { path: 'registro-fav', component: RegistroFavComponent}
 ];
 
 @NgModule({

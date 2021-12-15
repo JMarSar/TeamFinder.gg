@@ -39,6 +39,7 @@
 .login{
         font-family: var(--fontRevxBlack);
         font-size: var(--sizeGrande);
+        font-weight: 900;
         text-decoration: underline #CE0037;
         text-decoration-thickness: 2px;
 }

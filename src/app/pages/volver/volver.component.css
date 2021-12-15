@@ -20,6 +20,7 @@ button:hover{
 }
 p{
         font-family: var(--fontRevxMedium);
+        font-weight: 600;
 }
 #flecha {
         margin-top: 0.2vw;
