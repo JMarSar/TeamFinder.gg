@@ -43,6 +43,7 @@ export class LoginComponent implements OnInit {
       }
     }
   }
+  
   isValidForm() {
     return (this.loginForm.nombre.isValid()== true && this.loginForm.contrasena.isValid())
   }
