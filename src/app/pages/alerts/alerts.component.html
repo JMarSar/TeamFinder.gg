@@ -3,9 +3,8 @@
     <div id="containerAlerts">
         <h3 id="textAlert">Alertas</h3>
         <div id="containerAlertMsg">
+            <div class="mensaje" *ngIf="this.mensaje ==true"> No tienes alertas en este momento</div>
             <div class="alertas">
-
-
             <div class="alerta" *ngFor="let alert of this.ServicioAlertas.listaAlertas let i=index">
                 <div class="mensaje" >
                     <div>

@@ -9,7 +9,10 @@ import { LoginService } from '../../shared/login.service';
 })
 export class AlertsComponent implements OnInit {
   public alertMsg = []
-  constructor(public ServicioAlertas: AlertasService, public ServicioLogin: LoginService) { }
+  public mensaje:boolean
+  constructor(public ServicioAlertas: AlertasService, public ServicioLogin: LoginService) {
+    this.mensaje = false
+   }
 
   ngOnInit(): void {
     this.mostrar()
@@ -22,6 +25,10 @@ export class AlertsComponent implements OnInit {
     .subscribe((data:any)=>{
       console.log(data)
       this.ServicioAlertas.listaAlertas = data.resultado
+      if (this.ServicioAlertas.listaAlertas.length ==0){
+        this.mensaje = true
+        
+      }
     })
   }
   aceptar(index:number)
