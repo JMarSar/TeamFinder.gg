@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PerfilService } from 'src/app/shared/perfil.service';
 import { Chart, registerables } from 'node_modules/chart.js'
+import { LoginService } from '../../shared/login.service';
 
 @Component({
   selector: 'app-info-usuario-personal',
@@ -8,7 +10,11 @@ import { Chart, registerables } from 'node_modules/chart.js'
 })
 export class InfoUsuarioPersonalComponent implements OnInit {
 
-  constructor() {
+  public info:any;
+
+  constructor(public perfilServicio:PerfilService, public servicioLogin:LoginService) {
+    this.info = this.perfilServicio;
+    console.log()
     Chart.register(...registerables)
   }
 
@@ -40,5 +46,13 @@ export class InfoUsuarioPersonalComponent implements OnInit {
         rotation: 0
       }
     });
+  }
+
+  public datos(){
+    this.perfilServicio.Perfil()
+    .subscribe((data:any)=>{
+      console.log(data)
+      this.perfilServicio.nickname = data.resultado[0].nickname
+    })
   }
 }

@@ -128,7 +128,7 @@ input{
     padding-top: 1%;
     padding-bottom: 1%;
 }
-#createButton{
+.createButton{
     color: white;
     font-family: var(--fontRevxBold);
     font-size:x-large;
@@ -227,3 +227,14 @@ input{
     flex-direction: column;
 }
 
+.botonDesactivado{
+    width: 100px;
+    height: 48px;
+    background: #CAD2DA;
+    border-radius: 2px;
+    font-family: var(--fontRevxMedium);
+    font-size:(var(--sizeCommonBody2));
+    color: #FFFFFF;
+    border-radius: 2px;
+    border: none;
+}
