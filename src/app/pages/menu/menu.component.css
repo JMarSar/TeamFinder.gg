@@ -43,7 +43,9 @@
     align-items: center;
     gap: 1vw;
     margin-bottom: 2vw;
-    font-size: var(--sizeDesktopHeading4);margin-bottom: 1vw;
+    font-size: var(--sizeDesktopHeading4);
+    font-weight: 900;
+    margin-bottom: 1vw;
 }
 .imagen{
     height: 4vw;

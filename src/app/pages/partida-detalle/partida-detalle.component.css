@@ -80,6 +80,7 @@ button:hover{
 .nombreEquipo{
         font-family: var(--fontTitulos);
         font-size: var(--sizeTitulos);
+        text-transform: uppercase;
 }
 .capitan{
         font-size: var(--sizeCommonBody2);
@@ -90,7 +91,7 @@ button:hover{
         padding:0.1vh;
         padding-left: 1vh;
         padding-right: 1vh;
-        margin-top: -0.5vh;
+        margin-top: -0.5;
 }
 .botones{
         display: flex;
@@ -121,6 +122,7 @@ button:hover{
         width: 6em;
         font-size: var(--sizeDesktopHeading2);
         font-family: var(--fontRevxBold);
+        font-weight: 800;
         box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.5);
 }
 .ranked > .tipo > p{

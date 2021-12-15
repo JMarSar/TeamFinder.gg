@@ -40,6 +40,7 @@ button{
         height: 6.5vh;
         font-size: var(--sizeCommonBody2);
         font-family: var(--fontRevxMedium);
+        font-weight: 600;
         border: transparent;
         border-radius: 2px;
         box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
@@ -98,12 +99,14 @@ button:hover{
         width: 6em;
         font-size: var(--sizeDesktopHeading2);
         font-family: var(--fontRevxBold);
+        font-weight: 900;
         box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.3);
 }
 .ranked > .tipo > p{
         background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: 900;
 }
 .amistosa > .tipo > p{
         background: -webkit-linear-gradient(-90deg, #123D66 0%, #102A42 100%);

@@ -18,12 +18,12 @@
         height: 90%;
         width: 60%;
         margin-top: 10%;
-        margin-left: 6%;
+        margin-left: 10%;
 }
 .resultados-anteriores {
         display: flex;
         flex-direction: column;
-        height: 50%;
+        height: 45%;
 }
 .top-heading {
         display: flex;
@@ -137,7 +137,7 @@
         font-size: var(--sizeDesktopHeading4);
 }
 .proximo-partido {
-        height: 50%;
+        height: 30%;
         padding: 0 0 0 0;
 }
 .proximo-partido-display {
@@ -151,10 +151,11 @@
         box-shadow: var(--sombraStrongPlus);
 }
 .proximo-partido-display > h1 {
-        margin-top: 20px;
         margin-left: 20px;
         font-family: var(--fontTitulos);
         font-size: var(--sizeDisplay);
+        font-weight: 400;
+        text-transform: uppercase;
 }
 
 .right-container {

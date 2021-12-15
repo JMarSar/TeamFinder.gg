@@ -75,6 +75,7 @@ body{
 .mensaje{
     font-size: var(--sizeCommonLabel);
     font-family: var(--fontRevxMedium);
+    font-weight: 500;
     color: white;
     height: 5vw;
     display: flex;
@@ -93,6 +94,7 @@ body{
 }
 .boton{
     font-family: var(--fontRevxMedium);
+    font-weight: 400;
     width: 5vw;
     height: 3vw;
     border: none;

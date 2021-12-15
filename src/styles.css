@@ -1,24 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karantina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+
 @font-face {
-        font-family: Porton;
-        src: url(assets/porton/Porton\ -\ Bold.otf) format("opentype");
+        font-family: Karantina;
 }
-@font-face {
+/* @font-face {
         font-family: RevxBold;
         src: url(assets/revx-neue-10008162/RevxNeue\ Bold.ttf) format("opentype");
 }
 @font-face {
         font-family: RevxBlack;
         src: url(assets/revx-neue-10008162/RevxNeue\ Black.ttf) format("opentype");
-}
+} */
 @font-face {
-        font-family: RevxRegular;
-        src: url(assets/revx-neue-10008162/RevxNeue\ Regular.ttf) format("opentype");
+        font-family: Oxanium;
 }
-@font-face {
+/* @font-face {
         font-family: RevxMedium;
         src: url(assets/revx-neue-10008162/RevxNeue\ Medium.ttf) format("opentype");
-}
+} */
 
 * {
         margin: 0;
@@ -26,6 +29,7 @@
         color: var(--colorBlancoPrimario);
         box-sizing: border-box;
 }
+
 :root {
         /* COLORES .*/
         --colorRojoPrimario: #CE0037;
@@ -50,7 +54,7 @@
         --sombraStrongPlus: 0px 8px 11px rgba(0, 0, 0, 0.4);
 
         /* TEXTOS */
-        --sizeGrande: 6rem;
+        --sizeGrande: 7rem;
         --sizeDisplay: 5.625rem;
         --sizeTitulares: 4rem;
         --sizeDesktopHeading1: 3rem;
@@ -66,12 +70,14 @@
         --sizeCommonLabel: 1rem;
         --sizeCommonCaptionDefault: 0.875rem;
 
+
+
         /* FUENTES */
-        --fontTitulos: Porton;
-        --fontRevxBold: RevxBold;
-        --fontRevxMedium: RevxMedium;
-        --fontRevxRegular: RevxRegular;
-        --fontRevxBlack: RevxBlack;
+        --fontTitulos: Karantina;
+        --fontRevxBold: Oxanium;
+        --fontRevxMedium: Oxanium;
+        --fontRevxRegular: Oxanium;
+        --fontRevxBlack: Oxanium;
 }
 .toast-container{
         font-family: var(--fontRevxRegular);

@@ -66,8 +66,8 @@ li{
     border-bottom: solid 4px rgb(255, 255, 255);
     margin-bottom: 1em;
     display: inline;
-    font-family: Porton;
-    font-weight: bold;
+    font-family: var(--fontTitulos);
+    font-weight: 300;
     font-size: 52px;
     justify-content: center;
     color: #FFFFFF;
@@ -123,8 +123,8 @@ li{
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
-    font-family: Porton;
-    font-weight: bold;
+    font-family: var(--fontTitulos);
+    font-weight: 300;
 }
 .match{
     color: white;
@@ -162,10 +162,12 @@ li{
     color:#FFFFFF;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     font-style: normal;
-    font-family: Revx Neue;
+    font-family: var(--fontRevxMedium);
     font-weight: bold;
     text-shadow: 0.1em 0.1em 0.2em black;
     font-size: 16px;
@@ -195,7 +197,7 @@ a:link, a:visited, a:active {
     display: inline-block;
     padding: 3px;
     position: absolute;
-    left: 179px;
+    left: 199px;
     top: 38px;
     box-shadow: 0px 8px 11px 1px rgba(0, 0, 0, 0.4);
     text-shadow: 0.1em 0.1em 0.2em black;
@@ -206,7 +208,7 @@ a:link, a:visited, a:active {
 }
 .nombreUser{
     position: relative;
-    font-family: Revx Neue;
+    font-family: var(--fontRevxMedium);
     color: #FFFFFF;
     text-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.7);
 }

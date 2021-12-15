@@ -18,7 +18,8 @@
 .welcome{
         width: fit-content;
         font-family: var(--fontRevxMedium);
-        font-size: 40px;
+        font-weight: 800;
+        font-size: var(--sizeDesktopHeading1);
         color: white;
         height: 85%;
         border-bottom:  2px solid #CE0037;
@@ -53,10 +54,12 @@
         width: 30%;
         height: 100%;
         font-family: var(--fontRevxMedium);
+        
         color: white;
 }
 .tipo{
         font-family: var(--fontRevxBold);
+        font-weight: 900;
 }
 .datos{
         display: flex;
@@ -109,6 +112,7 @@ button{
         border: transparent;
         font-family: var(--fontRevxMedium);
         background:white;
+        font-weight: 600;
         color: var(--colorRojoPrimario);
         height: 12%;
         width: 11%;
@@ -118,8 +122,6 @@ button{
         transition: all .2s ease-in-out;
         transition-property: height, width,box-shadow;
 }
-
-
 .img{
         position: absolute;
 }

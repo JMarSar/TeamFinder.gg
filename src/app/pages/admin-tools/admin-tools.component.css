@@ -69,6 +69,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* overflow: scroll; */
 }
 
 #containerBig{
@@ -116,7 +117,10 @@ header{
     border-radius: 4px;
     border: 0;
     text-align: center;
-    color: black;
+    color: var(--colorAzulOscuroPrimario);
+    font-family: var(--fontRevxMedium);
+    font-weight: 600;
+    
 }
 
 
@@ -125,6 +129,9 @@ header{
     background-position:1vw;
     background-size: 3vh;
     background-repeat:no-repeat;
+    font-family: var(--fontRevxMedium);
+    font-weight: 600;
+
 }
 
 #containerButtons{
@@ -207,16 +214,19 @@ header{
     justify-items: center;
     align-items: center;
     text-align: center;
-    padding-left: 0.5%;
+    padding-left: 1%;
     margin-left: 1.5%;
     margin-right: 0.5%;
     font-family:var(--fontRevxMedium);
+    font-weight: 600;
     /* font-size: small; */
+    border-radius: 2px;
+
 }
 #data{
     /* border: solid 1px white; */
    
-    width: 100%;
+    width: 45vw;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -224,6 +234,8 @@ header{
     align-items: center;
     font-family:var(--fontRevxMedium);
     gap: 1%;
+    font-weight: 600;
+    border-radius: 4px;
     
 }
 .special{
@@ -314,6 +326,8 @@ font-family: var(--fontRevxMedium);
     border: 0;
     border-radius: 4px;
     font-family: var(--fontRevxMedium);
+    font-weight: 400;
+    font-size: var(--sizeCommonSubtitle);
 }
 
 

@@ -176,6 +176,7 @@ input:focus, :active :checked,:enabled{
 }
 .rank{
         font-size: var(--sizeDesktopHeading4);
+        font-weight: 800;
 }
 .numeroRank{
         font-size: var(--sizeCommonBody1);
@@ -194,6 +195,7 @@ input:focus, :active :checked,:enabled{
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: var(--sizeDesktopHeading3);
+        font-weight: 800;
         /* text-shadow: 0px 3px 5px rgb(0, 0, 0, 0.4); */
 }
 .botones{
