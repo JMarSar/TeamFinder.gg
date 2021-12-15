@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BuscarEquipoService {
 
-  public url = "http://localhost:3140/equipos"
+  public url = "https://api-team-finder.herokuapp.com/equipos"
   public nombre_equipo :string
 
   constructor(private http:HttpClient) { }

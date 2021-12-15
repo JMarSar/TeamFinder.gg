@@ -9,24 +9,10 @@ import { MenuLateralService } from 'src/app/shared/menu-lateral.service';
 })
 export class HeaderComponent implements OnInit {
   
-  constructor(public ServicioLogin: LoginService) {
+  constructor(public ServicioLogin: LoginService, public ServicioMenu: MenuLateralService) {
   }
 
   ngOnInit(): void {
-  }
-  refresh(): void {
-    window.location.reload();
-  }
-  abrirMenu(){
-    let menu = document.getElementById("menu")
-    menu.style.display = "block"
-    let lateral = document.getElementById("lateral")
-    lateral.style.marginLeft ="0"
-  }
-  cerrarMenu(){
-    let menu = document.getElementById("menu")
-    menu.style.display = "none"
-    console.log(menu.style.display)
   }
 
 }

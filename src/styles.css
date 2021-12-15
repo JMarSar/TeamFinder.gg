@@ -50,21 +50,21 @@
         --sombraStrongPlus: 0px 8px 11px rgba(0, 0, 0, 0.4);
 
         /* TEXTOS */
-        --sizeGrande: 96px;
-        --sizeDisplay: 90px;
-        --sizeTitulares: 64px;
+        --sizeGrande: 6rem;
+        --sizeDisplay: 5.625rem;
+        --sizeTitulares: 4rem;
         --sizeDesktopHeading1: 3rem;
-        --sizeTitulos: 45px;
-        --sizeTitulosHeader: 42px;
-        --sizeDesktopHeading2: 40px;
-        --sizeNames: 32px;
+        --sizeTitulos: 2.8rem;
+        --sizeTitulosHeader: 2.625rem;
+        --sizeDesktopHeading2: 2.5rem;
+        --sizeNames: 2rem;
         --sizeDesktopHeading3: 2rem;
-        --sizeDesktopHeading4: 24px;
-        --sizeCommonSubtitle: 20px;
-        --sizeCommonBody1: 20px;
-        --sizeCommonBody2: 16px;
-        --sizeCommonLabel: 16px;
-        --sizeCommonCaptionDefault: 14px;
+        --sizeDesktopHeading4: 1.5rem;
+        --sizeCommonSubtitle: 1.25rem;
+        --sizeCommonBody1: 1.25rem;
+        --sizeCommonBody2: 1rem;
+        --sizeCommonLabel: 1rem;
+        --sizeCommonCaptionDefault: 0.875rem;
 
         /* FUENTES */
         --fontTitulos: Porton;

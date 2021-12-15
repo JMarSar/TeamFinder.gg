@@ -23,7 +23,7 @@
                 </div>
                 <li><a class="texto" routerLink="ranking">Ranking</a></li>            
             </div>
-            <div class="colocarImagenPerfil" (click) = "abrirMenu()" >
+            <div class="colocarImagenPerfil" (click) = "this.ServicioMenu.activar(true)" >
                 <div class="iconoPerfil" >
                     <div class="foto"></div>
                 </div>
@@ -32,17 +32,17 @@
         </div>
         <hr class="lineaSeparadora">
     </div>
-    <div  id="menu" >
+    <!-- <div  id="menu" >
         <div class="equis" (click) = "cerrarMenu(); refresh()" ></div>
         <div class="fondo" ></div>
         <div id = "lateral">
             <app-menu></app-menu>
         </div>
-        <!-- <div id="alertas">
+        <div id="alertas">
             <app-alerts></app-alerts>
         </div>
         <div id="chat">
             <app-lista-chats></app-lista-chats>
-        </div> -->
+        </div>
 
-    </div>
+    </div> -->

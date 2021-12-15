@@ -7,6 +7,7 @@ export class MenuLateralService {
 
   public activo :boolean
   constructor() {
+    this.activo = false
     
    }
 

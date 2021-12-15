@@ -8,7 +8,7 @@ import { Login } from '../models/login';
 })
 export class LoginService {
 
-  public url = "http://localhost:3140/login"
+  public url = "https://api-team-finder.herokuapp.com/login"
   public id : number
   public nombre:string
   public password:string

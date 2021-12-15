@@ -1,10 +1,22 @@
 <body>
+    <div class="fondo" on-click="cerrar(false)"></div>
     <div id="containerAlerts">
         <h3 id="textAlert">Alertas</h3>
         <div id="containerAlertMsg">
-            <div *ngFor="let alert of alertMsg">
-                <p>{{alertMsg[0]}}</p>
-                <hr>
+            <div class="alertas">
+
+
+            <div class="alerta" *ngFor="let alert of this.ServicioAlertas.listaAlertas let i=index">
+                <div class="mensaje" >
+                    <div>
+                        {{alert.mensaje}}
+                    </div>
+                </div>
+                <div class="botones">
+                    <button class="boton aceptar" on-click="aceptar(i)">Aceptar</button>
+                    <button class="boton rechazar" on-click="rechazar(i)">Rechazar</button>
+                </div>
+            </div>
             </div>
         </div>
     </div> 

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
+import { MenuLateralService } from './shared/menu-lateral.service';
+import { AlertasService } from './shared/alertas.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +10,5 @@ import { Location } from '@angular/common';
 })
 export class AppComponent {
   title = 'teamFinder';
-  constructor(public routeLocation :Location){}
+  constructor(public routeLocation :Location , public ServicioMenu:MenuLateralService, public ServicioAlertas: AlertasService){}
 }

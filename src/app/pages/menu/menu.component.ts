@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertasService } from 'src/app/shared/alertas.service';
 import { LfmService } from 'src/app/shared/lfm.service';
 import { LoginService } from 'src/app/shared/login.service';
 import { MenuLateralService } from 'src/app/shared/menu-lateral.service';
@@ -10,25 +11,23 @@ import { MenuLateralService } from 'src/app/shared/menu-lateral.service';
 })
 export class MenuComponent implements OnInit {
 
-  public chats:boolean
-  public alertas : boolean
-  constructor(public ServicioLfm:LfmService, public ServicioLogin:LoginService) {
-    this.chats = false
-    this.alertas = false
+  constructor(public ServicioLfm:LfmService, public ServicioLogin:LoginService, public ServicioMenu:MenuLateralService, 
+              public ServicioALertas:AlertasService) {
+
    }
 
-  abrirchats(){
-    this.chats = true 
-    document.getElementById("navMenu").style.display = "none"
+  abrirchats(tipo:boolean){
   }
-  abrirAlertas(){
-    this.alertas = true 
-    document.getElementById("navMenu").style.display = "none"
+  abrirAlertas(tipo:boolean){
+    this.ServicioALertas.activar(tipo)
   }
   ngOnInit(): void {
   }
   cambiarLfm(){
     this.ServicioLfm.cambiarLfm(this.ServicioLogin.id,0)
+  }
+  cerrar(tipo:boolean){
+    this.ServicioMenu.activar(tipo)
   }
 
 }
