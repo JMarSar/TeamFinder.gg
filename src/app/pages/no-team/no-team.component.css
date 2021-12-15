@@ -49,6 +49,8 @@ h1{
     text-transform: uppercase;
     color: white;
     width: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
     height: 18%;
     text-align: center;
     text-shadow: 0px 2px 5px rgb(0, 0, 0, 0.4);
