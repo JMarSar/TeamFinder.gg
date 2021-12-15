@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LfrBuscarService {
 
-  public url = "http://localhost:3140/lfr"
+  public url = "https://api-team-finder.herokuapp.com/lfr"
   public equipo: any
   public cancelar:boolean
 
