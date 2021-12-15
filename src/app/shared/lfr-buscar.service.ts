@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LfrBuscarService {
 
-  public url = "https://api-team-finder.herokuapp.com/lfr"
+  public url = "http://localhost:3140/lfr"
   public equipo: any
   public cancelar:boolean
 
@@ -16,5 +16,12 @@ export class LfrBuscarService {
   buscar(){
     console.log("recibido servicio")
     return this.http.get(this.url)
+  }
+  introducir(id:string, lfr:string){
+    let data ={
+      id: id,
+      lfr : lfr
+    }
+    return this.http.put(this.url,data)
   }
 }
