@@ -20,7 +20,7 @@
                         <div class="equipos">
                                 <div class="lista">
                                         <ng-container *ngIf="this.elegido == true">
-                                                <div class="etiquetaEquipo" *ngFor="let equipo of this.ServicioRank.listaEquipos" >
+                                                <div class="etiquetaEquipo" *ngFor="let equipo of this.ServicioRank.listaEquipos let i=index" >
                                                         <div class="ranking">
                                                                 <div class="rank">Rank</div>  
                                                                 <div class="numeroRank">223</div> 
@@ -39,14 +39,14 @@
                                                 </div>
                                         </ng-container>
                                         <ng-container *ngIf="this.elegido == false">
-                                                <div class="etiquetaEquipo" *ngFor="let jugador of this.ServicioRankJugador.listaJugadores" >
+                                                <div class="etiquetaEquipo" *ngFor="let jugador of this.ServicioRankJugador.listaJugadores let i=index" >
                                                         <div class="ranking">
                                                                 <div class="rank">Rank</div>  
                                                                 <div class="numeroRank">{{jugador.rk_servidor}}</div> 
                                                                 <div class="numeroRank linea">|</div>   
                                                         </div>
                                                         <div class="nick">
-                                                                <div class="nombre" routerLink="../info-usuario-publico">{{jugador.nickname}}</div>  
+                                                                <div class="nombre" on-click = "mostrarJugador(i)">{{jugador.nickname}}</div>  
                                                                 <div class="posicion">{{jugador.posicion}}</div>
                                                         </div>
 

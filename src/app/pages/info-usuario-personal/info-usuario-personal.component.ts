@@ -20,6 +20,7 @@ export class InfoUsuarioPersonalComponent implements OnInit {
 
 
   ngOnInit() {
+    console.log(this.servicioLogin.imagen)
     const myChart = new Chart("myChart", {
       type: 'doughnut',
       data: {

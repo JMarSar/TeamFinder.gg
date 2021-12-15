@@ -49,7 +49,7 @@ export class EquiposComponent implements OnInit {
   llevar(index:number){
     console.log(index)
     this.ServicioEquipos.equipoMarcado(index)
-    this.navegar.navigate(["../info-equipo-personal"])
+    this.navegar.navigate(["../info-equipo-publico"])
   }
   unirse(index:number){
     console.log("hola")

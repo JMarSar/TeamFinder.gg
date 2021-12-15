@@ -68,7 +68,13 @@
 .perfil-logo-imagen {
         height: 110%;
         width: auto;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
         border-radius: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 }
 
 .perfil-elo, .perfil-equipo {

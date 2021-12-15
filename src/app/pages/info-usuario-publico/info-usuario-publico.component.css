@@ -1,0 +1,352 @@
+.main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 50px;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 10vh;
+        background: url(../../../assets/img/fondo_basico_for_gamers.jpg);
+        background-size: 100%;
+}
+
+.left-container {
+        display: flex;
+        flex-direction: row;
+        height: 70%;
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 9%;
+        border-radius: 4px;
+}
+
+.perfil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 45%;
+        background-color: var(--colorAzulSecundario);
+        border-radius: 4px 0 0 4px;
+        padding: 24px 0 2% 0;
+        gap: 5%;
+}
+.perfil-nombre {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: 48px;
+        gap: 8px;
+        
+}
+.perfil-nombre-barra-azul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 90%;
+        padding-left: 7%;
+        background-color: var(--colorAzulPrimario);
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeDesktopHeading3);
+}
+.perfil-nombre-barra-blanco {
+        height: 100%;
+        width: 16px;
+        background-color: white;
+}
+
+.perfil-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        width: 130px;
+        border-radius: 100%;
+        overflow: hidden;
+}
+.perfil-logo-imagen {
+        height: 110%;
+        width: auto;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.perfil-elo, .perfil-equipo {
+        display: flex;
+        align-items: center;
+        height: 20%;
+        width: 100%;
+        background-color: var(--colorAzulPrimario);
+}
+.perfil-elo-badge, .perfil-equipo-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 40%;
+}
+.perfil-elo-badge > img, .perfil-equipo-logo > img {
+        height: 100%;
+        width: auto;
+}
+.perfil-elo-info, .perfil-equipo-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80%;
+        width: 60%;
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeCommonLabel);
+}
+.elo-q  {
+        color: gray;
+        font-size: var(--sizeCommonCaptionDefault);
+}
+.lps, .Wr {
+        color: gray;
+}
+/* .equipo-percent-bar, .elo-percent-bar {
+        height: 5px;
+        width: 90%;
+        background-color: rebeccapurple;
+} */
+
+.estadisticas{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 55%;
+        background-color: var(--colorAzulPrimario);
+        border-radius: 0 4px 4px 0;
+        padding: 24px 0 2% 0;
+        gap: 5%;
+}
+.estadisticas-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        height: 48px;
+        gap: 8px;
+}
+.estadisticas-header-barra-grande {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 85%;
+        background-color: white;     
+}
+.estadisticas-header-barra-grande > h4 {
+        padding-top: 1%;
+        padding-right: 15%;
+        font-family: var(--fontRevxBold);
+        font-size: var(--sizeDesktopHeading4);
+        color:  var(--colorAzulPrimario);
+} 
+.estadisticas-header-barra-chica {
+        height: 100%;
+        width: 16px;
+        background-color: white;     
+}
+
+
+.mid-container-estadisticas{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 50%;
+        width: 95%;
+        margin-left: 5%;;
+}
+.estadisticas-datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeCommonSubtitle);
+}
+.estadisticas-datos-top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20% ;
+}
+.kda-datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 5%;
+}
+.estadisticas-datos-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 5%;;
+}
+.chart-info {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        width: 100%;
+        gap: 8px;
+}
+.chart-top-info {
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeDesktopHeading4);
+        padding-left: 24px;
+}
+.chart-bottom-info {
+        display: flex;
+        flex-direction: row;
+}
+.chart-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 180px;
+}
+
+.bottom-container-stadisticas {
+        display: flex;
+        flex-direction: column;
+}
+.bottom-container-stadisticas-header {
+        display: flex;
+        flex-direction: row;
+        height: 48px;
+        width: 100%;
+        gap: 8px;
+}
+.bottom-container-stadisticas-header-barra-grande {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+        background-color: white;
+        color: var(--colorAzulSecundario);
+}
+.bottom-container-stadisticas-header-barra-grande > h4 {
+        padding-top: 1%;
+        padding-left: 15%;
+        font-family: var(--fontRevxBold);
+        font-size: var(--sizeDesktopHeading4);
+        color:  var(--colorAzulPrimario);
+}
+.bottom-container-stadisticas-header-barra-chica {
+        height: 100%;
+        width: 16px;
+        background-color: white;
+}
+.server {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 2.5%;
+        font-family: var(--fontRevxBold);
+        font-size: var(--sizeDesktopHeading4);
+        gap: 10%;
+}
+.server-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        overflow: hidden;
+}
+.server-image > img {
+        height: auto;
+        width: 110%;
+
+}
+
+
+.right-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 55%;
+        width: 35%;
+        margin-top: 5%;
+        gap: 5%;
+        padding: 24px 0 2% 0;
+        background-color: var(--colorAzulPrimario);
+        border-radius: 4px;
+}
+.right-container-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 48px;
+        width: 100%;
+        gap: 8px;
+}
+.right-container-header-barra-grande {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        background-color: white;
+}
+.right-container-header-barra-grande > h4 {
+        padding-top: 1%;
+        padding-right: 15%;
+        font-family: var(--fontRevxBold);
+        font-size: var(--sizeDesktopHeading4);
+        color:  var(--colorAzulPrimario);
+}
+.right-container-header-barra-chica {
+        width: 16px;
+        height: 100%;
+        background-color: white;
+}
+.wrap-estadisticas {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 90%;
+        margin: 0 5%;
+        gap: 16px;
+}
+
+.cuadro-estadistica {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 45%;
+        width: 27.5%;
+        gap: 10%;
+        background-color: var(--colorAzulSecundario);
+        border-radius: 4px;
+        font-family: var(--fontRevxRegular);
+}
+.dato-estadistica {
+        text-align: center;
+        font-size: var(--sizeDesktopHeading2);
+}
+.titulo-estadistica {
+        text-align: center;
+        font-size: var(--sizeCommonBody1);
+}

@@ -1,0 +1,148 @@
+<div class="main-container">
+        <div class="left-container">
+            <div class="perfil">
+                <div class="perfil-logo">
+                    <img class="perfil-logo-imagen" style="background-image:url({{this.servicioLogin.imagen}});">
+                </div>
+                <div class="perfil-nombre">
+                    <div class="perfil-nombre-barra-azul">
+                        <h3>{{this.servicioLogin.nombre}}</h3>
+                    </div>
+                    <div class="perfil-nombre-barra-blanco"></div>
+                </div>
+                <div class="perfil-elo">
+                    <div class="perfil-elo-badge">
+                        <img src="../../../assets/img/grandmaster.badge.png" alt="">
+                    </div>
+                    <div class="perfil-elo-info">
+                        <span class="elo-q">Ranked Solo</span>
+                        <span>Grandmaster <span class="lps">· 686 LP</span></span>
+                        <span><span class="Wr">608W 560L · </span>51.7%</span>
+                        <!-- <div class="elo-percent-bar"></div> -->
+                    </div> 
+                </div>
+                <div class="perfil-equipo">
+                    <div class="perfil-equipo-logo">
+                        <img src="../../../assets/img/origen-logo.webp" alt="">
+                    </div>
+                    <div class="perfil-equipo-info">
+                        <span>| Origen |</span>
+                        <span><span class="Wr">31W 34L · </span>47.7%</span>
+                        <!-- <div class="equipo-percent-bar"></div> -->
+                    </div>
+                </div> <!-- NgIf si tiene equipo -->
+                <!-- <div class="perfil-campeones"></div> --> <!-- Duda de ponerlo -->
+            </div>
+            <div class="estadisticas">        
+                <div class="estadisticas-header">
+                    <div class="estadisticas-header-barra-chica"></div>
+                    <div class="estadisticas-header-barra-grande">
+                        <h4>Estadísticas</h4>
+                    </div>
+                </div>
+                <div class="mid-container-estadisticas">
+                    <div class="chart-info">
+                        <span class="chart-top-info">
+                            608W / 560L
+                        </span>
+                        <div class="chart-bottom-info">
+                            <div class="chart-container">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                            <div class="estadisticas-datos">
+                                <div class="estadisticas-datos-top">
+                                    <div class="kda-datos">
+                                        <div class="k1">5.1</div>
+                                        /
+                                        <div class="d1">4.3</div>
+                                        /
+                                        <div class="a1">4.2</div>
+                                    </div>
+                                </div>
+                                <div class="estadisticas-datos-bottom">
+                                    <div class="kda-ratio">
+                                        3.72:1
+                                    </div>
+                                    <div class="ckrate">
+                                        (51%)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-container-stadisticas">
+                    <div class="bottom-container-stadisticas-header">
+                        <div class="bottom-container-stadisticas-header-barra-grande">
+                            <h4>Servidor</h4>
+                        </div>
+                        <div class="bottom-container-stadisticas-header-barra-chica"></div>
+                    </div>
+                    <div class="server">
+                        <div class="server-image">
+                            <img src="../../../assets/img/EUW_server.png" alt="">
+                        </div>
+                        <h5>EUW</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="right-container-header">
+                <div class="right-container-header-barra-chica"></div>
+                <div class="right-container-header-barra-grande">
+                    <h4>Rendimiento</h4>
+                </div>
+            </div>
+            <div class="wrap-estadisticas">
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        -20
+                    </div>
+                    <div class="titulo-estadistica">
+                        GD@15
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        21,9%
+                    </div>
+                    <div class="titulo-estadistica">
+                        Gold Share
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        19.8%
+                    </div>
+                    <div class="titulo-estadistica">
+                        Damage Share
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        -55,6
+                    </div>
+                    <div class="titulo-estadistica">
+                        DMG/M-D
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        0.3
+                    </div>
+                    <div class="titulo-estadistica">
+                        Solo Deaths
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        18.9
+                    </div>
+                    <div class="titulo-estadistica">
+                        Vision Score
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

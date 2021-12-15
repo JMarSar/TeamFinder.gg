@@ -7,7 +7,7 @@ import { LoginService } from './login.service';
 })
 export class ConectarService {
 
-  public url = "http://localhost:3140/conectar"
+  public url = "https://api-team-finder.herokuapp.com/conectar"
   public estado :string
   
   constructor(public http: HttpClient, public ServicioLogin:LoginService) { 

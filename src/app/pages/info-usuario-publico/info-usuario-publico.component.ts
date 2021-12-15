@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Conexiones } from 'src/app/models/conexiones';
-import { DiaInfo } from 'src/app/models/dia-info';
-import { Estadistica } from 'src/app/models/estadistica';
+import { PerfilService } from 'src/app/shared/perfil.service';
+import { Chart, registerables } from 'node_modules/chart.js'
+import { LoginService } from '../../shared/login.service';
 
 @Component({
   selector: 'app-info-usuario-publico',
@@ -9,9 +9,50 @@ import { Estadistica } from 'src/app/models/estadistica';
   styleUrls: ['./info-usuario-publico.component.css']
 })
 export class InfoUsuarioPublicoComponent implements OnInit {
+  public info:any;
 
-  constructor() {}
-  
-  ngOnInit(): void {
+  constructor(public perfilServicio:PerfilService, public servicioLogin:LoginService) {
+    this.info = this.perfilServicio;
+    console.log()
+    Chart.register(...registerables)
+  }
+
+
+  ngOnInit() {
+    console.log(this.servicioLogin.imagen)
+    const myChart = new Chart("myChart", {
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Derrota',
+          'Victoria',
+        ],
+        datasets: [{
+          label: 'Win Ratio',
+          data: [560, 608],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)'
+          ]
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: false
+          }
+        },
+        rotation: 0
+      }
+    });
+  }
+
+  public datos(){
+    this.perfilServicio.Perfil()
+    .subscribe((data:any)=>{
+      console.log(data)
+      this.perfilServicio.nickname = data.resultado[0].nickname
+    })
   }
 }

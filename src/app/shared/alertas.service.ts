@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class AlertasService {
 
   public activo :boolean
-  public url = "http://localhost:3140/alertas"
+  public url = "https://api-team-finder.herokuapp.com/alertas"
   public listaAlertas = []
   constructor( private http:HttpClient) {
     this.activo = false

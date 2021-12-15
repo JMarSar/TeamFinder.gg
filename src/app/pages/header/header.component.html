@@ -24,9 +24,7 @@
                 <li><a class="texto" routerLink="ranking">RANKING</a></li>            
             </div>
             <div class="colocarImagenPerfil" (click) = "this.ServicioMenu.activar(true)" >
-                <div class="iconoPerfil" >
-                    <div class="foto"></div>
-                </div>
+                <div class="iconoPerfil" style="background-image:url({{this.ServicioLogin.imagen}});" ></div>
                 <p class="nombreUser">{{this.ServicioLogin.nombre}}</p>
             </div>
         </div>

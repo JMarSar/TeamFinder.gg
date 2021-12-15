@@ -4,13 +4,13 @@
     <nav id="navMenu">
         <div id="aPlayer">
             <p>{{this.ServicioLogin.nombre}}</p>
-            <div class="imagen"></div>
+            <div class="imagen" style="background-image:url({{this.ServicioLogin.imagen}});"></div>
         </div>    
         <div class="apartado">
             <div on-click="cerrar(false)" routerLink="info-usuario-personal">Perfil</div>
         </div>
         <div class="apartado">
-            <div on-click="cerrar(false)" routerLink="../info-equipo-personal">Mi equipo</div>
+            <div on-click="cerrar(false)" routerLink="info-equipo-personal">Mi equipo</div>
         </div>
         <div class="apartado"  on-click="cerrar(false); abrirAlertas(true)">
             <div>Alertas</div>            
