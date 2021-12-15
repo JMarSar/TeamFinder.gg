@@ -9,6 +9,7 @@ input{ /* arreglado*/
     height: 100vh;
     background-size: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .logo{
 width: 72px;
@@ -117,7 +118,7 @@ color: #FFFFFF;
     justify-content: center;
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .letras{
 text-align: center;
@@ -138,10 +139,15 @@ text-align: center;
     border-radius: 4%;
 
 }
+#comprobacion{
+    /* margin-top: -2%; */
+    height: fit-content;
+    border: solid 1px white;
+}
 .boton{ /*Arreglado*/
-    margin-top: -4%; 
     border: 0;
     background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
+    font-family: var();
 }
 
 .botonDesactivado{
