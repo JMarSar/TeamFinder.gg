@@ -21,6 +21,7 @@ export class InfoUsuarioPersonalComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.servicioLogin.imagen)
+    console.log(this.servicioLogin.url_imagen)
     const myChart = new Chart("myChart", {
       type: 'doughnut',
       data: {
@@ -30,7 +31,7 @@ export class InfoUsuarioPersonalComponent implements OnInit {
         ],
         datasets: [{
           label: 'Win Ratio',
-          data: [560, 608],
+          data: [this.servicioLogin.derrotas, this.servicioLogin.victorias],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)'
@@ -47,7 +48,12 @@ export class InfoUsuarioPersonalComponent implements OnInit {
         rotation: 0
       }
     });
+    // setTimeout(()=>{
+
+    //   myChart.destroy();
+    // },5000)
   }
+
 
   public datos(){
     this.perfilServicio.Perfil()

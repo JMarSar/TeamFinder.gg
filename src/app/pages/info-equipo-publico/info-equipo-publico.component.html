@@ -1,0 +1,155 @@
+<div class="main-container">
+        <div class="left-container">
+            <div class="perfil">
+                <div class="perfil-nombre">
+                    <div class="perfil-nombre-barra-azul">
+                        <h3>{{this.info.nombre_equipo}}</h3>
+                    </div>
+                    <div class="perfil-nombre-barra-blanco"></div>
+                </div>
+                <div class="perfil-logo">
+                    <div class="perfil-logo-imagen" style="background-image: url({{this.info.url_imagen}});"></div>
+                </div>
+                <div class="perfil-roster">
+                    <h3>Roster</h3>
+                    <div class="perfil-roster-players"> <!-- CAMBIAR A NGFOR-->
+                        <div class="perfil-roster-player">
+                            <div class="perfil-roster-player-barra-blanca"></div>
+                            <div class="perfil-roster-player-barra-azul">F_Marsar</div>
+                        </div>
+                        <div class="perfil-roster-player">
+                            <div class="perfil-roster-player-barra-blanca"></div>
+                            <div class="perfil-roster-player-barra-azul">{{this.info.nickname}}</div>
+                        </div>
+                        <div class="perfil-roster-player">
+                            <div class="perfil-roster-player-barra-blanca"></div>
+                            <div class="perfil-roster-player-barra-azul">Faker</div>
+                        </div>
+                        <div class="perfil-roster-player">
+                            <div class="perfil-roster-player-barra-blanca"></div>
+                            <div class="perfil-roster-player-barra-azul">Milky_Boy</div>
+                        </div>
+                        <div class="perfil-roster-player">
+                            <div class="perfil-roster-player-barra-blanca"></div>
+                            <div class="perfil-roster-player-barra-azul">Mixer</div>
+                        </div>
+                        <div class="perfil-roster-player">
+                            <div class="perfil-roster-player-barra-blanca"></div>
+                            <div class="perfil-roster-player-barra-azul">John_Cina</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="estadisticas">        
+                <div class="estadisticas-header">
+                    <div class="estadisticas-header-barra-chica"></div>
+                    <div class="estadisticas-header-barra-grande">
+                        <h4>Estadísticas</h4>
+                    </div>
+                </div>
+                <div class="mid-container-estadisticas">
+                    <div class="chart-info">
+                        <span class="chart-top-info">
+                        {{this.info.victorias}}W / {{this.info.derrotas}}L
+                        </span>
+                        <div class="chart-bottom-info">
+                            <div class="chart-container">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                            <div class="estadisticas-datos">
+                                <div class="estadisticas-datos-top">
+                                    <div class="kda-datos">
+                                        <div class="k1">5.1</div>
+                                        /
+                                        <div class="d1">4.3</div>
+                                        /
+                                        <div class="a1">4.2</div>
+                                    </div>
+                                </div>
+                                <div class="estadisticas-datos-bottom">
+                                    <div class="kda-ratio">
+                                        3.72:1
+                                    </div>
+                                    <div class="ckrate">
+                                        (51%)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-container-stadisticas">
+                    <div class="bottom-container-stadisticas-header">
+                        <div class="bottom-container-stadisticas-header-barra-grande">
+                            <h4>Servidor</h4>
+                        </div>
+                        <div class="bottom-container-stadisticas-header-barra-chica"></div>
+                    </div>
+                    <div class="server">
+                        <div class="server-image">
+                            <img src="../../../assets/img/EUW_server.png" alt="">
+                        </div>
+                        <h5>{{this.info.servidor}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="right-container-header">
+                <div class="right-container-header-barra-chica"></div>
+                <div class="right-container-header-barra-grande">
+                    <h4>Rendimiento</h4>
+                </div>
+            </div>
+            <div class="wrap-estadisticas">
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        {{this.fbR}}%
+                    </div>
+                    <div class="titulo-estadistica">
+                        First Blood
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        {{this.frhR}}%
+                    </div>
+                    <div class="titulo-estadistica">
+                        First Herald
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        {{this.ftR}}%
+                    </div>
+                    <div class="titulo-estadistica">
+                        First Tower
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        {{this.fnashR}}%
+                    </div>
+                    <div class="titulo-estadistica">
+                        First Nashor
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-champ-fav">
+                        <div class= "campeon" style="background-image:url({{this.info.imagen_campeon}});"></div>
+                    </div>
+                    <div class="titulo-estadistica">
+                        FAV CHAMP
+                    </div>
+                </div>
+                <div class="cuadro-estadistica">
+                    <div class="dato-estadistica">
+                        2
+                    </div>
+                    <div class="titulo-estadistica">
+                        HOT STREAK
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

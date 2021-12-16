@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'node_modules/chart.js'
 import { EquiposService } from 'src/app/shared/equipos.service';
+import { LoginService } from '../../shared/login.service';
 
 @Component({
   selector: 'app-info-equipo-personal',
@@ -15,19 +16,17 @@ export class InfoEquipoPersonalComponent implements OnInit {
   public ftR:number;
   public fnashR:number;
 
-  constructor( public ServicioEquipos:EquiposService) {
+  constructor( public ServicioEquipos:EquiposService, public ServicioLogin: LoginService) {
     Chart.register(...registerables);
-    this.info = this.ServicioEquipos.seleccionado;
-    this.partidasTotales = this.info.derrotas + this.info.victorias;
-    this.fbR = Math.round(((100 * this.info.first_blood_contador) / this.partidasTotales)*10)/10
-    this.frhR = Math.round(((100 * this.info.first_herald_contador) / this.partidasTotales)*10)/10  
-    this.ftR = Math.round(((100 * this.info.first_tower_contador) / this.partidasTotales)*10)/10
-    this.fnashR = Math.round(((100 * this.info.first_nashor_contador) / this.partidasTotales)*10)/10
+    this.partidasTotales = this.ServicioLogin.derrotas + this.ServicioLogin.victorias;
+    this.fbR = Math.round(((this.ServicioLogin.fbr) / this.partidasTotales)*10)/10
+    this.frhR = Math.round(((this.ServicioLogin.frhR) / this.partidasTotales)*10)/10  
+    this.ftR = Math.round(((this.ServicioLogin.ftr) / this.partidasTotales)*10)/10
+    this.fnashR = Math.round(((this.ServicioLogin.fnashR) / this.partidasTotales)*10)/10
   }
 
 
   ngOnInit() {
-    console.log(this.ServicioEquipos.seleccionado.creador)
     const myChart = new Chart("myChart", {
       type: 'doughnut',
       data: {
@@ -37,7 +36,7 @@ export class InfoEquipoPersonalComponent implements OnInit {
         ],
         datasets: [{
           label: 'Win Ratio',
-          data: [this.info.derrotas, this.info.victorias],
+          data: [this.ServicioLogin.derrotas, this.ServicioLogin.victorias],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)'

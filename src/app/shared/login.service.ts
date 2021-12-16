@@ -21,6 +21,14 @@ export class LoginService {
   public nombre_equipo:string
   public equipo_id:number
   public creador: number
+  public url_imagen: string
+  public victorias:number
+  public derrotas:number
+  public servidor:string
+  public fbr: number
+  public frhR: number
+ public fnashR: number
+ public ftr: number
   constructor( private http: HttpClient) { }
 
   login(user:Login){

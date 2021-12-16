@@ -67,6 +67,14 @@ export class LoginComponent implements OnInit {
         this.ServicioLogin.nombre_equipo = data.resultado[0].nombre_equipo
         this.ServicioLogin.equipo_id = data.resultado[0].equipo_id
         this.ServicioLogin.creador = data.resultado[0].creador
+        this.ServicioLogin.url_imagen = data.resultado[0].url_imagen
+        this.ServicioLogin.victorias = data.resultado[0].victorias
+        this.ServicioLogin.derrotas = data.resultado[0].derrotas
+        this.ServicioLogin.servidor = data.resultado[0].servidor
+        this.ServicioLogin.fbr = data.resultado[0].first_blood_contador
+        this.ServicioLogin.fnashR = data.resultado[0].first_nashor_contador
+        this.ServicioLogin.frhR = data.resultado[0].first_herald_contador
+        this.ServicioLogin.ftr = data.resultado[0].first_tower_contador
 
         console.log(data.resultado[0],
           this.ServicioLogin.id, this.ServicioLogin.nombre,this.ServicioLogin.password,this.ServicioLogin.idioma,

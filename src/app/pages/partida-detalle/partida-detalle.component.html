@@ -53,7 +53,7 @@
                                         <div>
                                                 <p class="nombreEquipo" >{{this.ServicioLogin.nombre_equipo}}</p>
                                         </div>
-                                        <div class="circulo">
+                                        <div class="circulo" style="background-image: url({{this.ServicioLogin.url_imagen}});">
                                         </div>
                                         <div>
                                                 <p class="capitan" >Capitán</p>
@@ -69,7 +69,7 @@
                                         <div>
                                                 <p class="nombreEquipo" >{{this.ServicioBuscar.equipo.nombre_equipo}}</p>
                                         </div>
-                                        <div class="circulo2">
+                                        <div class="circulo2" style="background-image: url({{this.ServicioBuscar.equipo.url_imagen}});">
                                         </div>
                                         <div>
                                                 <p class="capitan" >Capitán</p>
@@ -96,7 +96,7 @@
                         <div class="descripcion">
                                 <div class="equipo">
                                         <div>
-                                                <p class="nombreEquipo" >WARRIORS</p>
+                                                <p class="nombreEquipo" >{{this.ServicioLogin.nombre_equipo}}</p>
                                         </div>
                                         <div class="circulo">
                                         </div>
@@ -104,7 +104,7 @@
                                                 <p class="capitan" >Capitán</p>
                                         </div>
                                         <div>
-                                                <p class="nombre amistoso" >@JohnDoe</p>
+                                                <p class="nombre amistoso" >@{{this.ServicioLogin.nombre}}</p>
                                         </div>
                                 </div>
                                 <div>

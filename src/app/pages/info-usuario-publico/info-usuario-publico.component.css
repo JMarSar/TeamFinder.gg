@@ -116,7 +116,15 @@
         width: 90%;
         background-color: rebeccapurple;
 } */
-
+.equipo-logo{
+        width: 4vw;
+        height: 4vw;
+        overflow: hidden;
+        border-radius: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
 .estadisticas{
         display: flex;
         flex-direction: column;
@@ -216,6 +224,7 @@
         align-items: center;
         width: 180px;
         height: 180px;
+        margin-left: 2vw;
 }
 
 .bottom-container-stadisticas {
