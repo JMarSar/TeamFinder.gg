@@ -42,7 +42,7 @@ export class RankingComponent implements OnInit {
   }
   mostrarJugador(index:number){
     this.ServicioRankJugador.jugador = this.ServicioRankJugador.listaJugadores[index]
-    this.llevar.navigate(["../info-jugador-publico"])
+    this.llevar.navigate(["../info-usuario-publico"])
   }
 
 }

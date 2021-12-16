@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PerfilService } from 'src/app/shared/perfil.service';
 import { Chart, registerables } from 'node_modules/chart.js'
 import { LoginService } from '../../shared/login.service';
+import { RankingJugadoresService } from 'src/app/shared/ranking-jugadores.service';
 
 @Component({
   selector: 'app-info-usuario-publico',
@@ -10,16 +11,18 @@ import { LoginService } from '../../shared/login.service';
 })
 export class InfoUsuarioPublicoComponent implements OnInit {
   public info:any;
+  public wr:string
 
-  constructor(public perfilServicio:PerfilService, public servicioLogin:LoginService) {
+  constructor(public perfilServicio:PerfilService, public servicioLogin:LoginService, public ServicioJugador: RankingJugadoresService) {
+    this.wr = ((this.ServicioJugador.jugador.Victorias/(this.ServicioJugador.jugador.Derrotas + this.ServicioJugador.jugador.Victorias))*100).toFixed(1)
     this.info = this.perfilServicio;
-    console.log()
+    console.log(this.ServicioJugador.jugador)
     Chart.register(...registerables)
   }
 
 
   ngOnInit() {
-    console.log(this.servicioLogin.imagen)
+    console.log(this.wr)
     const myChart = new Chart("myChart", {
       type: 'doughnut',
       data: {
@@ -29,7 +32,7 @@ export class InfoUsuarioPublicoComponent implements OnInit {
         ],
         datasets: [{
           label: 'Win Ratio',
-          data: [560, 608],
+          data: [this.ServicioJugador.jugador.Derrotas, this.ServicioJugador.jugador.Victorias],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)'

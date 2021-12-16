@@ -28,53 +28,50 @@
         width: 45%;
         background-color: var(--colorAzulSecundario);
         border-radius: 4px 0 0 4px;
-        padding: 24px 0 2% 0;
-        gap: 5%;
 }
 .perfil-nombre {
         display: flex;
         justify-content: flex-start;
         width: 100%;
         height: 48px;
-        gap: 8px;
-        
 }
 .perfil-nombre-barra-azul {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 3vw;
         width: 90%;
         padding-left: 7%;
         background-color: var(--colorAzulPrimario);
         font-family: var(--fontRevxRegular);
         font-size: var(--sizeDesktopHeading3);
+        margin-top: 1vw;      
 }
 .perfil-nombre-barra-blanco {
-        height: 100%;
+        height: 3vw;
         width: 16px;
         background-color: white;
+        margin-top: 1vw;
 }
 
 .perfil-logo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 130px;
-        width: 130px;
-        border-radius: 100%;
+        height: 10vw;
+        width: 10vw;
         overflow: hidden;
+        margin-top: 1vw;
 }
 .perfil-logo-imagen {
-        height: 110%;
-        width: auto;
-        height: 100%;
-        width: 100%;
+        height:9.78vw;
+        width: 9.8vw;
         overflow: hidden;
         border-radius: 100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
 }
 
 .perfil-elo, .perfil-equipo {
@@ -84,12 +81,19 @@
         width: 100%;
         background-color: var(--colorAzulPrimario);
 }
+.perfil-elo{
+        margin-top: 1.8vw;
+}
+.perfil-equipo{
+        margin-top: 0.5vw;
+}
 .perfil-elo-badge, .perfil-equipo-logo {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 80%;
         width: 40%;
+        
 }
 .perfil-elo-badge > img, .perfil-equipo-logo > img {
         height: 100%;
@@ -111,6 +115,7 @@
 .lps, .Wr {
         color: gray;
 }
+
 /* .equipo-percent-bar, .elo-percent-bar {
         height: 5px;
         width: 90%;
@@ -205,6 +210,7 @@
         font-family: var(--fontRevxRegular);
         font-size: var(--sizeDesktopHeading4);
         padding-left: 24px;
+        margin-left: 2vw;
 }
 .chart-bottom-info {
         display: flex;
@@ -216,6 +222,7 @@
         align-items: center;
         width: 180px;
         height: 180px;
+        margin-left: 2vw;
 }
 
 .bottom-container-stadisticas {
@@ -278,7 +285,9 @@
 }
 
 
+
 .right-container {
+
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -321,6 +330,7 @@
         background-color: white;
 }
 .wrap-estadisticas {
+
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
@@ -349,4 +359,12 @@
 .titulo-estadistica {
         text-align: center;
         font-size: var(--sizeCommonBody1);
+}
+.abandonar{
+        font-family: var(--fontRevxRegular);
+        font-size: var(--sizeCommonCaptionDefault);
+        text-decoration: underline;
+        color: red;
+        cursor: pointer;
+        margin-top: 0.5vw;
 }

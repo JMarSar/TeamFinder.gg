@@ -2,11 +2,11 @@
         <div class="left-container">
             <div class="perfil">
                 <div class="perfil-logo">
-                    <img class="perfil-logo-imagen" style="background-image:url({{this.servicioLogin.imagen}});">
+                    <img class="perfil-logo-imagen" style="background-image:url({{this.ServicioJugador.jugador.imagen}});">
                 </div>
                 <div class="perfil-nombre">
                     <div class="perfil-nombre-barra-azul">
-                        <h3>{{this.servicioLogin.nombre}}</h3>
+                        <h3>{{this.ServicioJugador.jugador.nickname}}</h3>
                     </div>
                     <div class="perfil-nombre-barra-blanco"></div>
                 </div>
@@ -17,7 +17,8 @@
                     <div class="perfil-elo-info">
                         <span class="elo-q">Ranked Solo</span>
                         <span>Grandmaster <span class="lps">· 686 LP</span></span>
-                        <span><span class="Wr">608W 560L · </span>51.7%</span>
+                        <span><span class="Wr">{{this.ServicioJugador.jugador.Victorias}}W  
+                             {{this.ServicioJugador.jugador.Derrotas}}L  </span>{{this.wr}}%</span>
                         <!-- <div class="elo-percent-bar"></div> -->
                     </div> 
                 </div>
@@ -43,7 +44,7 @@
                 <div class="mid-container-estadisticas">
                     <div class="chart-info">
                         <span class="chart-top-info">
-                            608W / 560L
+                            {{this.ServicioJugador.jugador.Victorias}}W / {{this.ServicioJugador.jugador.Derrotas}}L
                         </span>
                         <div class="chart-bottom-info">
                             <div class="chart-container">
