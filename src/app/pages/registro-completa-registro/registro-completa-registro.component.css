@@ -22,8 +22,9 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: Karantina;
-    font-size:  var(--sizeDisplay);
+    font-family: Oxanium;
+    font-size: var(--sizeDesktopHeading2);
+    font-weight: 800;
     padding-left: 2.5%;
 }
 #containerXL{

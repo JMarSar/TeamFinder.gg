@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/models/user';
 import { RankingJugadoresService } from 'src/app/shared/ranking-jugadores.service';
 import { RankingService } from 'src/app/shared/ranking.service';
 import { Router } from '@angular/router';

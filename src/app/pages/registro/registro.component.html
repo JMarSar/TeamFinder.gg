@@ -14,8 +14,8 @@
                <p class="circulo"></p>
            </div>
            <div class="cajas1">
-               <input type="text"[(ngModel)]="regisForm.nombre.val" class="cajaUser" placeholder="User">
-               <input type="text"[(ngModel)]="regisForm.email.val" class="cajaEmail" placeholder="Email">
+               <input type="text"[(ngModel)]="regisForm.nombre.val" class="cajaUser" placeholder="User" #user>
+               <input type="text"[(ngModel)]="regisForm.email.val" class="cajaEmail" placeholder="Email" #mail>
            </div>
            <div class="nombres">
             <p class="pass">Contraseña</p>
@@ -24,7 +24,7 @@
             <p class="circulo"></p>
         </div>
            <div class="cajas1">
-            <input type="text"[(ngModel)]="regisForm.contrasena.val" class="cajaPass" placeholder="Contraseña">
+            <input type="text"[(ngModel)]="regisForm.contrasena.val" class="cajaPass" placeholder="Contraseña" #pass>
             <input type="text"[(ngModel)]="regisForm.passRep.val" class="cajaPass2" placeholder="Repite la contraseña">
            </div>
        </div>
@@ -43,7 +43,7 @@
              </p>
         </div>
         <div id="comprobacion">
-            <button class="boton"  [ngClass]="isValidReg() === false ? 'registro' : 'botonDesactivado'" [disabled]="isValidReg()" routerLink="../registro-completa-registro">Siguiente</button>
+            <button class="boton"  [ngClass]="isValidReg() === false ? 'registro' : 'botonDesactivado'" [disabled]="isValidReg()" routerLink="../registro-fav" on-click="guardar(user.value,mail.value,pass.value)" >Siguiente</button>
         </div>
 
     </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistroService } from '../../shared/registro.service';
 
 
 @Component({
@@ -30,7 +31,7 @@ export class RegistroComponent implements OnInit {
       isValid: () => boolean;}
   }
 
-  constructor() {
+  constructor( public ServicioRegistrar: RegistroService) {
     this.regisForm ={
       nombre:{
         val:"",
@@ -69,6 +70,14 @@ export class RegistroComponent implements OnInit {
     }
 
   ngOnInit(): void {
+  }
+
+  guardar(user:string, mail:string,pass:string,){
+  console.log("llega")
+      this.ServicioRegistrar.user.nombre = user
+      this.ServicioRegistrar.user.email = mail
+      this.ServicioRegistrar.user.password = pass
+    console.log(this.ServicioRegistrar.user)
   }
 
 }
