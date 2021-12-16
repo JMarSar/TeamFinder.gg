@@ -142,12 +142,14 @@ text-align: center;
 #comprobacion{
     /* margin-top: -2%; */
     height: fit-content;
-    border: solid 1px white;
+    /* border: solid 1px white; */
 }
 .boton{ /*Arreglado*/
     border: 0;
     background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
-    font-family: var();
+    font-family: Oxanium;
+    font-size: var(--sizeCommonBody2);
+
 }
 
 .botonDesactivado{
@@ -156,7 +158,7 @@ text-align: center;
     height: 48px;
     background: #CAD2DA;
     border-radius: 2px;
-    font-family: var(--fontRevxMedium);
+    font-family: Oxanium;
     font-size: var(--sizeCommonBody2);
     color: #FFFFFF;
     border-radius: 4px; /*Arreglado*/
