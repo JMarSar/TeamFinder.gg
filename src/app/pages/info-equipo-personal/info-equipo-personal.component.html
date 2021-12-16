@@ -3,39 +3,39 @@
         <div class="perfil">
             <div class="perfil-nombre">
                 <div class="perfil-nombre-barra-azul">
-                    <h3>{{this.info.nombre_equipo}}</h3>
+                    <h3>{{this.ServicioLogin.nombre_equipo}}</h3>
                 </div>
                 <div class="perfil-nombre-barra-blanco"></div>
             </div>
             <div class="perfil-logo">
-                <img class="perfil-logo-imagen" src="../../../assets/img/elves.png" alt="">
+                <div class="perfil-logo-imagen" style="background-image: url({{this.ServicioLogin.url_imagen}});"></div>
             </div>
             <div class="perfil-roster">
                 <h3>Roster</h3>
                 <div class="perfil-roster-players"> <!-- CAMBIAR A NGFOR-->
                     <div class="perfil-roster-player">
                         <div class="perfil-roster-player-barra-blanca"></div>
-                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                        <div class="perfil-roster-player-barra-azul">{{this.ServicioLogin.nombre}}</div>
                     </div>
                     <div class="perfil-roster-player">
                         <div class="perfil-roster-player-barra-blanca"></div>
-                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                        <div class="perfil-roster-player-barra-azul">Robblet21</div>
                     </div>
                     <div class="perfil-roster-player">
                         <div class="perfil-roster-player-barra-blanca"></div>
-                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                        <div class="perfil-roster-player-barra-azul">Sad_Boy</div>
                     </div>
                     <div class="perfil-roster-player">
                         <div class="perfil-roster-player-barra-blanca"></div>
-                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                        <div class="perfil-roster-player-barra-azul">X_Phantom</div>
                     </div>
                     <div class="perfil-roster-player">
                         <div class="perfil-roster-player-barra-blanca"></div>
-                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                        <div class="perfil-roster-player-barra-azul">Reacter</div>
                     </div>
                     <div class="perfil-roster-player">
                         <div class="perfil-roster-player-barra-blanca"></div>
-                        <div class="perfil-roster-player-barra-azul">John Doe</div>
+                        <div class="perfil-roster-player-barra-azul">Zz_HEMO_zZ</div>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
             <div class="mid-container-estadisticas">
                 <div class="chart-info">
                     <span class="chart-top-info">
-                    {{this.info.victorias}}W / {{this.info.derrotas}}L
+                    {{this.ServicioLogin.victorias}}W / {{this.ServicioLogin.derrotas}}L
                     </span>
                     <div class="chart-bottom-info">
                         <div class="chart-container">
@@ -86,10 +86,10 @@
                     <div class="bottom-container-stadisticas-header-barra-chica"></div>
                 </div>
                 <div class="server">
-                    <!-- <div class="server-image">
+                    <div class="server-image">
                         <img src="../../../assets/img/EUW_server.png" alt="">
-                    </div> -->
-                    <h5>{{this.info.servidor}}</h5>
+                    </div>
+                    <h5>{{this.ServicioLogin.servidor}}</h5>
                 </div>
             </div>
         </div>
