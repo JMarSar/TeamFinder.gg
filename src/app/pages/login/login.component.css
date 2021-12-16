@@ -44,7 +44,7 @@
         text-decoration-thickness: 2px;
 }
 .inputs{
-        /* margin-top: 3%; arreglada linea blanca */
+        margin-top: 3%; /* arreglada linea blanca */
         font-family: var(--fontRevxMedium);
         font-weight: var(--sizeCommonBody1);  
         height: 22vw;
@@ -58,7 +58,6 @@ input{
         height: 3vw;
         margin-top: 0.5vw;
         margin-left: 8vw;
-        margin-bottom: 1vw;
         outline: none;
         margin-left: 0%;
         padding-left: 1.5vw;

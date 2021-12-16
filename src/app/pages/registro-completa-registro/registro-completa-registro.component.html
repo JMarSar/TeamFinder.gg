@@ -1,42 +1,49 @@
-<div class="padre">
-    <div class="superior">
-        <img class="logo" src="../../../assets/img/logo_blac.png">
-    </div>
-    <div class="medio">
-        <p class="titulo">Completa tu información</p>
-        <div class="letrasMitad">
-            <p class="tex0">Fecha de nacimiento</p>
-            <p class="texI">Idiomas que usas</p>
-            <p class="texA">Sube tu icono</p>
-        </div>
-        <div class="cajasMitad">
-            <input type="text" class="fecha" placeholder="Placeholder">
-            <input type="text" class="idioma" placeholder="idioma">
-            <div class="circulo">
-                <img src="../../../assets/img/image 91.png" class="abeja">
-            </div>
-            
-        </div>
-        <div class="ultimasLetras">
-            
-                <p class="tex">Nacionalidad</p>
-                <p class="tex2">Descríbete</p>
-                <p class="tex3">Contáctame</p>
-        
-        </div>
-        <div class="cajasMitad">
-            <input type="text" class="nacionalidad" placeholder="Placeholder">
-            <input type="text" class="describete" placeholder="Sobre mi">
-            <div class="redes">
-                <img src="../../../assets/img/Group 16.png" class="cont">
-            </div>
-          
-        </div>
-    </div>
-    <div class="inferior">
-     
-        <button class="sige" routerLink="../registro-final">Siguiente</button>
+<main>
+    <div id="containerXXL">
+        <div id="containerInfo">Completa tu información</div>
 
-    </div>
-</div>
+        <div id="containerXL">
+            <div id="containerLeft">
+                <div id="leftTop">
+                    <label for="text">Fecha de nacimiento</label>
+                    <input type="text" placeholder="dd/mm/aa">
+                </div>
+                <div id="leftBot">
+                    <label for="text">Nacionalidad</label>
+                    <input type="text" placeholder="¿De donde eres?">
+                </div>
 
+            </div>
+            <div id="containerMid">
+                <div id="midTop">
+                    <label for="text">Idioma</label>
+                    <input type="text" placeholder="¿Que idioma hablas?">
+                </div>
+                <div id="midBot">
+                    <label for="text">Descripción</label>
+                    <input id="moreInfo" type="text" placeholder="¡Cuéntanos más sobre ti!">
+                </div>
+
+            </div>
+            <div id="containerRight">
+                <div id="rightTop">
+                    <p>¡Sube tu icono!</p>
+                    <img id="bee" src="../../../assets/img/image_91.png">
+                </div>
+                <p>Contacto</p>
+                <div id="rightBot">
+
+                
+
+                    <div id="containerIcons">
+                        <img id="icons" src="../../../assets/img/Group 16.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="containerButton">
+            <button id="next" routerLink="../registro-final">Siguiente</button>
+        </div>
+    </div>
+
+</main>
