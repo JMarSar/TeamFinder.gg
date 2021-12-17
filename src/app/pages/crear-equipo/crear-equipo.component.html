@@ -34,16 +34,11 @@
                <p id="actualPlayers"> Jugadores: 10 de 10</p> 
             </button>
             <div class="dropdown-content">
-                <p class="names">PlayerName1 <button class="x">X</button></p>
-                <p class="names">PlayerName2 <button class="x">X</button></p>
-                <p class="names">PlayerName3 <button class="x">X</button></p>
-                <p class="names">PlayerName4 <button class="x">X</button></p>
-                <p class="names">PlayerName5 <button class="x">X</button></p>
-                <p class="names">PlayerName6 <button class="x">X</button></p>
-                <p class="names">PlayerName7 <button class="x">X</button></p>
-                <p class="names">PlayerName8 <button class="x">X</button></p>
-                <p class="names">PlayerName9 <button class="x">X</button></p>
-                <p class="names">PlayerName10 <button class="x">X</button></p>
+                <p class="names">Faker <button class="x">X</button></p>
+                <p class="names">John_21 <button class="x">X</button></p>
+                <p class="names">AzCino <button class="x">X</button></p>
+                <p class="names">Mixer <button class="x">X</button></p>
+                <p class="names">Alpine_Son <button class="x">X</button></p>
                 
     
                 
@@ -62,7 +57,7 @@
         </div>
     </div>
 </div>
-<div id="containerCreateButton">
+<div id="containerCreateButton" routerLink="../new-team">
     <button [ngClass]="isValidForm() ? 'createButton' : 'botonDesactivado'" [disabled]="!isValidForm()" > CREAR </button>
 </div>
 

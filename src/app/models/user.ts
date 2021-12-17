@@ -20,7 +20,6 @@ export class User {
         public asist: number;
         public elo: number;
         public tier: string;
-        public matches: string[]
         public wins:number;
         public loses:number;
 

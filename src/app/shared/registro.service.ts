@@ -34,7 +34,6 @@ export class RegistroService {
       asist : 0,
       elo : 0,
       tier : "none",
-      matches : [],
       wins : 0,
       loses : 0,
 
