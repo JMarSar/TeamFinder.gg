@@ -107,6 +107,7 @@ header{
     height: 100%;
     width: 100%;
     margin-left: 8%;
+    
     /* border: solid 1px white */
 }
 .search >input{
@@ -227,7 +228,7 @@ header{
     /* border: solid 1px white; */
    
     width: 45vw;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
