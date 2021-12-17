@@ -3,6 +3,7 @@ import { PerfilService } from 'src/app/shared/perfil.service';
 import { Chart, registerables } from 'node_modules/chart.js'
 import { LoginService } from '../../shared/login.service';
 import { RankingJugadoresService } from 'src/app/shared/ranking-jugadores.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-info-usuario-publico',
@@ -13,7 +14,7 @@ export class InfoUsuarioPublicoComponent implements OnInit {
   public info:any;
   public wr:string
 
-  constructor(public perfilServicio:PerfilService, public servicioLogin:LoginService, public ServicioJugador: RankingJugadoresService) {
+  constructor(public perfilServicio:PerfilService, public servicioLogin:LoginService, public ServicioJugador: RankingJugadoresService, public navegar:Router) {
     this.wr = ((this.ServicioJugador.jugador.Victorias/(this.ServicioJugador.jugador.Derrotas + this.ServicioJugador.jugador.Victorias))*100).toFixed(1)
     this.info = this.perfilServicio;
     console.log(this.ServicioJugador.jugador)

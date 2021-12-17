@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-team',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewTeamComponent implements OnInit {
 
-  constructor() { }
+  constructor( public navegar:Router) { }
 
   ngOnInit(): void {
+    setTimeout(()=>{
+
+      this.navegar.navigate(["../home"])
+
+    },4000)
+  }
+  funciion(){
   }
 
 }

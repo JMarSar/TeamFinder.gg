@@ -10,6 +10,7 @@ export class NoTeamComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
