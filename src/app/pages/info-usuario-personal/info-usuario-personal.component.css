@@ -95,6 +95,15 @@
         width: 40%;
         
 }
+.logo-equipo{
+        height: 5vw;
+        width: 5vw;
+        border-radius: 50%;
+        background-color: red;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
 .perfil-elo-badge > img, .perfil-equipo-logo > img {
         height: 100%;
         width: auto;

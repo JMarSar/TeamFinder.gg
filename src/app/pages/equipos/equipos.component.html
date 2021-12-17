@@ -20,8 +20,8 @@
                                         <div class="etiquetaEquipo" *ngFor="let equipo of this.ServicioEquipos.listaEquipos let i=index">
                                                 <div class="informacion"  on-click ="llevar(i)">
                                                         <div class="ranking">
-                                                                <div class="rank">Rank</div> 
-                                                                <div class="numeroRank">222</div> 
+                                                                <div class="rank">Server</div> 
+                                                                <div class="numeroRank">{{equipo.servidor}}</div> 
                                                                 <div class="numeroRank linea">|</div>   
                                                         </div>
                                                         <div class="nick">

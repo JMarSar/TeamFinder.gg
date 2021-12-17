@@ -149,6 +149,7 @@ text-align: center;
     background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
     font-family: Oxanium;
     font-size: var(--sizeCommonBody2);
+    cursor: pointer;
 
 }
 

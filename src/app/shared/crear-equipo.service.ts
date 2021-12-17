@@ -6,7 +6,7 @@ import { Equipo } from '../models/equipo';
   providedIn: 'root'
 })
 export class CrearEquipoService {
-  public url = "http://localhost:3140/crearEquipo"
+  public url = "https://api-team-finder.herokuapp.com/crearEquipo"
   public url_imagen: number;
   public nombre_equipo:string;
   public acronimo_equipo: string;
