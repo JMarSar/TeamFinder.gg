@@ -1,4 +1,4 @@
-<main>
+<main *ngIf="this.adminCreado == false">
         <header>
             <div class="padre">
                 <div class="contenidoHeader">
@@ -37,3 +37,7 @@
                 </div>
         </div>
 </main>
+<div *ngIf="this.adminCreado == true">
+        <app-landing></app-landing>
+</div>
+

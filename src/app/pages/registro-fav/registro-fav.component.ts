@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistroService } from '../../shared/registro.service';
+import { Router } from '@angular/router';
+import { CogerIdService } from 'src/app/shared/coger-id.service';
 
 @Component({
   selector: 'app-registro-fav',
@@ -14,7 +17,7 @@ export class RegistroFavComponent implements OnInit {
   public hidenP:boolean
   public hidenV:boolean
   public hidenT:boolean
-  constructor() { 
+  constructor(public navegar:Router, public servicioRegistro:RegistroService,public ServiciocogerID: CogerIdService) { 
     this.zedVar=false;
     this.pinguVar=false;
     this.valoVar=false;
@@ -57,6 +60,14 @@ cambiarValo(){
   this.valoVar=true;
 }
   ngOnInit(): void {
+  }
+
+  datosJuego(nick:string,posicion:string){
+    console.log(nick)
+    this.servicioRegistro.user.nick = nick
+    this.servicioRegistro.user.posicion = posicion
+    this.navegar.navigate(["../registro-completa-registro"])
+    console.log(this.servicioRegistro.user)
   }
 
 }

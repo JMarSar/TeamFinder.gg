@@ -8,12 +8,13 @@ import { User } from '../models/user';
 export class RegistroService {
 
 
-  public url : "https://api-team-finder.herokuapp.com/registro";
+  public url = "http://localhost:3140/registro";
   public user:User
 
 
   constructor(private http: HttpClient) { 
     this.user ={
+      id_base:1,
       G_manager : 0,
       email : "none",
       nombre : "none",
@@ -24,7 +25,7 @@ export class RegistroService {
       info_ad : "none",
       imagen : "none",
       nick : "none",
-      servidor : "none",
+      servidor : "EW1",
       posicion : "none",
       id_jugador_riot : "none",
       puuid : "none",
@@ -41,7 +42,8 @@ export class RegistroService {
   }
 
 
-  clonar(){
-
+  guardar(){
+    console.log(this.user)
+    return this.http.post(this.url, this.user)
   }
 }

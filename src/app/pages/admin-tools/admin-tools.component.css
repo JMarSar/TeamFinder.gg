@@ -100,7 +100,7 @@ header{
     position: absolute;
     z-index: 2;
     background-color: var(--colorAzulOscuroPrimario);
-    top: 20vh;
+    top: 19vh;
 
 }
 .search{
@@ -126,15 +126,16 @@ header{
     color: var(--colorAzulOscuroPrimario);
     font-family: var(--fontRevxMedium);
     font-weight: 600;
+    background-image: url('../../../assets/img/search.svg');
+    background-position:1vw;
+    background-size: 3vh;
+    background-repeat:no-repeat;
     
 }
 
 
  input::placeholder{
-    background-image: url('../../../assets/img/search.svg');
-    background-position:1vw;
-    background-size: 3vh;
-    background-repeat:no-repeat;
+
     font-family: var(--fontRevxMedium);
     font-weight: 600;
 
@@ -148,6 +149,7 @@ header{
     /* border: solid 1px black; */
 
 }
+
 #gameButtons{
     width: 100%;
     display: flex;

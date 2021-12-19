@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { RegistroAdminService } from 'src/app/shared/registro-admin.service';
 import { Router } from '@angular/router';
+import { HayAdminService } from 'src/app/shared/hay-admin.service';
 
 @Component({
   selector: 'app-crear-admin',
@@ -10,9 +11,28 @@ import { Router } from '@angular/router';
 })
 export class CrearAdminComponent implements OnInit {
 
-  constructor(public navegar: Router, private toastr:ToastrService, public ServicioCrearAdmin: RegistroAdminService) { }
+  public adminCreado:boolean
+  constructor(public navegar: Router, private toastr:ToastrService, public ServicioCrearAdmin: RegistroAdminService,
+              public ServicioAdmin:HayAdminService) { 
+    this.adminCreado = false
+    
+  }
 
   ngOnInit(): void {
+
+    this.ServicioAdmin.comprobarAdmin()
+    .subscribe((data:any)=>{
+      console.log(data.resultado)
+      if(data.resultado.length !=0){
+        this.adminCreado = true
+      }
+
+    })
+
+
+    // if(this.adminCreado == true){
+    //   this.navegar.navigate(["../landing"])
+    // }
   }
   acceder(){
     this.navegar.navigate(["../admin-tools"])
