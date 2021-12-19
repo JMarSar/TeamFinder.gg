@@ -49,23 +49,32 @@
 
                 <div class="contents">
                     <div id="dateInputs">
-                    <label for=""> Desde</label>
+                    <label id="desde" for=""> Desde</label>
                     <input class="date"type="text" #fechainicio placeholder="dd/mm/aa">
-                    <label for=""> Hasta</label>
+                    <label id="hasta" for=""> Hasta</label>
                     <input class="date"type="text" #fechafin placeholder="dd/mm/aa">
                 </div>
             </div>
 
 
                 <div class="contents">
+                    <label id="equipos" for=""> Equipos</label>
                     <input id="teamNum" class="date"type="text" #nEquipos placeholder="Entre 6 y 60">
-                    <label for=""> Tier </label>
+                    <label id="tierInput" for=""> Tier </label>
                     <input class="date" #tier placeholder="T1 a T4">
                 </div>
 
 
                 <div class="contents">
                     <input id="codeInput" #clave class="date" type="text" placeholder="Introduce la clave generada">
+                    <div id="patrocinate">
+                        <p>Patrocinado</p>
+                        <input #patrocinadoCheckBox
+                         id="patrocinadoCheckBox" 
+                         type="checkbox" 
+                         [checked]="patrocinado" 
+                         (change)="patrocinadoChanged()"/>
+                    </div>
                 </div>
 
 
@@ -74,7 +83,7 @@
                 </div>
 
             </div>
-            <div id="generate">
+            <!-- <div id="generate">
                 
                 <div id="genContainer">
                     <button class="gen" > Generar clave </button>
@@ -88,7 +97,7 @@
                      [checked]="patrocinado" 
                      (change)="patrocinadoChanged()"/>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div id="containerGenAndRes">

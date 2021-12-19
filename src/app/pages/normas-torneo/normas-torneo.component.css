@@ -10,6 +10,9 @@
         overflow-x: hidden;
         gap: 30px;
 }
+h4{
+        font-family: Oxanium;
+}
 .top-name-container {
         display: flex;
         justify-content: center;

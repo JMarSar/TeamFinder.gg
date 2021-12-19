@@ -6,6 +6,15 @@
     
     
 }
+button{
+    cursor: pointer;
+    
+}
+input{
+    border: 0;
+    outline: none;
+    padding-left: 4%;
+}
 .logo{
     width: 72px;
     height: 76.11px;
@@ -177,6 +186,7 @@ border: none;
     margin-left: 27%;
     background-color: transparent;
     border: none;
+
 }
 .botonZedEstrellaB{
     margin-left: 15%;
