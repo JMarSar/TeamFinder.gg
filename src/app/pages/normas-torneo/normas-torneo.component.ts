@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Torneo } from '../../models/torneo';
 import { Partida } from '../../models/partida';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-normas-torneo',
@@ -14,7 +15,7 @@ export class NormasTorneoComponent implements OnInit {
   public myIndex:number;
   public partida:Partida;
 
-  constructor() { 
+  constructor(public enrutar: Location) { 
     this.torneos = [
       new Torneo("PREDATORIANS OF THE TOMB", "1", "10/11/2021", true),
       new Torneo("TEST2", "2", "10/11/2021", true),
@@ -30,6 +31,10 @@ export class NormasTorneoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  volver(){
+    this.enrutar.back()
   }
 
 }
