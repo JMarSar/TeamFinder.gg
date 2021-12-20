@@ -16,7 +16,10 @@
                                 </div> -->
                         </div>
                         <div class="equipos">
-                                <div class="lista">
+                                <div class="vacio" *ngIf="this.vacio == true">
+                                        <div>No hay ningún equipo con ese nombre</div>
+                                </div>
+                                <div class="lista" *ngIf="this.vacio == false">
                                         <div class="etiquetaEquipo" *ngFor="let equipo of this.ServicioEquipos.listaEquipos let i=index">
                                                 <div class="informacion"  on-click ="llevar(i)">
                                                         <div class="ranking">
@@ -30,9 +33,9 @@
                                                 </div>
                                                 <div class="botones">
 
-                                                                <button *ngIf="this.admin == true" class="conectar" on-click="conectar(i)">Conectar</button>
+                                                                <button  *ngIf="this.admin == true" class="conectar" on-click="conectar(i);">Conectar</button>
 
-                                                                <button *ngIf="this.tieneEquipo == false"class="unirse" on-click="unirse(i)">Unirse</button>
+                                                                <button id= "unir" *ngIf="this.tieneEquipo == false"class="unirse" on-click="unirse(i); desactivar()">Unirse</button>
                                                 </div>             
                                         </div>
                                 </div>

@@ -15,9 +15,11 @@ import { ConectarService } from 'src/app/shared/conectar.service';
 export class EquiposComponent implements OnInit {
   public admin :boolean
   public tieneEquipo :boolean
+  public vacio :boolean
 
   constructor( private toastr:ToastrService, public ServicioEquipos:EquiposService, 
               public navegar : Router, public ServicioUnirse:UnirseService, public ServicioLogin:LoginService, public ServicioBuscar : BuscarEquipoService, public ServicioConectar:ConectarService ) {
+                this.vacio = false
 
 
    }
@@ -78,7 +80,13 @@ export class EquiposComponent implements OnInit {
     .subscribe((data:any) =>{
       console.log(data)
       this.ServicioEquipos.listaEquipos = data.resultado
+      if(data.resultado.length ==0){
+        this.vacio = true
+      }
     })
+  }
+  desactivar(){
+    document.getElementById('unir').style.display = 'none'
   }
 }
 

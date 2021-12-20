@@ -144,6 +144,16 @@ input:focus, :active :checked,:enabled{
         overflow-x: hidden;
         z-index: 1;
 }
+.vacio{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--fontRevxBold);
+        font-weight: 500;
+        font-size: var(--sizeCommonBody1);
+}
 .etiquetaEquipo{
         display: flex;
         align-items: center;

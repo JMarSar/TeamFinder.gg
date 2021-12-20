@@ -455,7 +455,7 @@
 .campeon{
         height: 4vw;
         width: 5vw;
-        background-color: red;
+        background-image: url("../../../assets/img/ashe.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

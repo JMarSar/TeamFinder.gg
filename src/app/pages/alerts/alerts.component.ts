@@ -25,6 +25,7 @@ export class AlertsComponent implements OnInit {
     .subscribe((data:any)=>{
       console.log(data)
       this.ServicioAlertas.listaAlertas = data.resultado
+      console.log(this.ServicioAlertas.listaAlertas)
       if (this.ServicioAlertas.listaAlertas.length ==0){
         this.mensaje = true
         
