@@ -181,12 +181,14 @@ header{
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.3;
 }
 #tftButton{
     background-image: url(../../../assets/img/iconos-esports-03.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.3;
 }
 
 /************** BARRAS DE TORNEO **********************/

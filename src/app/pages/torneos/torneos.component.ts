@@ -33,5 +33,6 @@ export class TorneosComponent implements OnInit {
       this.torneos = data.resultado
     })
   }
+  
 
 }
