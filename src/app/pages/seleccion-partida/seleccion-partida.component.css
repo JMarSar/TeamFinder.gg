@@ -6,7 +6,7 @@
         background-image: url("../../../assets/img/fondo_basico.jpg");
         background-size: 100%;
         background-color: #142236;
-        overflow-x: hidden;
+        overflow: hidden;
 }
 .titulo{
         display: flex;
@@ -111,7 +111,7 @@ button:hover{
         cursor: pointer;
 }
 .contieneImagen{
-        width: 100%;
+        width: 100vw;
 }
 .imagen{
         position: absolute;
