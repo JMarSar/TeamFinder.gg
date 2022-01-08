@@ -36,7 +36,7 @@
                 <div class="bottom-container">
                         <h3>Torneos</h3>
                         <div class="carrousel-torneos">
-                                <div [ngClass]="torneo.patrocinado === 1 && i==myIndex  ? 'card-torneo-rojo blanco' : torneo.patrocinado === 1 ? 'card-torneo-rojo': torneo.patrocinado === 0 && i == myIndex ? 'card-torneo-azul blanco': 'card-torneo-azul' " on-click="mostrarTorneo(i)" *ngFor="let torneo of torneos; let i = index">
+                                <div [ngClass]="[getClass(torneo, i), torneo.selected ? 'seleccionado': ''] " on-click="mostrarTorneo(i)" *ngFor="let torneo of torneos; let i = index">
                                         <div class="card-title">{{torneo.nombre_torneo}}</div>
                                         <div class="card-info">
                                                 <div class="card-tier">Tier {{torneo.tier}}</div>

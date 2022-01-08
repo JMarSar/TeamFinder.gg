@@ -30,9 +30,9 @@ export class CrearAdminComponent implements OnInit {
     })
 
 
-    // if(this.adminCreado == true){
-    //   this.navegar.navigate(["../landing"])
-    // }
+    if(this.adminCreado == true){
+      this.navegar.navigate(["../landing"])
+    }
   }
   acceder(){
     this.navegar.navigate(["../admin-tools"])

@@ -35,7 +35,7 @@
 
                                                                 <button  *ngIf="this.admin == true" class="conectar" on-click="conectar(i);">Conectar</button>
 
-                                                                <button id= "unir" *ngIf="this.tieneEquipo == false"class="unirse" on-click="unirse(i); desactivar()">Unirse</button>
+                                                                <button class= "unir" *ngIf="this.tieneEquipo == false && !equipo.joined "class="unirse" on-click="unirse(i)">Unirse</button>
                                                 </div>             
                                         </div>
                                 </div>

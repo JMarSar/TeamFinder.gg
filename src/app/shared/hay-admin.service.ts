@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HayAdminService {
 
-  public url = "http://localhost:3140/admin"
+  public url = "https://api-team-finder.herokuapp.com/admin"
   constructor(private http:HttpClient) { }
 
   comprobarAdmin(){

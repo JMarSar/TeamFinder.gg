@@ -1,6 +1,12 @@
 <body>
     <div class="fondo" on-click="cerrar(false)"></div>
     <div id="containerAlerts">
+        <div class="contieneVolver">
+            <div class="volver" on-click="cerrar(false); abrirMenu(true)">
+                <img class="img" src="../../../assets/img/noun_Arrow_18954.svg" alt="flecha">
+            </div>
+        </div>
+
         <h3 id="textAlert">Alertas</h3>
         <div id="containerAlertMsg">
             <div class="mensaje" *ngIf="this.mensaje ==true"> No tienes alertas en este momento</div>

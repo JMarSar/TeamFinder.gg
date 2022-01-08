@@ -8,6 +8,7 @@ export class Torneos {
     public reglas:string
     public clave_torneo:any
     public patrocinado:number
+    public selected: boolean
 
             
             constructor(nombre_torneo:string,fecha_inicio:string,fecha_fin:string,numero_equipos:number,
@@ -21,6 +22,7 @@ export class Torneos {
                     this.tier = tier
                     this.reglas = reglas
                     this.clave_torneo = clave_torneo
-                    this.patrocinado   = patrocinado             
+                    this.patrocinado   = patrocinado       
+                    this.selected = false      
             }
 }

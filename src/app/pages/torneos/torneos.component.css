@@ -235,3 +235,6 @@
         text-shadow: var(--sombraMedium);
         text-align: right;
 }
+.seleccionado{
+        border-radius: 50%;
+}
