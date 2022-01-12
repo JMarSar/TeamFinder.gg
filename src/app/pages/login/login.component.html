@@ -49,7 +49,7 @@
                         </p>
                 </div>
                 <div class="boton">
-                        <button  [ngClass]="isValidForm() ? 'registro' : 'botonDesactivado'" [disabled]="!isValidForm()" on-click="login(name.value, pass.value)">Acceder</button>
+                        <button  [ngClass]="isValidForm() ? 'registro' : 'botonDesactivado'" [disabled]="!isValidForm()" on-click="login(name.value, pass.value)" type="submit">Acceder</button>
                 </div>
         </div>
 </div>

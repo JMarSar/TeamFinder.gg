@@ -79,7 +79,11 @@ export class LoginComponent implements OnInit {
         console.log(data.resultado[0],
           this.ServicioLogin.id, this.ServicioLogin.nombre,this.ServicioLogin.password,this.ServicioLogin.idioma,
           this.ServicioLogin.id,this.ServicioLogin.imagen, this.ServicioLogin.lfm, this.ServicioLogin.juego_fav, this.ServicioLogin.nombre_equipo)
-        this.navegar.navigate(["../home"]) 
+          if(this.ServicioLogin.manager){
+            this.navegar.navigate(["../admin-create"])
+          }
+          else{
+        this.navegar.navigate(["../home"]) }
       }
       else{
         console.log("flag")
