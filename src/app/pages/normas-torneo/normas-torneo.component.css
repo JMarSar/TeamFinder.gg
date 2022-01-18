@@ -2,7 +2,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 220vh;
+        height: 190vh;
         /* width: 100vw; */
         /* background: url(../../../assets/img/fondo_basico.jpg); */
         background: var(--colorAzulPrimario);
@@ -148,9 +148,12 @@ h4{
         border: 2px solid white;
         border-radius: 4px;
 }
+.noticia:hover {
+        background-color: rgb(94, 34, 153);
+}
 .noticia-titulo {
         font-family: var(--fontTitulos);
-        font-size: var(--sizeTitulos);
+        font-size: var(--sizeDesktopHeading3);
 }
 .noticia-fecha {
         font-family: var(--fontRevxRegular);
@@ -235,7 +238,7 @@ h4{
         height: 20%;
         width: 100%;
         padding: 0 9%;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
         background-color: var(--colorNegro);
         overflow-y: scroll;
         overflow: hidden;

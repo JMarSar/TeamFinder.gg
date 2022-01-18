@@ -228,6 +228,7 @@
         align-items: center;
         width: 180px;
         height: 180px;
+        margin-left: 8px;
 }
 
 .bottom-container-stadisticas {
@@ -237,7 +238,7 @@
 }
 .bottom-container-stadisticas-header {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; 
         height: 48px;
         width: 100%;
         gap: 8px;

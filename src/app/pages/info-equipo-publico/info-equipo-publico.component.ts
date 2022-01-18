@@ -23,10 +23,10 @@ export class InfoEquipoPublicoComponent implements OnInit {
     Chart.register(...registerables);
     this.info = this.ServicioEquipos.seleccionado;
     this.partidasTotales = this.info.derrotas + this.info.victorias;
-    this.fbR = Math.round(((this.info.first_blood_contador) / this.partidasTotales)*10)/10
-    this.frhR = Math.round(((this.info.first_herald_contador) / this.partidasTotales)*10)/10  
-    this.ftR = Math.round(((this.info.first_tower_contador) / this.partidasTotales)*10)/10
-    this.fnashR = Math.round(((this.info.first_nashor_contador) / this.partidasTotales)*10)/10
+    this.fbR = Math.round(((this.info.first_blood_contador * 100) / this.partidasTotales))
+    this.frhR = Math.round(((this.info.first_herald_contador * 100) / this.partidasTotales))
+    this.ftR = Math.round(((this.info.first_tower_contador * 100) / this.partidasTotales))
+    this.fnashR = Math.round(((this.info.first_nashor_contador * 100) / this.partidasTotales))
   }
 
 
