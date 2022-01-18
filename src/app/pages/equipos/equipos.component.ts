@@ -15,9 +15,11 @@ import { ConectarService } from 'src/app/shared/conectar.service';
 export class EquiposComponent implements OnInit {
   public admin :boolean
   public tieneEquipo :boolean
+  public vacio :boolean
 
   constructor( private toastr:ToastrService, public ServicioEquipos:EquiposService, 
               public navegar : Router, public ServicioUnirse:UnirseService, public ServicioLogin:LoginService, public ServicioBuscar : BuscarEquipoService, public ServicioConectar:ConectarService ) {
+                this.vacio = false
 
 
    }
@@ -42,7 +44,13 @@ export class EquiposComponent implements OnInit {
     this.ServicioEquipos.Equipos()
     .subscribe((data:any) =>{
       console.log(data)
-      this.ServicioEquipos.listaEquipos = data.resultado
+      const result = data.resultado.map((element:any)=>{
+        return {
+          ...element,
+          joined: false
+        }
+      })
+      this.ServicioEquipos.listaEquipos = result
 
     })
   }
@@ -52,11 +60,12 @@ export class EquiposComponent implements OnInit {
     this.navegar.navigate(["../info-equipo-publico"])
   }
   unirse(index:number){
-    console.log("hola")
+    console.log("flag click")
     console.log(index)
     this.ServicioUnirse.unirse(this.ServicioLogin.id.toString(),this.ServicioEquipos.listaEquipos[index].equipo_id.toString())
     .subscribe((data:any) =>{
       console.log(data)
+      this.ServicioEquipos.listaEquipos[index].joined = true
     })
     console.log(this.ServicioLogin.id,this.ServicioEquipos.listaEquipos[index].equipo_id)
     this.showToastr()
@@ -78,6 +87,9 @@ export class EquiposComponent implements OnInit {
     .subscribe((data:any) =>{
       console.log(data)
       this.ServicioEquipos.listaEquipos = data.resultado
+      if(data.resultado.length ==0){
+        this.vacio = true
+      }
     })
   }
 }

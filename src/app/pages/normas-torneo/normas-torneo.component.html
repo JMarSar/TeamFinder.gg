@@ -1,10 +1,10 @@
 <div class="container">
         <div class="top-name-container">
                 <div class="torneo-nombre">
-                        <h1>Rango Diamante</h1> <!-- Nombre del torneo -->
+                        <h4>Rango Diamante</h4> <!-- Nombre del torneo -->
                 </div>
                 <div class="torneo-fecha">
-                        <p>Del 10 al 20 de noviembre</p> <!-- Fecha del torneo -->
+                        <p>Del 10 al 20 de enero</p> <!-- Fecha del torneo -->
                 </div>
         </div>
         <div class="reglas">
@@ -13,14 +13,33 @@
                 <div class="collapsible-content">
                         <div class="content-inner">
                                 <p>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti voluptatum nemo quae saepe! Nisi dolorum repellat architecto neque fugiat. Quibusdam dolor obcaecati similique expedita temporibus at reiciendis sint aliquam?
-                                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate iusto suscipit esse quos perspiciatis animi consequatur, modi quod, minima necessitatibus culpa, expedita ullam minus dolorem quas sit obcaecati unde cupiditate.
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel incidunt nemo provident porro dolorum eum tempore minima? Explicabo ullam consequatur aut fugiat minus sequi facere hic quia eum mollitia.
-                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quia reprehenderit eaque molestiae ullam corporis repellendus, amet dignissimos assumenda. Laborum earum quam incidunt deserunt qui doloremque sunt ratione veniam eligendi!
-                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quo sint, quis modi ex maxime! Fuga quisquam veritatis, distinctio accusantium voluptas ullam inventore pariatur, vitae sequi laborum molestias quibusdam possimus.
-                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore est accusamus, nihil nulla quibusdam quaerat corporis eius, ipsa iure ipsam voluptas nesciunt distinctio accusantium quod autem vel excepturi voluptates non.
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde autem itaque, saepe dolores facilis laboriosam necessitatibus, sequi temporibus corrupti natus. Minus quas omnis cum optio. Delectus maxime at cupiditate.
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at placeat deserunt eaque atque optio reprehenderit quam adipisci itaque a blanditiis, velit ut nobis magnam totam sunt iusto est nihil!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti
+                                        voluptatum nemo quae saepe! Nisi dolorum repellat architecto neque fugiat.
+                                        Quibusdam dolor obcaecati similique expedita temporibus at reiciendis sint
+                                        aliquam?
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate iusto
+                                        suscipit esse quos perspiciatis animi consequatur, modi quod, minima
+                                        necessitatibus culpa, expedita ullam minus dolorem quas sit obcaecati unde
+                                        cupiditate.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel incidunt nemo
+                                        provident porro dolorum eum tempore minima? Explicabo ullam consequatur aut
+                                        fugiat minus sequi facere hic quia eum mollitia.
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quia
+                                        reprehenderit eaque molestiae ullam corporis repellendus, amet dignissimos
+                                        assumenda. Laborum earum quam incidunt deserunt qui doloremque sunt ratione
+                                        veniam eligendi!
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quo sint, quis
+                                        modi ex maxime! Fuga quisquam veritatis, distinctio accusantium voluptas ullam
+                                        inventore pariatur, vitae sequi laborum molestias quibusdam possimus.
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore est accusamus,
+                                        nihil nulla quibusdam quaerat corporis eius, ipsa iure ipsam voluptas nesciunt
+                                        distinctio accusantium quod autem vel excepturi voluptates non.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde autem
+                                        itaque, saepe dolores facilis laboriosam necessitatibus, sequi temporibus
+                                        corrupti natus. Minus quas omnis cum optio. Delectus maxime at cupiditate.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at placeat deserunt
+                                        eaque atque optio reprehenderit quam adipisci itaque a blanditiis, velit ut
+                                        nobis magnam totam sunt iusto est nihil!
                                 </p>
                         </div>
                 </div>
@@ -31,16 +50,16 @@
                 </div>
                 <div class="noticias-right">
                         <div class="noticia">
-                                <div class ="noticia-titulo">Pentakill</div>
-                                <div class ="noticia-fecha">20-10-2001</div>
+                                <div class="noticia-titulo">Pentakill</div>
+                                <div class="noticia-fecha">20-10-2001</div>
                         </div>
                         <div class="noticia">
-                                <div class ="noticia-titulo">Pentakill</div>
-                                <div class ="noticia-fecha">20-10-2001</div>
+                                <div class="noticia-titulo">Pentakill</div>
+                                <div class="noticia-fecha">20-10-2001</div>
                         </div>
                         <div class="noticia">
-                                <div class ="noticia-titulo">Pentakill</div>
-                                <div class ="noticia-fecha">20-10-2001</div>
+                                <div class="noticia-titulo">Pentakill</div>
+                                <div class="noticia-fecha">20-10-2001</div>
                         </div>
                 </div>
         </div>
@@ -60,44 +79,56 @@
                 </div>
                 <div class="cuadro-right">
                         <div *ngFor="let torneo of torneos">
-                                <div *ngIf="torneo.partida.resultadoEquipo1 > torneo.partida.resultadoEquipo2"  class="partida">
+                                <div *ngIf="torneo.partida.resultadoEquipo1 > torneo.partida.resultadoEquipo2"
+                                        class="partida">
                                         <div class="resultado-partida">
                                                 <div class="resultado-partida-equipo-ganador">
                                                         <div class="resultado-partida-equipos">
-                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo1}}</h3>
-                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo1}}</h3>
+                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo1}}
+                                                                </h3>
+                                                                <h3 class="puntos-equipo">
+                                                                        {{torneo.partida.resultadoEquipo1}}</h3>
                                                         </div>
                                                         <div class="selector-ganador">
                                                                 <div class="equipo-ganador">
-                                                                        <img src="../../../assets/img/arrov_victoria.svg" alt="">
+                                                                        <img src="../../../assets/img/arrov_victoria.svg"
+                                                                                alt="">
                                                                 </div>
                                                         </div>
                                                 </div>
                                                 <div class="resultado-partida-equipo-perdedor">
                                                         <div class="resultado-partida-equipos">
-                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo2}}</h3>
-                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo2}}</h3>
+                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo2}}
+                                                                </h3>
+                                                                <h3 class="puntos-equipo">
+                                                                        {{torneo.partida.resultadoEquipo2}}</h3>
                                                         </div>
                                                 </div>
                                         </div>
                                 </div>
-                                                
-                                <div *ngIf="torneo.partida.resultadoEquipo2 > torneo.partida.resultadoEquipo1" class="partida">
+
+                                <div *ngIf="torneo.partida.resultadoEquipo2 > torneo.partida.resultadoEquipo1"
+                                        class="partida">
                                         <div class="resultado-partida">
                                                 <div class="resultado-partida-equipo-perdedor">
                                                         <div class="equipo">
-                                                                <h3 class="equipo-nombre">{{torneo.partida.equipo1}}</h3>
-                                                                <h3 class="equipo-puntos">{{torneo.partida.resultadoEquipo1}}</h3>
+                                                                <h3 class="equipo-nombre">{{torneo.partida.equipo1}}
+                                                                </h3>
+                                                                <h3 class="equipo-puntos">
+                                                                        {{torneo.partida.resultadoEquipo1}}</h3>
                                                         </div>
                                                 </div>
                                                 <div class="resultado-partida-equipo-ganador">
-                                                                <div class="equipo">
-                                                                        <h3 class="equipo-nombre">{{torneo.partida.equipo1}}</h3>
-                                                                        <h3 class="equipo-puntos">{{torneo.partida.resultadoEquipo1}}</h3>
-                                                                </div>
+                                                        <div class="equipo">
+                                                                <h3 class="equipo-nombre">{{torneo.partida.equipo1}}
+                                                                </h3>
+                                                                <h3 class="equipo-puntos">
+                                                                        {{torneo.partida.resultadoEquipo1}}</h3>
+                                                        </div>
                                                         <div class="selector-ganador">
                                                                 <div class="equipo-ganador">
-                                                                        <img src="../../../assets/img/arrov_victoria.svg" alt="">
+                                                                        <img src="../../../assets/img/arrov_victoria.svg"
+                                                                                alt="">
                                                                 </div>
                                                         </div>
                                                 </div>
@@ -112,44 +143,57 @@
                 </div>
                 <div class="resultados-carrousel">
                         <div *ngFor="let torneo of torneos" class="qwerty">
-                                <div *ngIf="torneo.partida.resultadoEquipo1 > torneo.partida.resultadoEquipo2"  class="resultado-card">
+                                <div *ngIf="torneo.partida.resultadoEquipo1 > torneo.partida.resultadoEquipo2"
+                                        class="resultado-card">
                                         <div class="resultado-partida">
                                                 <div class="resultado-partida-equipo-ganador">
                                                         <div class="resultado-partida-equipos">
-                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo1}}</h3>
-                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo1}}</h3>
+                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo1}}
+                                                                </h3>
+                                                                <h3 class="puntos-equipo">
+                                                                        {{torneo.partida.resultadoEquipo1}}</h3>
                                                         </div>
                                                         <div class="selector-ganador">
                                                                 <div class="equipo-ganador">
-                                                                        <img src="../../../assets/img/arrov_victoria.svg" alt="">
+                                                                        <img src="../../../assets/img/arrov_victoria.svg"
+                                                                                alt="">
                                                                 </div>
                                                         </div>
                                                 </div>
                                                 <div class="resultado-partida-equipo-perdedor">
                                                         <div class="resultado-partida-equipos">
-                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo2}}</h3>
-                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo2}}</h3>
+                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo2}}
+                                                                </h3>
+                                                                <h3 class="puntos-equipo">
+                                                                        {{torneo.partida.resultadoEquipo2}}</h3>
                                                         </div>
                                                 </div>
                                         </div>
                                 </div>
-                                                
-                                <div *ngIf="torneo.partida.resultadoEquipo2 > torneo.partida.resultadoEquipo1" class="resultado-card">
+
+                                <div *ngIf="torneo.partida.resultadoEquipo2 > torneo.partida.resultadoEquipo1"
+                                        class="resultado-card">
                                         <div class="resultado-partida">
                                                 <div class="resultado-partida-equipo-perdedor">
                                                         <div class="resultado-partida-equipos">
-                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo1}}</h3>
-                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo1}}</h3>
+                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo1}}
+                                                                </h3>
+                                                                <h3 class="puntos-equipo">
+                                                                        {{torneo.partida.resultadoEquipo1}}</h3>
                                                         </div>
                                                 </div>
                                                 <div class="resultado-partida-equipo-ganador">
                                                         <div class="resultado-partida-equipos">
-                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo2}}</h3>
-                                                                <h3 class="puntos-equipo">{{torneo.partida.resultadoEquipo2}}</h3>
+                                                                <h3 class="nombre-equipo">{{torneo.partida.equipo2}}
+                                                                </h3>
+                                                                <h3 class="puntos-equipo">
+                                                                        {{torneo.partida.resultadoEquipo2}}</h3>
                                                         </div>
                                                         <div class="selector-ganador">
                                                                 <div class="equipo-ganador">
-                                                                        <img src="../../../assets/img/arrov_victoria.svg" alt="">
+                                                                        <img src="../../../assets/img/arrov_victoria.svg"
+                                                                                alt="">
+                                                                
                                                                 </div>
                                                         </div>
                                                 </div>

@@ -14,11 +14,11 @@
             <div class="zedFormulario" [hidden]="hidenZ">
                 <div class="formularioPingu">
                     <p class="nickP">Nick en el juego</p>
-                    <input type="text" class="nickFP" placeholder="@example">
+                    <input type="text" class="nickFP" placeholder="@example" #nick>
                     <p class="servidorP">Servidor</p>
                     <input type="text" class="serverFP" placeholder="@example">
                     <p class="posicionP">Posicion Favorita</p>
-                    <input type="text" class="posicionFP" placeholder="@example">
+                    <input type="text" class="posicionFP" placeholder="@example" #posicion>
                     
                 </div>
                 <img src="../../../assets/img/letr.png" class="lol">
@@ -43,11 +43,11 @@
             <div class="valorantFormulario" [hidden]="hidenV">
                 <div class="formularioPingu">
                     <p class="nickP">Nick en el juego</p>
-                    <input type="text" class="nickFP" placeholder="@example">
+                    <input type="text" class="nickFP" placeholder="@example" >
                     <p class="servidorP">Servidor</p>
                     <input type="text" class="serverFP" placeholder="@example">
                     <p class="posicionP">Posicion Favorita</p>
-                    <input type="text" class="posicionFP" placeholder="@example">
+                    <input type="text" class="posicionFP" placeholder="@example" >
                 </div>
                 <img class="letrasVal" src="../../../assets/img/Valorant_logo1.png">
             </div>
@@ -96,7 +96,7 @@
     <div class="parteInferior">
         <p class="letrasAbajo">Indica tu juego favorito clicando en una de las estrellas </p>
         <div>
-            <button class="sige">Siguiente</button>
+            <button class="sige" on-click="datosJuego(nick.value,posicion.value)">Siguiente</button>
         </div>
     
     </div>

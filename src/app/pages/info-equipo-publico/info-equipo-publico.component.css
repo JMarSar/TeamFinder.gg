@@ -137,6 +137,7 @@
         border-radius: 0 4px 4px 0;
         padding: 24px 0 2% 0;
         gap: 5%;
+        margin-left: 6%;
 }
 .estadisticas-header {
         display: flex;
@@ -450,7 +451,7 @@
 .campeon{
         height: 4vw;
         width: 5vw;
-        background-color: red;
+        background-image: url("../../../assets/img/ashe.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

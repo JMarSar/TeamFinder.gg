@@ -1,5 +1,6 @@
 export class User {
 
+        public id_base: number
         public email:string;
         public nombre:string;
         public password: string;

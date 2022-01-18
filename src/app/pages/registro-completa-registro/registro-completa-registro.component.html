@@ -27,14 +27,12 @@
             </div>
             <div id="containerRight">
                 <div id="rightTop">
-                    <p>¡Sube tu avatar!</p>
-                    <img id="bee" src="../../../assets/img/image_91.png">
+                    <p id="avatar">¡Sube tu avatar!</p>
+                    <input id="url" type="text" placeholder="coloca la url" #url>
                 </div>
-                <p>Contacto</p>
+
                 <div id="rightBot">
-
-                
-
+                    <p id="contacto">Contacto</p>
                     <div id="containerIcons">
                         <img id="icons" src="../../../assets/img/Group 16.png">
                     </div>
@@ -42,7 +40,7 @@
             </div>
         </div>
         <div id="containerButton">
-            <button id="next" routerLink="../registro-final" on-click="guardar(fecha.value,idioma.value,info.value)">Siguiente</button>
+            <button id="next" routerLink="../registro-final" on-click="guardar(fecha.value,idioma.value,info.value,url.value)">Siguiente</button>
         </div>
     </div>
 

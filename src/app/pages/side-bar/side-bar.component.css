@@ -74,9 +74,11 @@
 }
 #tft{
         background-image: url("../../../assets/img/iconos_esports_tft.svg");
+        opacity: 0.3;
 }
 #val{
         background-image: url("../../../assets/img/iconos_esports_val.svg");
+        opacity: 0.3;
 }
 
 hr{

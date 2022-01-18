@@ -6,6 +6,15 @@
     
     
 }
+button{
+    cursor: pointer;
+    
+}
+input{
+    border: 0;
+    outline: none;
+    padding-left: 4%;
+}
 .logo{
     width: 72px;
     height: 76.11px;
@@ -177,6 +186,7 @@ border: none;
     margin-left: 27%;
     background-color: transparent;
     border: none;
+
 }
 .botonZedEstrellaB{
     margin-left: 15%;
@@ -198,11 +208,19 @@ border: none;
 
 }
 .sige{
-    width: 10em;
-    height: 4em;
-    background: linear-gradient(180deg, #CE0037 0%, #560505 100%);
-    border-radius: 4px;
-   margin-top: 20%; 
+    border: none;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
+    height: 6vh;
+    width: 6vw;
+    position: absolute;
+    z-index: 1;
+    left: 85%;
+    top: 85%;
+    font-family: Oxanium;
+    font-size: var(--sizeCommonBody2);
+    cursor: pointer;
+
 }
 .letrasAbajo{
     font-family: var(--fontRevxRegular);

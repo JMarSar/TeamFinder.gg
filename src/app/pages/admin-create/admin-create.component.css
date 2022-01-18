@@ -138,17 +138,6 @@ p{
     border: 0;
     border-radius: 4px;
 }
-/* #valorantButton{
-    background: linear-gradient(179.84deg, #ffffff 0.14%, #adadad 84.23%);
-    
-}
-#tftButton{
-    background: linear-gradient(179.84deg, #ffffff 0.14%, #adadad 84.23%);
-}
-#lolButton{
-    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
-
-} */
 
 .selectButton{
     height: 50%;
@@ -183,7 +172,7 @@ input{
 }
 
 #nameInput{
-    width: 80%;
+    width: 98%;
     height: 50%;
     display: flex;
     justify-content: center;
@@ -193,22 +182,23 @@ input{
 
 #dateInputs{
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 3%;
-    gap:4% 
+    gap: 2% 
 }
 
 .date{
     height: 50%;
-    width: 25%;
+    width: 35%;
 }
 #teamNum,#codeInput{
     margin-left: 3%
 }
 #codeInput{
-    width: 50%;
+    width: 60%;
 }
 a{
     text-decoration: underline;
@@ -356,13 +346,28 @@ label{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    /* border: solid 1px red; */
+    width: 60%;
+    height: 100%;
+    margin-left: 11%;
 }
 #patrocinadoCheckBox{
-width: 100%;
-height: 100%;
+width: 30%;
+height: 30%;
+margin-right: 40%;
 }
 
 button{
     font-weight: 500;
 }
+#tierInput{
+    width: 16%;
+    text-align: right;
+}
+#equipos{
+    margin-left:3%;
 
+}
+#hasta{
+    margin-left:10%;
+}

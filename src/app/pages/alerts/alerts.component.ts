@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertasService } from 'src/app/shared/alertas.service';
 import { LoginService } from '../../shared/login.service';
+import { MenuLateralService } from '../../shared/menu-lateral.service';
 
 @Component({
   selector: 'app-alerts',
@@ -10,7 +11,7 @@ import { LoginService } from '../../shared/login.service';
 export class AlertsComponent implements OnInit {
   public alertMsg = []
   public mensaje:boolean
-  constructor(public ServicioAlertas: AlertasService, public ServicioLogin: LoginService) {
+  constructor(public ServicioAlertas: AlertasService, public ServicioLogin: LoginService, public ServicioMenu:MenuLateralService) {
     this.mensaje = false
    }
 
@@ -25,6 +26,7 @@ export class AlertsComponent implements OnInit {
     .subscribe((data:any)=>{
       console.log(data)
       this.ServicioAlertas.listaAlertas = data.resultado
+      console.log(this.ServicioAlertas.listaAlertas)
       if (this.ServicioAlertas.listaAlertas.length ==0){
         this.mensaje = true
         
@@ -58,6 +60,9 @@ export class AlertsComponent implements OnInit {
     .subscribe((data:any)=>{
       console.log(data)
     })
+  }
+  abrirMenu(tipo:boolean){
+    this.ServicioMenu.activar(tipo)
   }
 
 }

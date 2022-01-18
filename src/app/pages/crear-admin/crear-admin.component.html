@@ -1,4 +1,4 @@
-<main>
+<main *ngIf="this.adminCreado == false">
         <header>
             <div class="padre">
                 <div class="contenidoHeader">
@@ -25,11 +25,11 @@
                         </div>
                         <div class="info">
                                 <label class="texto" for="Pass">Contraseña</label>
-                                <input #pass class="input"  type="text" name="Pass">
+                                <input #pass class="input"  type="password" name="Pass">
                         </div>
                         <div class="info">
                                 <label class="texto" for="confirmaPass">Repite tu contraseña</label>
-                                <input class="input"  type="text" name="confirmaPass">
+                                <input class="input"  type="password" name="confirmaPass">
                         </div>
                 </div>
                 <div class="confirmar">
@@ -37,3 +37,7 @@
                 </div>
         </div>
 </main>
+<div *ngIf="this.adminCreado == true">
+        <app-landing></app-landing>
+</div>
+
