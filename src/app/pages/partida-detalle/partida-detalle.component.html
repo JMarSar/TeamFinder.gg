@@ -6,17 +6,14 @@
         <div class="enCurso" *ngIf="this.jugando == true">
                 <div class="modalEnCurso">
                         <p class="partida">Partida en curso</p>
-                        <p class="explica"> Ligula fermentum mauris aliquet sed sed nam semper sit. Ut suspendisse q
-                                uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.</p>
+                        <p class="explica"> La partida está en proceso, espera a que termine para utilizar la aplicación.</p>
                 </div>
         </div>
         <div class="modalCancelar" *ngIf="this.cancelar == true">
                 <div class="mensaje">
                         <div class="infoModal">
                                 <div class="titulo">Vas a cancelar la partida</div>
-                                <div class="texto"> Ligula fermentum mauris aliquet sed sed nam semper sit. Ut suspendisse q
-                                        uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.Ligula fermentum mauris aliquet sed sed nam semper sit. Ut suspendisse q
-                                        uisque euismod pharetra, aenean ullamcorper tempor, adipiscing rutrum.</div>
+                                <div class="texto"> ¿Estás seguro de que quieres cancelar la partida? Esta acción puede conllevar una penalización para tu equipo</div>
                         </div>
                         <div class="botones">
                                 <button class="botonD" on-click="cambiarCancelar(false)">Deshacer</button>
