@@ -39,6 +39,7 @@ import { CreateTournamentComponent } from './pages/create-tournament/create-tour
 import { NormasTorneoComponent } from './pages/normas-torneo/normas-torneo.component';
 import { RegistroFavComponent } from './pages/registro-fav/registro-fav.component';
 import { AdjustComponent } from './pages/adjust/adjust.component';
+import { TermsComponent } from './pages/terms/terms.component';
 
 
 const routes: Routes = [
@@ -80,7 +81,8 @@ const routes: Routes = [
   { path: 'equipo-creado', component:EquipoCreadoComponent},
   { path: 'normas-torneo', component:NormasTorneoComponent},
   { path: 'registro-fav', component: RegistroFavComponent},
-  { path: 'adjust', component: AdjustComponent}
+  { path: 'adjust', component: AdjustComponent},
+  { path:  'terms', component: TermsComponent}
 ];
 
 @NgModule({

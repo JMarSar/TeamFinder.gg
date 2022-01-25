@@ -1,0 +1,111 @@
+#containerxxl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-size: 100%;
+    height: 100vh;
+    background-image: url("../../../assets/img/InspirationBackground.png");
+    background-color: #142236;
+    overflow: hidden;
+    /* border: solid 1px white; */
+    
+}
+#containerimg{
+    width: 100%;
+}
+#ryze{
+    position: fixed;
+    height: 36vw;
+    margin-top: 7.5vw;
+    z-index: 10;
+}
+#title{
+    height: fit-content;
+    width: fit-content;
+    border: solid 3px var(--colorRojoPrimario);
+    font-size: var(--sizeTitulares);
+    margin-top: 10vw;
+    font-family: var(--fontTitulos);
+    border-radius: 1px;
+    padding: 0% 3% 0% 3.3%;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
+}
+#containerxl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+
+}
+#containerx{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorAzulPrimario);
+    background: var(--colorAzulPrimario);
+    box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.5);
+    border-radius: 4px;  
+    width: 38vw;
+    height: 22vw;
+    /* border: solid 1px white; */
+}
+#containerl{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorAzulPrimario);
+    background: var(--colorAzulPrimarioGradient);
+    box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.5);
+    border-radius: 4px;  
+    width: 36vw;
+    height: 20vw;
+    overflow: scroll;
+    /* border: solid 1px white; */
+}
+h4{
+    font-family: Oxanium;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+    
+}
+.terms{
+    font-family: Oxanium;
+    margin-top: 2%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#textTerms{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding:2%;
+}
+
+
+
+
+
+
+button{
+    cursor: pointer;
+    gap: 10%;
+    border: none;
+    border-radius: 4px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+a:visited,:link,:active{
+    text-decoration-thickness: 0.15vw;
+}
+
+
