@@ -49,6 +49,7 @@ import { InfoEquipoPersonalComponent } from './pages/info-equipo-personal/info-e
 import { InfoEquipoPublicoComponent } from './pages/info-equipo-publico/info-equipo-publico.component';
 import { InfoUsuarioPersonalComponent } from './pages/info-usuario-personal/info-usuario-personal.component';
 import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-usuario-publico.component';
+import { AdjustComponent } from './pages/adjust/adjust.component';
 
 @NgModule({
   declarations: [
@@ -97,6 +98,7 @@ import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-u
     InfoEquipoPublicoComponent,
     InfoUsuarioPersonalComponent,
     InfoUsuarioPublicoComponent,
+    AdjustComponent,
   ],
   imports: [
     CommonModule,

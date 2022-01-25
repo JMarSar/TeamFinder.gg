@@ -1,0 +1,205 @@
+#containerxxl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-size: 100%;
+    height: 100vh;
+    background-image: url("../../../assets/img/fondo_basico.jpg");
+    background-color: #142236;
+    overflow: hidden;
+    /* border: solid 1px white; */
+    
+}
+#containerimg{
+    width: 100%;
+}
+#heimer{
+    position: fixed;
+    height: 25vw;
+    margin-left: -6vw;
+    margin-top: 18vw;
+    z-index: 10;
+}
+#title{
+    height: fit-content;
+    width: fit-content;
+    border: solid 3px var(--colorRojoPrimario);
+    font-size: var(--sizeTitulares);
+    margin-top: 10vw;
+    font-family: var(--fontTitulos);
+    border-radius: 1px;
+    padding: 0% 3% 0% 3.3%;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
+}
+#containerxl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+
+}
+#containerContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorAzulPrimario);
+    background: var(--colorAzulPrimarioGradient);
+    box-shadow: 5px 5px 15px rgb(14, 14, 14, 0.5);
+    border-radius: 4px;  
+    width: 55vw;
+    height: 20vw;
+    /* border: solid 1px white; */
+}
+#containerinfo{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+}
+.infocontent{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* border: solid 1px white; */
+    justify-content: center;
+    font-family: Oxanium;
+}
+#leftinfo{
+    /* border: solid 1px red; */
+    height: 80%;
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+}
+input{
+        border: none;
+        outline: none;
+        height: 18%; 
+        color: black;
+        border-radius: 4px;
+        width: 100%;
+        text-align: center;
+}
+.containerOptions{
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    align-items: center;
+    gap: 17%;
+}
+#containerButtons{
+    /* border: solid 1px rgb(13, 255, 0); */
+    height: 80%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%
+    
+
+}
+.gameButton{
+    height: 100%;
+    width: 30%;
+    gap: 10%;
+    border: none;
+    border-radius: 4px;
+
+}
+#lolButton{
+    background-image: url(../../../assets/img/iconos-esports-01.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#valButton{
+    background-image: url(../../../assets/img/iconos-esports-02.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+#tftButton{
+    background-image: url(../../../assets/img/iconos-esports-03.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+#containerMsgButtons{
+    height: 100%;
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    /* border: solid 1px rebeccapurple; */
+    align-items: center;
+    justify-content: center;
+    gap: 9%;
+    margin-left: 1%;
+
+}
+
+#onOff{
+    margin-top: 9%;
+}
+.onOff{
+    height: 60%;
+    width: 40%;
+}
+#onButton{
+    background-color: var(--colorRojoPrimario);
+}
+#offButton{
+    color: var(--colorAzulPrimario);
+}
+
+#containerSaveCancel{
+    /* border: solid 1px white; */
+    height: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.bigButtons{
+    height: 100%;
+    width: 30%;
+    font-family: Oxanium;
+    font-size: larger;
+
+}
+#save{
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
+}
+#cancel{
+    background-color: white;
+    color: var(--colorAzulPrimario);
+}
+
+
+
+
+button{
+    cursor: pointer;
+    gap: 10%;
+    border: none;
+    border-radius: 4px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+a:visited,:link,:active{
+    text-decoration-thickness: 0.15vw;
+}
+
+
