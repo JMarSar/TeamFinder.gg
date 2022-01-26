@@ -1,42 +1,40 @@
 <div class="padre">
     <div class="chatTop" >
             <div>
-                    <p class="titulo">Conversaciones</p>
+                    <p class="titulo">Chats</p>
             </div>
-            <div>
-                    <button disabled="disabled">≡</button> 
-                    <button disabled="disabled">﹀</button> 
-                    <button disabled="disabled">X</button>
-            </div>
+            <div class="cerrar-cont">
+                <button on-click="cerrar()" class="cerrar">X</button>
+        </div>
 
     </div>
     <div class="chatMain">
             <div class="listaChats" >
                     <div class="lista">
-                        <div class="mensaje1">
-                            <p> mensaje de prueba 1</p>
-                        </div>
                         <div class="mensaje2">
-                            <p> mensaje de prueba 2 largo</p>
+                            <p> Hola Queríamos contactar con vosotros</p>
                         </div>
                         <div class="mensaje1">
-                            <p> mensaje de prueba un poco mas largo</p>
+                            <p> Genial!o</p>
+                        </div>
+                        <div class="mensaje1">
+                            <p> Podríamos jugar esta semana</p>
                         </div>
                         <div class="mensaje2">
-                            <p> mensaje de prueba 2</p>
+                            <p> Si! nosotros tambien, el jueves por la tarde</p>
                         </div>                        
                         <div class="mensaje1">
-                            <p> mensaje de prueba 1</p>
+                            <p> Nosotros podemos también</p>
                         </div>
-                        <div class="mensaje2">
-                            <p> mensaje de prueba mas largo aun que el anterior</p>
+                        <div *ngIf="this.enviado == true" class="mensaje1">
+                            <p> Hola de nuevo</p>
                         </div>
                     </div>
                     <div class="barrita"></div>
             </div>
             <div class="inputTexto">
                 <textarea  class="text" name="texto" id="" placeholder="aqui el mensaje"></textarea>
-                <div class="boton">Enviar</div>
+                <div class="boton" on-click="enviar()">Enviar</div>
             </div>
     </div> 
 </div>

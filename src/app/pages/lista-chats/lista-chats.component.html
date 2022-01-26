@@ -1,17 +1,15 @@
 <div id="padre">
         <div class="chatTop" >
                 <div>
-                        <p class="titulo">Chats</p>
+                        <p class="titulo">Conversaciones</p>
                 </div>
-                <div>
-                        <button disabled="disabled">≡</button> 
-                        <button disabled="disabled">﹀</button> 
-                        <button disabled="disabled">X</button>
+                <div class="cerrar-cont">
+                        <button on-click="cerrar()" class="cerrar">X</button>
                 </div>
  
         </div>
         <div class="chatMain">
-                <div class="listaChats" on-click="anadir()">
+                <div class="listaChats">
                         <div class="lista">
                                 <div class="chat" *ngFor="let chat of chats" (click)="abrirChat()">
                                         <div class="info">

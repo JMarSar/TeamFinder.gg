@@ -126,6 +126,20 @@
     height: 1.7vw;
     background:var(--colorBlancoGradient);
     color: var(--colorAzulOscuroPrimario);
+    cursor: pointer;
+}
+.cerrar-cont{
+    height: 3vw;
+    width: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cerrar{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
 }
 
 /* width */

@@ -109,7 +109,7 @@
         justify-content: center;
         width: 18vw;
         margin-left: 2vw;
-        height: 80%;
+        height: 90%;
 }
 
 .nombre{
@@ -133,6 +133,19 @@
         background-color: #242424;
         width: 0.8vw;
         margin-left: 25vw;
+}
+.cerrar-cont{
+        height: 3vw;
+        width: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.cerrar{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
 }
 /* width */
 ::-webkit-scrollbar {

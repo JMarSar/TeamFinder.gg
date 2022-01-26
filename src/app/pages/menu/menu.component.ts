@@ -4,6 +4,7 @@ import { LfmService } from 'src/app/shared/lfm.service';
 import { LoginService } from 'src/app/shared/login.service';
 import { MenuLateralService } from 'src/app/shared/menu-lateral.service';
 import { Router } from '@angular/router';
+import { ListachatsService } from '../../shared/listachats.service';
 
 @Component({
   selector: 'app-menu',
@@ -13,11 +14,12 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
 
   constructor(public ServicioLfm:LfmService, public ServicioLogin:LoginService, public ServicioMenu:MenuLateralService, 
-              public ServicioALertas:AlertasService, public navegar:Router) {
+              public ServicioALertas:AlertasService, public navegar:Router, public ServicioChats: ListachatsService) {
 
    }
 
-  abrirchats(tipo:boolean){
+  abrirChats(tipo:boolean){
+    this.ServicioChats.activar(tipo)
   }
   abrirAlertas(tipo:boolean){
     this.ServicioALertas.activar(tipo)
@@ -38,6 +40,7 @@ export class MenuComponent implements OnInit {
     else{
       this.navegar.navigate(["../no-team"])
     }
+
     
   }
 
