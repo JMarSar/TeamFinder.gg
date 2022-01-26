@@ -1,5 +1,20 @@
 <div class="imagen">
         <div class="torneos-container">
+                <div class="modalCancelar" *ngIf="this.apuntar == true">
+                        <div class="mensaje">
+                                <div class="infoModal">
+                                        <div class="titulo">Vas a apuntarte al torneo</div>
+                                        <div class="texto"> ¿Estás seguro de que quieres apuntarte? Esta acción no se puede deshacer, tendréis que combatir conn los equipos asignados</div>
+                                </div>
+                                <div class="botones">
+                                        <button class="botonD" on-click="apuntarse(false)">Deshacer</button>
+                                        <button class="botonC" routerLink="../detalles-torneo">Confirmar</button>
+                                </div>
+                        </div>
+                        <div class="fondo" on-click="apuntarse(false)">
+        
+                        </div>
+                </div>
                 <div class="top-container">
                         <div class="torneo-activado" *ngIf="torneo; else esFalso">
                                 <div class="info-torneo-activado">
@@ -11,8 +26,8 @@
                                         </div>
                                 </div>
                                 <div class="botones-torneo-activado">
-
-                                        <a href="#" class="boton-torneo-activado-left" routerLink="../detalles-torneo">¡Apuntate</a>
+                                        <button *ngIf="this.torneo.selected ==false" class="boton-torneo-activado-left" on-click="apuntarse(true)" >¡Apuntate</button>        
+                                        <a *ngIf="this.torneo.selected == true" href="#" class="boton-torneo-activado-left" routerLink="../detalles-torneo">Estadísticas</a>
                                         <a href="#" class="boton-torneo-activado-right"routerLink="../normas-torneo">Mas info</a>
 
                                 </div>

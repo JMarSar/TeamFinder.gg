@@ -15,9 +15,11 @@ export class TorneosComponent implements OnInit {
   public torneo:Torneos;
   public myIndex:number;
   public partida:Partida;
+  public apuntar:boolean
 
   constructor(public apiService : TorneosService, public ServicioApuntados: TorneosApuntadoService) { 
     this.torneos = []
+    this.apuntar = false
   }
 
 
@@ -28,6 +30,7 @@ export class TorneosComponent implements OnInit {
     .subscribe((data:any) =>{
       console.log( "flag1",  data.resultado)
       for(let i =0; i< this.torneos.length;i++){
+        
         const result = data.resultado.find((element:any) =>{
           return element.clave_torneo === this.torneos[i].clave_torneo
         })
@@ -35,9 +38,17 @@ export class TorneosComponent implements OnInit {
         if(result){
           this.torneos[i].selected = true
         }
+        else{
+          this.torneos[i].selected = false
+        }
       }
     })
 
+  }
+  apuntarse(tipo:boolean){
+    console.log(tipo)
+    this.apuntar = tipo
+    console.log(this.apuntar)
   }
   mostrarTorneo(i:number){
     this.torneo = this.torneos[i]
