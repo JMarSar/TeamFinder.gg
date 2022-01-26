@@ -1,0 +1,30 @@
+#containerxxl{
+    height: 100vh;
+    background-image: url(../../../assets/img/errorBackground.png);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 23vh;
+    font-family: Oxanium;
+}
+h2{
+    font-family: Oxanium;
+}
+#goHome{
+    height: 8vh;
+    width: 10vw;
+    margin-top: 6vh;
+    background: -webkit-linear-gradient(-90deg, #CE0037 0%, #560505 100%);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
+    cursor: pointer;
+    font-family: Oxanium;
+    font-size:large;
+}
