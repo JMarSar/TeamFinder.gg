@@ -50,6 +50,9 @@ button{
     font-family: var(--fontRevxMedium);
     margin-left: -15%;
 }
+.desde{
+    width:5vw ;
+}
 /************************************PRINCIPAL*****************************************************************/
 
 main{
@@ -402,7 +405,7 @@ pendiente scroll
     height: 100vh;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     width: 100vw;
     opacity: 0.6;
     background-color: black;
@@ -416,7 +419,7 @@ pendiente scroll
     gap: 2vw;
     height: 60%;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     width: 25%;
     top: 20%;
     left: 37.5%;

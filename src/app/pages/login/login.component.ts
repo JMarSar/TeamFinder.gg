@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
     console.log(login)
     this.ServicioLogin.login(login)
     .subscribe((data:any) =>{
-      console.log(data)
+      console.log(data, "esto es todo")
 
       if(data.resultado.length > 0){
         this.ServicioLogin.id = data.resultado[0].id_user
@@ -77,10 +77,11 @@ export class LoginComponent implements OnInit {
         this.ServicioLogin.ftr = data.resultado[0].first_tower_contador
 
         console.log(data.resultado[0],
+          "este es el manager", this.ServicioLogin.manager,
           this.ServicioLogin.id, this.ServicioLogin.nombre,this.ServicioLogin.password,this.ServicioLogin.idioma,
           this.ServicioLogin.id,this.ServicioLogin.imagen, this.ServicioLogin.lfm, this.ServicioLogin.juego_fav, this.ServicioLogin.nombre_equipo)
-          if(this.ServicioLogin.manager){
-            this.navegar.navigate(["../admin-create"])
+          if(data.resultado[0].G_manager == 1){
+            this.navegar.navigate(["../admin-tools"])
           }
           else{
         this.navegar.navigate(["../home"]) }
