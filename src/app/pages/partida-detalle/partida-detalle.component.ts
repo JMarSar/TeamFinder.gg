@@ -25,7 +25,7 @@ export class PartidaDetalleComponent implements OnInit {
 
       if(this.cancelar!=true){
       this.jugando = true}
-    },12000)
+    },8000)
 
   }
   cambiarCancelar(tipo:boolean){

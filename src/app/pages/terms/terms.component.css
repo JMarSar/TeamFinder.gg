@@ -12,12 +12,13 @@
 }
 #containerimg{
     width: 100%;
+    margin-left: -50px;
 }
 #ryze{
     position: fixed;
     height: 36vw;
-    margin-top: 7.5vw;
-    z-index: 10;
+    bottom: 0;
+    z-index: 2;
 }
 #title{
     height: fit-content;

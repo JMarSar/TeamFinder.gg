@@ -17,8 +17,8 @@
     position: fixed;
     height: 25vw;
     margin-left: -6vw;
-    margin-top: 18vw;
-    z-index: 10;
+    bottom:0 ;
+    z-index: 2;
 }
 #title{
     height: fit-content;
