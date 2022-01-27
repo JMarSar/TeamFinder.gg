@@ -47,14 +47,15 @@
         width: 100%;
         height: 100%;
         padding: 0 0 0 6%;
-        background-color: var(--colorAzulPrimario);
+        background-color:rgba(27, 99, 144, 0.17);
 }
 .info-torneo-activado {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap:1vw
+        gap:1vw;
+        width: 28vw
 }
 .nombre-torneo-activado {
         width: 60%;

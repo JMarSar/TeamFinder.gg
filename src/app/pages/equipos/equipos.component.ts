@@ -77,6 +77,7 @@ export class EquiposComponent implements OnInit {
     this.ServicioConectar.conectar(this.ServicioLogin.equipo_id.toString(),this.ServicioEquipos.listaEquipos[index].equipo_id.toString())
     .subscribe((data:any) =>{
       console.log(data)
+      this.ServicioEquipos.listaEquipos[index].joined = true
     })
     console.log(this.ServicioLogin.equipo_id,this.ServicioEquipos.listaEquipos[index].equipo_id)
     this.showToastr()

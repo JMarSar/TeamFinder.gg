@@ -33,9 +33,9 @@
                                                 </div>
                                                 <div class="botones">
 
-                                                                <button  *ngIf="this.admin == true" class="conectar" on-click="conectar(i);">Conectar</button>
+                                                                <button  *ngIf="this.admin == true && !equipo.joined" class="conectar" on-click="conectar(i);">Conectar</button>
 
-                                                                <button class= "unir" *ngIf="this.tieneEquipo == false && !equipo.joined "class="unirse" on-click="unirse(i)">Unirse</button>
+                                                                <button class= "unir" *ngIf="this.tieneEquipo == false && !equipo.joined" class="unirse" on-click="unirse(i)">Unirse</button>
                                                 </div>             
                                         </div>
                                 </div>
