@@ -79,7 +79,7 @@
                 </div>
                 <div on-click="cambiarCancelar(true)">
                         <div class="botones" *ngIf="this.jugando == false">
-                                <button class="boton2">
+                                <button routerLink="../seleccion-partida" class="boton2">
                                         Cancelar
                                 </button>
                         </div>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="botones">
                         <div on-click="cambiarCancelar(true)">
-                                <button class="boton2" *ngIf="this.jugando == false">
+                                <button class="boton2" routerLink="../seleccion-partida" *ngIf="this.jugando == false">
                                         Cancelar
                                 </button>
                         </div>
