@@ -40,6 +40,7 @@ import { NormasTorneoComponent } from './pages/normas-torneo/normas-torneo.compo
 import { RegistroFavComponent } from './pages/registro-fav/registro-fav.component';
 import { AdjustComponent } from './pages/adjust/adjust.component';
 import { TermsComponent } from './pages/terms/terms.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 
 const routes: Routes = [
@@ -82,7 +83,8 @@ const routes: Routes = [
   { path: 'normas-torneo', component:NormasTorneoComponent},
   { path: 'registro-fav', component: RegistroFavComponent},
   { path: 'adjust', component: AdjustComponent},
-  { path:  'terms', component: TermsComponent}
+  { path:  'terms', component: TermsComponent},
+  { path: 'error404', component: Error404Component}
 ];
 
 @NgModule({

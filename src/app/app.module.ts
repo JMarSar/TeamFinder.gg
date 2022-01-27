@@ -51,6 +51,7 @@ import { InfoUsuarioPersonalComponent } from './pages/info-usuario-personal/info
 import { InfoUsuarioPublicoComponent } from './pages/info-usuario-publico/info-usuario-publico.component';
 import { AdjustComponent } from './pages/adjust/adjust.component';
 import { TermsComponent } from './pages/terms/terms.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +102,7 @@ import { TermsComponent } from './pages/terms/terms.component';
     InfoUsuarioPublicoComponent,
     AdjustComponent,
     TermsComponent,
+    Error404Component,
   ],
   imports: [
     CommonModule,

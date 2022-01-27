@@ -193,6 +193,8 @@ button{
     gap: 10%;
     border: none;
     border-radius: 4px;
+    border-radius: 2px;
+    box-shadow: 5px 1px 5px rgb(14, 14, 14, 0.5);
 }
 
 a:hover{
